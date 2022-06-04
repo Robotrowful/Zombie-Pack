@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef ParentName="CodZP_ZapgunBase">
+		<defName>CODZP_WavegunSplit</defName>
+		<label>Split Wavegun</label>
+		<uiIconThing>CODZP_Icon_Zapguns</uiIconThing>
+		<description>Split the Wavegun into two Zapguns!</description>
+		<soundWorking>CodZP_Work_Wavegun_Separate</soundWorking>
+    	<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CodZP_Gun_Wavegun</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<CODZP_Gun_Zapgun_Blue>1</CODZP_Gun_Zapgun_Blue>
+			<CODZP_Gun_Zapgun_Red>1</CODZP_Gun_Zapgun_Red>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="CodZP_PackZapgunBase">
+		<defName>CODZP_MaxWavegunSplit</defName>
+		<label>Split Max Wavegun</label>
+		<uiIconThing>CODZP_Icon_PAPZapguns</uiIconThing>
+		<description>Split the Wavegun into two Porter's Zapguns!</description>
+		<soundWorking>CodZP_Work_Wavegun_Separate</soundWorking>
+    	<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CodZP_Gun_Wavegun-PAP</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<CODZP_Gun_Zapgun_Blue-PAP>1</CODZP_Gun_Zapgun_Blue-PAP>
+			<CODZP_Gun_Zapgun_Red-PAP>1</CODZP_Gun_Zapgun_Red-PAP>
+		</products>
+	</RecipeDef>
+</Defs>

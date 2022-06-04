@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--Frost-->
+<DamageDef>
+	<defName>CodZP_Frostbite</defName>
+	<label>frostbite</label>
+	<makesBlood>false</makesBlood>
+    <workerClass>DamageWorker_Frostbite</workerClass>
+    <externalViolence>false</externalViolence>
+    <deathMessage>{0} has succumbed to frostbite.</deathMessage>
+    <hediff>Frostbite</hediff>
+	<harmsHealth>true</harmsHealth>
+	<additionalHediffs>
+		<li>
+			<hediff>Hypothermia</hediff>
+			<severityPerDamageDealt>0.01</severityPerDamageDealt>
+		</li>
+	</additionalHediffs>
+	<defaultArmorPenetration>0</defaultArmorPenetration>
+	<soundExplosion>Explosion_EMP</soundExplosion>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+	<impactSoundType>Tornado</impactSoundType>
+    <armorCategory>Sharp</armorCategory>	
+	<isRanged>true</isRanged>
+</DamageDef>
+   
+<!--Ray Guns explosions-->
+	<!-- Green -->
+<DamageDef ParentName="Bomb">
+	<defName>CodZP_RaygunGreenBomb</defName>
+	<explosionColorCenter>(0, 1, 0)</explosionColorCenter>
+    <explosionColorEdge>(0, 0.8, 0)</explosionColorEdge>
+</DamageDef>
+<DamageDef ParentName="Bomb">
+	<defName>CodZP_RaygunRedBomb</defName>
+	<explosionColorCenter>(1, 0, 0)</explosionColorCenter>
+    <explosionColorEdge>(0.8, 0, 0)</explosionColorEdge>
+</DamageDef>
+<DamageDef ParentName="Bomb">
+	<defName>CodZP_RaygunYellowBomb</defName>
+	<explosionColorCenter>(1, 1, 0)</explosionColorCenter>
+    <explosionColorEdge>(0.8, 0.8, 0)</explosionColorEdge>
+	<defaultStoppingPower>100</defaultStoppingPower>
+	<additionalHediffs>
+		<li>
+			<hediff>ToxicBuildup</hediff>
+			<severityPerDamageDealt>0.05</severityPerDamageDealt>
+			<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
+			<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+		</li>
+	</additionalHediffs>
+</DamageDef>
+<DamageDef ParentName="Bomb">
+	<defName>CodZP_WavegunPurpleBomb</defName>
+	<explosionColorCenter>(0.66, 0, 1)</explosionColorCenter>
+    <explosionColorEdge>(0.57, 0, 0.57)</explosionColorEdge>
+</DamageDef>
+</Defs>

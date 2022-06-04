@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Expanded Framework</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/DamageDef[defName="CodZP_Toxic_Burn"]/hediff</xpath>
+                    <value>
+                        <hediff>VEF_AcidBurn</hediff>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/DamageDef[defName="CodZP_Toxic_Burn"]/additionalHediffs</xpath>
+                    <value>
+                        <additionalHediffs>
+			                <li>
+                                <hediff>VEF_AcidBuildup</hediff>
+                                <severityPerDamageDealt>0.005</severityPerDamageDealt>
+                                <victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
+			                </li>
+                        </additionalHediffs>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/DamageDef[defName="CodZP_RaygunYellowBomb"]/additionalHediffs</xpath>
+                    <value>
+                        <additionalHediffs>
+			                <li>
+                                <hediff>VEF_AcidBuildup</hediff>
+                                <severityPerDamageDealt>0.02</severityPerDamageDealt>
+                                <victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
+			                </li>
+                        </additionalHediffs>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>

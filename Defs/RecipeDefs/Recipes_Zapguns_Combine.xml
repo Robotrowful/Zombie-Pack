@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef Name="CodZP_ZapgunBase" Abstract="True">
+		<workAmount>50</workAmount>
+		<workSkill>Crafting</workSkill>
+		<researchPrerequisites>
+			<li>CodZP_WonderWorks</li>
+		</researchPrerequisites>
+		<recipeUsers>
+			<li>CodZP_Wond-R-Works</li>
+			<li>CraftingSpot</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef Name="CodZP_PackZapgunBase" ParentName="CodZP_ZapgunBase" Abstract="True">
+		<researchPrerequisites>
+			<li>CodZP_PackAPunch</li>
+		</researchPrerequisites>
+	</RecipeDef>
+
+	<RecipeDef ParentName="CodZP_ZapgunBase">
+		<defName>CODZP_Zapguncombine</defName>
+		<label>Combine Zap Guns</label>
+		<description>Combine the Zapguns into one!</description>
+		<soundWorking>CodZP_Work_Wavegun_Join</soundWorking>
+    	<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CODZP_Gun_Zapgun_Blue</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CODZP_Gun_Zapgun_Red</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<CodZP_Gun_Wavegun>1</CodZP_Gun_Wavegun>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="CodZP_PackZapgunBase">
+		<defName>CODZP_PAPZapguncombine</defName>
+		<label>Combine Porter's X2 Zap Guns</label>
+		<description>Combine the Porter's X2 Zap Gun into one!</description>
+		<soundWorking>CodZP_Work_Wavegun_Join</soundWorking>
+    	<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CODZP_Gun_Zapgun_Blue-PAP</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CODZP_Gun_Zapgun_Red-PAP</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<CodZP_Gun_Wavegun-PAP>1</CodZP_Gun_Wavegun-PAP>
+		</products>
+	</RecipeDef>
+</Defs>

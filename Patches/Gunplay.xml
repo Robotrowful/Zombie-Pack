@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+ 
+    <Operation Class="PatchOperationFindMod">
+    <mods><li>Gunplay</li></mods>
+    <match Class="PatchOperationSequence">
+    <operations>
+    <li Class="PatchOperationAdd">
+    <xpath>/Defs</xpath>
+    <value>
+    
+<!--Green Trails-->
+    <Gunplay.ProjectileTrailDef ParentName="GunplayProjectileTrailDefault">
+        <defName>CODZP_TrailGreen</defName>
+        <graphicData>
+            <texPath>Gunplay/Effects/Guntrail</texPath>
+            <shaderType>TransparentPostLight</shaderType>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(100,255,60)</color>
+        </graphicData>
+        <trailWidth>0.15</trailWidth>
+    </Gunplay.ProjectileTrailDef>
+
+    <Gunplay.GunPropDef>
+        <defName>CodZP_Gun_RayGun</defName>
+        <trail>CODZP_TrailGreen</trail>
+    </Gunplay.GunPropDef>
+    <Gunplay.GunPropDef>
+        <defName>CodZP_Gun_RayGunMkTwo</defName>
+        <trail>CODZP_TrailGreen</trail>
+    </Gunplay.GunPropDef>
+    <Gunplay.GunPropDef>
+        <defName>CodZP_Gun_RayGunMkThree</defName>
+        <trail>CODZP_TrailGreen</trail>
+    </Gunplay.GunPropDef>
+    <Gunplay.GunPropDef>
+        <defName>CodZP_Gun_Acidgat</defName>
+        <trail>CODZP_TrailGreen</trail>
+    </Gunplay.GunPropDef>
+    <Gunplay.GunPropDef>
+        <defName>CodZP_Gun_Acidgat-PAP</defName>
+        <trail>CODZP_TrailGreen</trail>
+    </Gunplay.GunPropDef>
+
+<!--Red Trails-->
+    <Gunplay.ProjectileTrailDef ParentName="GunplayProjectileTrailDefault">
+        <defName>CODZP_TrailRed</defName>
+        <graphicData>
+            <texPath>Gunplay/Effects/Guntrail</texPath>
+            <shaderType>TransparentPostLight</shaderType>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(255,31,31)</color>
+        </graphicData>
+        <trailWidth>0.15</trailWidth>
+    </Gunplay.ProjectileTrailDef>
+
+    <Gunplay.GunPropDef>
+        <defName>CodZP_Gun_RayGun-PAP</defName>
+        <trail>CODZP_TrailRed</trail>
+    </Gunplay.GunPropDef>
+    <Gunplay.GunPropDef>
+        <defName>CodZP_Gun_RayGunMkTwo-PAP</defName>
+        <trail>CODZP_TrailRed</trail>
+    </Gunplay.GunPropDef>
+    <Gunplay.GunPropDef>
+        <defName>CodZP_Gun_RayGunMkThree-PAP</defName>
+        <trail>CODZP_TrailRed</trail>
+    </Gunplay.GunPropDef>
+    <Gunplay.GunPropDef>
+        <defName>CODZP_Gun_Zapgun_Red</defName>
+        <trail>CODZP_TrailRed</trail>
+    </Gunplay.GunPropDef>
+    <Gunplay.GunPropDef>
+        <defName>CodZP_Gun_Wavegun-PAP</defName>
+        <trail>CODZP_TrailRed</trail>
+    </Gunplay.GunPropDef>
+
+<!--Blue Trails-->
+    <Gunplay.ProjectileTrailDef ParentName="GunplayProjectileTrailDefault">
+        <defName>CODZP_TrailBlue</defName>
+        <graphicData>
+            <texPath>Gunplay/Effects/Guntrail</texPath>
+            <shaderType>TransparentPostLight</shaderType>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(68, 85, 206)</color>
+        </graphicData>
+        <trailWidth>0.15</trailWidth>
+    </Gunplay.ProjectileTrailDef>
+
+    <Gunplay.GunPropDef>
+        <defName>CODZP_Gun_Zapgun_Blue</defName>
+        <trail>CODZP_TrailBlue</trail>
+    </Gunplay.GunPropDef>
+    <Gunplay.GunPropDef>
+        <defName>CodZP_Gun_RayGunMkTwo-X</defName>
+        <trail>CODZP_TrailBlue</trail>
+    </Gunplay.GunPropDef>
+    <Gunplay.GunPropDef>
+        <defName>CodZP_Gun_RayGunMkTwo-X-PAP</defName>
+        <trail>CODZP_TrailBlue</trail>
+    </Gunplay.GunPropDef>
+    <Gunplay.GunPropDef>
+        <defName>CodZP_Hells_Retriever-PAP</defName>
+        <trail>CODZP_TrailBlue</trail>
+    </Gunplay.GunPropDef>
+
+<!--Purple Trails-->
+    <Gunplay.ProjectileTrailDef ParentName="GunplayProjectileTrailDefault">
+        <defName>CODZP_TrailPurple</defName>
+        <graphicData>
+            <texPath>Gunplay/Effects/Guntrail</texPath>
+            <shaderType>TransparentPostLight</shaderType>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(140, 0, 255)</color>
+        </graphicData>
+        <trailWidth>0.15</trailWidth>
+    </Gunplay.ProjectileTrailDef>
+
+    <Gunplay.GunPropDef>
+        <defName>CODZP_Gun_Zapgun_Blue-PAP</defName>
+        <trail>CODZP_TrailPurple</trail>
+    </Gunplay.GunPropDef>
+    <Gunplay.GunPropDef>
+        <defName>CODZP_Gun_Zapgun_Red-PAP</defName>
+        <trail>CODZP_TrailPurple</trail>
+    </Gunplay.GunPropDef>
+    <Gunplay.GunPropDef>
+        <defName>CodZP_Gun_Wavegun</defName>
+        <trail>CODZP_TrailPurple</trail>
+    </Gunplay.GunPropDef>
+    <Gunplay.GunPropDef>
+        <defName>CodZP_Gun_RayGunMkTwo-Z</defName>
+        <trail>CODZP_TrailPurple</trail>
+    </Gunplay.GunPropDef>
+    <Gunplay.GunPropDef>
+        <defName>CodZP_Gun_RayGunMkTwo-Z-PAP</defName>
+        <trail>CODZP_TrailPurple</trail>
+    </Gunplay.GunPropDef>
+
+<!--Orange Trails-->
+    <Gunplay.ProjectileTrailDef ParentName="GunplayProjectileTrailDefault">
+        <defName>CODZP_TrailOrange</defName>
+        <graphicData>
+            <texPath>Gunplay/Effects/Guntrail</texPath>
+            <shaderType>TransparentPostLight</shaderType>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(250, 90, 10)</color>
+        </graphicData>
+        <trailWidth>0.15</trailWidth>
+    </Gunplay.ProjectileTrailDef>
+
+    <Gunplay.GunPropDef>
+        <defName>CodZP_Gun_RayGunMkTwo-Y</defName>
+        <trail>CODZP_TrailOrange</trail>
+    </Gunplay.GunPropDef>
+    <Gunplay.GunPropDef>
+        <defName>CodZP_Gun_RayGunMkTwo-Y-PAP</defName>
+        <trail>CODZP_TrailOrange</trail>
+    </Gunplay.GunPropDef>
+    <Gunplay.GunPropDef>
+        <defName>CodZP_Gun_Magmagat</defName>
+        <trail>CODZP_TrailOrange</trail>
+    </Gunplay.GunPropDef>
+    <Gunplay.GunPropDef>
+        <defName>CodZP_Gun_Magmagat-PAP</defName>
+        <trail>CODZP_TrailOrange</trail>
+    </Gunplay.GunPropDef>
+    <Gunplay.GunPropDef>
+        <defName>CodZP_Hells_Retriever</defName>
+        <trail>CODZP_TrailOrange</trail>
+    </Gunplay.GunPropDef>
+
+<!--Yellow Trails-->
+    <Gunplay.ProjectileTrailDef ParentName="GunplayProjectileTrailDefault">
+        <defName>CODZP_TrailYellow</defName>
+        <graphicData>
+            <texPath>Gunplay/Effects/Guntrail</texPath>
+            <shaderType>TransparentPostLight</shaderType>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(255, 255, 31)</color>
+        </graphicData>
+        <trailWidth>0.15</trailWidth>
+    </Gunplay.ProjectileTrailDef>
+
+    <Gunplay.GunPropDef>
+        <defName>CodZP_Gun_RayGunMkTwo-V</defName>
+        <trail>CODZP_TrailYellow</trail>
+    </Gunplay.GunPropDef>
+    <Gunplay.GunPropDef>
+        <defName>CodZP_Gun_RayGunMkTwo-V-PAP</defName>
+        <trail>CODZP_TrailYellow</trail>
+    </Gunplay.GunPropDef>
+
+<!--White Trails-->
+    <Gunplay.ProjectileTrailDef ParentName="GunplayProjectileTrailDefault">
+        <defName>CODZP_TrailWhite</defName>
+        <graphicData>
+            <texPath>Gunplay/Effects/Guntrail</texPath>
+            <shaderType>TransparentPostLight</shaderType>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(255,255,255)</color>
+        </graphicData>
+        <trailWidth>0.15</trailWidth>
+    </Gunplay.ProjectileTrailDef>
+
+    <Gunplay.GunPropDef>
+        <defName>CodZP_Gun_Wunderwaffe</defName>
+        <trail>CODZP_TrailWhite</trail>
+    </Gunplay.GunPropDef>
+    <Gunplay.GunPropDef>
+        <defName>CodZP_Gun_Wunderwaffe-PAP</defName>
+        <trail>CODZP_TrailWhite</trail>
+    </Gunplay.GunPropDef>
+    <Gunplay.GunPropDef>
+        <defName>CodZP_Gun_Wunderwaffe_Scharf</defName>
+        <trail>CODZP_TrailWhite</trail>
+    </Gunplay.GunPropDef>
+    <Gunplay.GunPropDef>
+        <defName>CodZP_Gun_Wunderwaffe_Scharf-PAP</defName>
+        <trail>CODZP_TrailWhite</trail>
+    </Gunplay.GunPropDef>
+
+<!--End of Patch-->
+    </value>
+    </li>
+    </operations>
+    </match>
+    </Operation>
+</Patch>
