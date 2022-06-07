@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+    	<mods><li>Royalty</li></mods> <!-- Relooks for Royalty -->
+    <match Class="PatchOperationSequence">
+	<operations>
+		<li Class="PatchOperationFindMod">
+        	<mods><li>Persona Bond Forge</li></mods> <!-- Looks for Persona Bond Forge Second -->
+        	<match Class="PatchOperationSequence">
+    		<operations>
+			<li Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+				<value>
+
+<ThingDef ParentName="BaseWeapon_Bladelink">
+	<defName>CodZP_MeleeWeapon_MonoSword-Persona</defName>
+	<label>Persona Bisword</label>
+	<description>Doubles the sword, Doubles the damage. \nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+	<soundInteract>Interact_BladelinkMonoSword</soundInteract>
+	<meleeHitSound>MeleeHit_BladelinkMonoSword</meleeHitSound>
+	<equippedAngleOffset>-65</equippedAngleOffset>
+	<statBases>
+      <Mass>2</Mass>
+    </statBases>
+	<tradeability>None</tradeability>
+	<graphicData>
+		<texPath>Things/Item/Equipment/WeaponMelee/CODZP_Monosword_PAP</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<color>(255,200,200)</color>
+	</graphicData>
+	<tools>
+		<li>
+			<label>handle</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>30</power>
+			<cooldownTime>1.11</cooldownTime>
+		</li>
+		<li>
+			<label>point</label>
+			<capacities>
+				<li>Stab</li>
+			</capacities>
+			<power>56</power>
+			<cooldownTime>1.39</cooldownTime>
+			<armorPenetration>1.1</armorPenetration>
+		</li>
+		<li>
+			<label>edge</label>
+			<capacities>
+				<li>Cut</li>
+			</capacities>
+			<power>56</power>
+			<cooldownTime>1.39</cooldownTime>
+			<armorPenetration>1.1</armorPenetration>
+		</li>
+	</tools>
+</ThingDef>
+<RecipeDef ParentName="CODZP_PersonaPatch"> 
+  <defName>CodZP_Make_BondMonoSword</defName>
+    <label>bond Bisword</label>
+    <description>Bond an Bisword</description>
+    <jobString>Bonding a Bisword</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CodZP_MeleeWeapon_MonoSword</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BondingCore</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>CodZP_MeleeWeapon_MonoSword</li>
+        <li>BondingCore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <CodZP_MeleeWeapon_MonoSword-Persona>1</CodZP_MeleeWeapon_MonoSword-Persona>
+    </products>
+</RecipeDef>
+
+<ThingDef ParentName="BaseWeapon_Bladelink">
+	<defName>CodZP_MeleeWeapon_Zeushammer-Persona</defName>
+	<label>Persona Olympus Breaker</label>
+	<description>A hammer so strong, that bards across the land and seas tell tales of a hammer so strong. \nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+	<soundInteract>Interact_BladelinkZeusHammer</soundInteract>
+    <meleeHitSound>MeleeHit_BladelinkZeusHammer</meleeHitSound>
+	<equippedAngleOffset>-65</equippedAngleOffset>
+	<statBases>
+      <Mass>2</Mass>
+    </statBases>
+	<tradeability>None</tradeability>
+	<graphicData>
+		<texPath>Things/Item/Equipment/WeaponMelee/CODZP_ZeusHammer_PAP</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>TransparentPostLight</shaderType>
+		<color>(255,200,200)</color>
+	</graphicData>
+	<tools>
+		<li>
+			<label>handle</label>
+			<capacities>
+				<li>Poke</li>
+			</capacities>
+			<power>36</power>
+			<cooldownTime>1.39</cooldownTime>
+		</li>
+		<li>
+			<label>head</label>
+			<labelUsedInLogging>false</labelUsedInLogging>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>68</power>
+			<cooldownTime>2.09</cooldownTime>
+			<extraMeleeDamages>
+				<li>
+					<def>EMP</def>
+					<amount>24</amount>
+				</li>
+			</extraMeleeDamages>
+		</li>
+	</tools>
+</ThingDef>
+<RecipeDef ParentName="CODZP_PersonaPatch"> 
+  <defName>CodZP_Make_BondZeusHammer</defName>
+    <label>bond Olympus Breaker</label>
+    <description>Bond an Olympus Breaker</description>
+    <jobString>Bonding a Olympus Breaker</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CodZP_MeleeWeapon_Zeushammer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BondingCore</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>CodZP_MeleeWeapon_Zeushammer</li>
+        <li>BondingCore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <CodZP_MeleeWeapon_Zeushammer-Persona>1</CodZP_MeleeWeapon_Zeushammer-Persona>
+    </products>
+</RecipeDef>
+
+<ThingDef ParentName="BaseWeapon_Bladelink">
+	<defName>CodZP_MeleeWeapon_PlasmaSword-Persona</defName>
+	<label>Persona SolarSlasher</label>
+	<description>The power of the sun in the palm of your hand. \nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+	<soundInteract>Interact_BladelinkPlasmaSword</soundInteract>
+    <meleeHitSound>MeleeHit_BladelinkPlasmaSword</meleeHitSound>
+	<equippedAngleOffset>-65</equippedAngleOffset>
+		<statBases>
+      <Mass>2</Mass>
+    </statBases>
+	<tradeability>None</tradeability>
+	<graphicData>
+		<texPath>Things/Item/Equipment/WeaponMelee/CODZP_PlasmaSword_PAP</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>TransparentPostLight</shaderType>
+		<color>(255,200,200)</color>
+	</graphicData>
+	<tools>
+		<li>
+			<label>handle</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>30</power>
+			<cooldownTime>1.39</cooldownTime>
+		</li>
+		<li>
+			<label>point</label>
+			<capacities>
+				<li>Stab</li>
+			</capacities>
+			<power>48</power>
+			<cooldownTime>1.81</cooldownTime>
+			<extraMeleeDamages>
+				<li>
+					<def>Flame</def>
+					<amount>26</amount>
+					<chance>0.5</chance>
+				</li>
+			</extraMeleeDamages>
+		</li>
+		<li>
+			<label>edge</label>
+			<capacities>
+				<li>Cut</li>
+			</capacities>
+			<power>48</power>
+			<cooldownTime>1.81</cooldownTime>
+			<extraMeleeDamages>
+				<li>
+					<def>Flame</def>
+					<amount>26</amount>
+					<chance>0.5</chance>
+				</li>
+			</extraMeleeDamages>
+		</li>
+	</tools>
+</ThingDef>
+<RecipeDef ParentName="CODZP_PersonaPatch"> 
+  <defName>CodZP_Make_BondPlasmaSword</defName>
+    <label>bond SolarSlasher</label>
+    <description>Bond an SolarSlasher</description>
+    <jobString>Bonding a SolarSlasher</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CodZP_MeleeWeapon_PlasmaSword</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BondingCore</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>CodZP_MeleeWeapon_PlasmaSword</li>
+        <li>BondingCore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <CodZP_MeleeWeapon_PlasmaSword-Persona>1</CodZP_MeleeWeapon_PlasmaSword-Persona>
+    </products>
+</RecipeDef>
+
+    		</value>
+		</li>
+		</operations>
+		</match>
+    </li>
+    </operations>
+    </match>
+    </Operation>
+</Patch>
