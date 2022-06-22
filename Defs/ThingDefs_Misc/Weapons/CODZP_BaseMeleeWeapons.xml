@@ -21,13 +21,14 @@
 	 </ThingDef>
 	<ThingDef Name="CODZP_BaseWonderPackAPunchSharp" Abstract="True" ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<statBases>
-			<WorkToMake>5000</WorkToMake>
+			<WorkToMake>220</WorkToMake>
 		</statBases>	
 		<thingCategories Inherit="False">
 			<li>CodZP_PunchedMeleeWonders</li>
 		</thingCategories>
 		<tradeability>None</tradeability>
 		<recipeMaker>
+			<soundWorking>CodZP_Recipe_PackAPunch</soundWorking>
 			<researchPrerequisites Inherit="False">
 				<li>CodZP_WonderWorks</li>
 				<li>CodZP_PackAPunch</li>
@@ -64,13 +65,14 @@
 	 </ThingDef>
 	<ThingDef Name="CODZP_BaseWonderPackAPunchBlunt" Abstract="True" ParentName="BaseMeleeWeapon_Blunt_Quality">
 		<statBases>
-			<WorkToMake>5000</WorkToMake>
+			<WorkToMake>220</WorkToMake>
 		</statBases>	
 		<thingCategories Inherit="False">
 			<li>CodZP_PunchedMeleeWonders</li>
 		</thingCategories>
 		<tradeability>None</tradeability>
 		<recipeMaker>
+			<soundWorking>CodZP_Recipe_PackAPunch</soundWorking>
 			<researchPrerequisites Inherit="False">
 				<li>CodZP_WonderWorks</li>
 				<li>CodZP_PackAPunch</li>

@@ -2,14 +2,15 @@
 <Defs>
   <RecipeDef Name="CodZP_BuyPerkaColas" Abstract="True">
     <jobString>Buying drink</jobString>
-		<workAmount>50</workAmount>
+		<workAmount>120</workAmount>
 		<researchPrerequisites>
 			<li>CodZP_PerkACola</li>
 		</researchPrerequisites>
+		<soundWorking>CodZP_PerkColaDrop</soundWorking>
 		<recipeUsers>
 			<li>CodZP_Perk-A-Cola</li>
 		</recipeUsers>
-    <fixedIngredientFilter>
+    	<fixedIngredientFilter>
 			<thingDefs>
 				<li>Silver</li>
 			</thingDefs>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+ 
+    <Operation Class="PatchOperationFindMod">
+    <mods><li>Vanilla Achievements Expanded</li></mods>
+    <match Class="PatchOperationSequence">
+    <operations>
+    <li Class="PatchOperationAdd">
+    <xpath>/Defs</xpath>
+    <value>
+<!--Buildings-->
+	<AchievementsExpanded.AchievementDef ParentName="CodZP_AchievementParent">
+		<defName>CodZP_BuildMB</defName>
+		<label>Lost in Random</label>
+		<description>Build a Mystery Box</description>
+		<tracker Class="AchievementsExpanded.BuildingTracker">
+			<def>CodZP_Mystery-Box</def>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/CodZP_AchievementMystery</texPath>
+		<points>15</points>
+	 </AchievementsExpanded.AchievementDef>
+
+    </value>
+    </li>
+    </operations>
+    </match>
+    </Operation>
+</Patch>

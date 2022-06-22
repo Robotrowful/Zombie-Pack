@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--Ranged-->
+<!--Pack a Punch-->
+	<ThingDef Name="CODZP_BaseUncraftablePackAPunch" Abstract="True" ParentName="BaseGunWithQuality">
+		<weaponTags>
+      		<li>Gun</li>
+		</weaponTags>
+		<thingCategories Inherit="False">
+			<li>CodZP_PackPunch</li>
+		</thingCategories>
+		<tradeability>None</tradeability>
+	 </ThingDef>
+<!--Wonder Weapons-->
+	<ThingDef Name="CODZP_BaseUncraftableWonderGun" Abstract="True" ParentName="BaseGunWithQuality">
+		<weaponTags>
+      		<li>Gun</li>
+		</weaponTags>
+		<thingCategories Inherit="False">
+			<li>CodZP_WonderWeapons</li>
+		</thingCategories>
+		<tradeability>None</tradeability>
+	 </ThingDef>
+	<ThingDef Name="CODZP_UncraftablePAPWonderGun" Abstract="True" ParentName="CODZP_BaseUncraftablePackAPunch">
+		<thingCategories Inherit="False">
+			<li>CodZP_PunchedWonders</li>
+		</thingCategories>
+	 </ThingDef>
+</Defs>

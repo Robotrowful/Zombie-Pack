@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HugsLib.UpdateFeatureDef ParentName="CODZP_UpdateFeatureBase">
+		<defName>CallOfDutyZombiesPack_1_3</defName>
+		<assemblyVersion>1.3</assemblyVersion>
+		<content>Call of Duty: Zombies Pack has been updated to Version 1.3
+|New:
+-Mystery Box
+Allows you to obtain a random weapon for some silver 
+Credits: Danimineiro for making the C# code necessary.
+
+Changes:
+New sounds for crafting at a Der Wunderfizz and at a Pack a Punch
+Buying Perk Colas now take 120 ticks (from 50) (2 seconds)
+Pack a punching now takes 220 tick (from 5000) (3.6 seconds)
+
+|Thank you for playing!
+        </content>
+	</HugsLib.UpdateFeatureDef>
+
+</Defs>
