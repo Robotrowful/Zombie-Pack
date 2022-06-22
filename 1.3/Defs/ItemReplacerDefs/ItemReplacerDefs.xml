@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<MysteryBoxFrameWork.ItemReplacerDef>
-		<defName>ItemReplacerRanWeaps</defName>
+		<defName>Replacer_RandomWeapons</defName>
 		<targetItem>CODZP_Random_Weapons</targetItem>
 		<qualityGenerator>Gift</qualityGenerator>
 		<producedItems>
@@ -50,7 +50,7 @@
 	</MysteryBoxFrameWork.ItemReplacerDef>
 
 	<MysteryBoxFrameWork.ItemReplacerDef>
-		<defName>ItemReplacerRanPerkCola</defName>
+		<defName>Replacer_RandomPerkCola</defName>
 		<targetItem>CODZP_Random_PerkCola</targetItem>
 		<producedItems>
 			<CODZP_Juggernog>1</CODZP_Juggernog>
