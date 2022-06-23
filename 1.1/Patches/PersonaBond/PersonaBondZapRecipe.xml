@@ -7,7 +7,7 @@
     <success>Normal</success>
     <operations>
     <li Class="PatchOperationAdd">
-    <xpath>/Defs</xpath>
+    <xpath>Defs</xpath>
     <value>
 
 <!--Recipe for Zap guns and wavegun splitting, this one removes the UIthing-->

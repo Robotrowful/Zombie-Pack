@@ -11,7 +11,7 @@
             <operations>
             <!--Remove The Burst shotcount from shotguns-->
                 <li Class="PatchOperationRemove">
-                    <xpath>/Defs/ThingDef[
+                    <xpath>Defs/ThingDef[
                                         defName="CodZP_Gun_Blundergat" or 
                                         defName="CodZP_Gun_Blundergat-PAP" or 
                                         defName="CodZP_Gun_Acidgat" or 
@@ -28,7 +28,7 @@
 
             <!--Core-->
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/ThingDef[defName="CodZP_Bullet_PAP_Shotgun"]</xpath>
+                    <xpath>Defs/ThingDef[defName="CodZP_Bullet_PAP_Shotgun"]</xpath>
                     <value>
                         <li Class="ProperShotguns.ShotgunExtension">
                             <pelletCount>6</pelletCount>
@@ -37,14 +37,14 @@
                 </li>
 
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="CodZP_Bullet_PAP_Shotgun"]/graphicData/texPath</xpath>
+                    <xpath>Defs/ThingDef[defName="CodZP_Bullet_PAP_Shotgun"]/graphicData/texPath</xpath>
                     <value>
                         <texPath>Things/Projectile/Bullet_Small</texPath>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="CodZP_Gun_PumpShotgun-PAP" or defName="CodZP_Gun_ChainShotgun-PAP"]/verbs//li[verbClass="Verb_Shoot" and defaultProjectile="CodZP_Bullet_PAP_Shotgun"]/verbClass</xpath>
+                    <xpath>Defs/ThingDef[defName="CodZP_Gun_PumpShotgun-PAP" or defName="CodZP_Gun_ChainShotgun-PAP"]/verbs//li[verbClass="Verb_Shoot" and defaultProjectile="CodZP_Bullet_PAP_Shotgun"]/verbClass</xpath>
                     <value>
                         <verbClass>ProperShotguns.Verb_ShootShotgun</verbClass>
                     </value>
@@ -52,7 +52,7 @@
 
             <!--Blunders-->
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/ThingDef[
+                    <xpath>Defs/ThingDef[
                                         defName="CodZP_Bullet_Blundergat" or 
                                         defName="CodZP_Bullet_PAP_Blundergat" or 
                                         defName="CodZP_Bullet_Acidgat" or 
@@ -67,42 +67,42 @@
                 </li>
 
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="CodZP_Gun_Blundergat"]/verbs//li[verbClass="Verb_Shoot" and defaultProjectile="CodZP_Bullet_Blundergat"]/verbClass</xpath>
+                    <xpath>Defs/ThingDef[defName="CodZP_Gun_Blundergat"]/verbs//li[verbClass="Verb_Shoot" and defaultProjectile="CodZP_Bullet_Blundergat"]/verbClass</xpath>
                     <value>
                         <verbClass>ProperShotguns.Verb_ShootShotgun</verbClass>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="CodZP_Gun_Blundergat-PAP"]/verbs//li[verbClass="Verb_Shoot" and defaultProjectile="CodZP_Bullet_PAP_Blundergat"]/verbClass</xpath>
+                    <xpath>Defs/ThingDef[defName="CodZP_Gun_Blundergat-PAP"]/verbs//li[verbClass="Verb_Shoot" and defaultProjectile="CodZP_Bullet_PAP_Blundergat"]/verbClass</xpath>
                     <value>
                         <verbClass>ProperShotguns.Verb_ShootShotgun</verbClass>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="CodZP_Gun_Acidgat"]/verbs//li[verbClass="Verb_Shoot" and defaultProjectile="CodZP_Bullet_Acidgat"]/verbClass</xpath>
+                    <xpath>Defs/ThingDef[defName="CodZP_Gun_Acidgat"]/verbs//li[verbClass="Verb_Shoot" and defaultProjectile="CodZP_Bullet_Acidgat"]/verbClass</xpath>
                     <value>
                         <verbClass>ProperShotguns.Verb_ShootShotgun</verbClass>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="CodZP_Gun_Acidgat-PAP"]/verbs//li[verbClass="Verb_Shoot" and defaultProjectile="CodZP_Bullet_PAP_Acidgat"]/verbClass</xpath>
+                    <xpath>Defs/ThingDef[defName="CodZP_Gun_Acidgat-PAP"]/verbs//li[verbClass="Verb_Shoot" and defaultProjectile="CodZP_Bullet_PAP_Acidgat"]/verbClass</xpath>
                     <value>
                         <verbClass>ProperShotguns.Verb_ShootShotgun</verbClass>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="CodZP_Gun_Magmagat"]/verbs//li[verbClass="Verb_Shoot" and defaultProjectile="CodZP_Bullet_Magmagat"]/verbClass</xpath>
+                    <xpath>Defs/ThingDef[defName="CodZP_Gun_Magmagat"]/verbs//li[verbClass="Verb_Shoot" and defaultProjectile="CodZP_Bullet_Magmagat"]/verbClass</xpath>
                     <value>
                         <verbClass>ProperShotguns.Verb_ShootShotgun</verbClass>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="CodZP_Gun_Magmagat-PAP"]/verbs//li[verbClass="Verb_Shoot" and defaultProjectile="CodZP_Bullet_PAP_Magmagat"]/verbClass</xpath>
+                    <xpath>Defs/ThingDef[defName="CodZP_Gun_Magmagat-PAP"]/verbs//li[verbClass="Verb_Shoot" and defaultProjectile="CodZP_Bullet_PAP_Magmagat"]/verbClass</xpath>
                     <value>
                         <verbClass>ProperShotguns.Verb_ShootShotgun</verbClass>
                     </value>
@@ -110,7 +110,7 @@
 
             <!--Rayguns-->
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/ThingDef[
+                    <xpath>Defs/ThingDef[
                                         defName="CodZP_Bullet_RaygunTwoZ" or 
                                         defName="CodZP_Bullet_RaygunTwoZ-PAP" or
                                         defName="CodZP_Bullet_CodZP_StaffFlame" or 
@@ -123,14 +123,14 @@
                 </li>
 
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="CodZP_Gun_RayGunMkTwo-Z"]/verbs//li[verbClass="Verb_Shoot" and defaultProjectile="CodZP_Bullet_RaygunTwoZ"]/verbClass</xpath>
+                    <xpath>Defs/ThingDef[defName="CodZP_Gun_RayGunMkTwo-Z"]/verbs//li[verbClass="Verb_Shoot" and defaultProjectile="CodZP_Bullet_RaygunTwoZ"]/verbClass</xpath>
                     <value>
                         <verbClass>ProperShotguns.Verb_ShootShotgun</verbClass>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="CodZP_Gun_RayGunMkTwo-Z-PAP"]/verbs//li[verbClass="Verb_Shoot" and defaultProjectile="CodZP_Bullet_RaygunTwoZ-PAP"]/verbClass</xpath>
+                    <xpath>Defs/ThingDef[defName="CodZP_Gun_RayGunMkTwo-Z-PAP"]/verbs//li[verbClass="Verb_Shoot" and defaultProjectile="CodZP_Bullet_RaygunTwoZ-PAP"]/verbClass</xpath>
                     <value>
                         <verbClass>ProperShotguns.Verb_ShootShotgun</verbClass>
                     </value>
@@ -138,21 +138,21 @@
 
             <!--Elemental Staffs-->
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="CodZP_Gun_Staff-Fire"]/verbs//li[verbClass="Verb_Shoot" and defaultProjectile="CodZP_Bullet_CodZP_StaffFlame"]/verbClass</xpath>
+                    <xpath>Defs/ThingDef[defName="CodZP_Gun_Staff-Fire"]/verbs//li[verbClass="Verb_Shoot" and defaultProjectile="CodZP_Bullet_CodZP_StaffFlame"]/verbClass</xpath>
                     <value>
                         <verbClass>ProperShotguns.Verb_ShootShotgun</verbClass>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="CodZP_Gun_Staff-Fire-PAP"]/verbs//li[verbClass="Verb_Shoot" and defaultProjectile="CodZP_Bullet_CodZP_StaffFlamePAP"]/verbClass</xpath>
+                    <xpath>Defs/ThingDef[defName="CodZP_Gun_Staff-Fire-PAP"]/verbs//li[verbClass="Verb_Shoot" and defaultProjectile="CodZP_Bullet_CodZP_StaffFlamePAP"]/verbClass</xpath>
                     <value>
                         <verbClass>ProperShotguns.Verb_ShootShotgun</verbClass>
                     </value>
                 </li>
 
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/ThingDef[
+                    <xpath>Defs/ThingDef[
                                         defName="CodZP_Bullet_CodZP_StaffLightning" or 
                                         defName="CodZP_Bullet_CodZP_StaffLightningPAP"]</xpath>
                     <value>
@@ -163,14 +163,14 @@
                 </li>
 
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="CodZP_Gun_Staff-Lightning"]/verbs//li[verbClass="Verb_Shoot" and defaultProjectile="CodZP_Bullet_CodZP_StaffElectric"]/verbClass</xpath>
+                    <xpath>Defs/ThingDef[defName="CodZP_Gun_Staff-Lightning"]/verbs//li[verbClass="Verb_Shoot" and defaultProjectile="CodZP_Bullet_CodZP_StaffElectric"]/verbClass</xpath>
                     <value>
                         <verbClass>ProperShotguns.Verb_ShootShotgun</verbClass>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="CodZP_Gun_Staff-Lightning-PAP"]/verbs//li[verbClass="Verb_Shoot" and defaultProjectile="CodZP_Bullet_CodZP_StaffElectricPAP"]/verbClass</xpath>
+                    <xpath>Defs/ThingDef[defName="CodZP_Gun_Staff-Lightning-PAP"]/verbs//li[verbClass="Verb_Shoot" and defaultProjectile="CodZP_Bullet_CodZP_StaffElectricPAP"]/verbClass</xpath>
                     <value>
                         <verbClass>ProperShotguns.Verb_ShootShotgun</verbClass>
                     </value>

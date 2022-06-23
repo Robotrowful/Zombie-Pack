@@ -6,7 +6,7 @@
     <match Class="PatchOperationSequence">
     <operations>
     <li Class="PatchOperationAdd">
-    <xpath>/Defs</xpath>
+    <xpath>Defs</xpath>
     <value>
 
 	<ThingDef Name="CODZP_BasePackAPunchUltra" Abstract="True" ParentName="MeleeWeaponUltratech">
@@ -172,7 +172,7 @@
     </value>
     </li>
 	<li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName = "CodZP_MeleeWeapon_Spoon" or defName = "CodZP_MeleeWeapon_Spoon-PAP"]</xpath>
+        <xpath>Defs/ThingDef[defName = "CodZP_MeleeWeapon_Spoon" or defName = "CodZP_MeleeWeapon_Spoon-PAP"]</xpath>
             <value>
                 <soundInteract>Interact_MonoSword</soundInteract>
 				<meleeHitSound>MeleeHit_MonoSword</meleeHitSound>

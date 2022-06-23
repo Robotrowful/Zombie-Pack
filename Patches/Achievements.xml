@@ -6,7 +6,7 @@
     <match Class="PatchOperationSequence">
     <operations>
     <li Class="PatchOperationAdd">
-    <xpath>/Defs</xpath>
+    <xpath>Defs</xpath>
     <value>
 
 <!--Important info--><!--

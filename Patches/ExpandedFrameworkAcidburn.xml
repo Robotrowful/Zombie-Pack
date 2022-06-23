@@ -7,14 +7,14 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/DamageDef[defName="CodZP_Toxic_Burn"]/hediff</xpath>
+                    <xpath>Defs/DamageDef[defName="CodZP_Toxic_Burn"]/hediff</xpath>
                     <value>
                         <hediff>VEF_AcidBurn</hediff>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/DamageDef[defName="CodZP_Toxic_Burn"]/additionalHediffs</xpath>
+                    <xpath>Defs/DamageDef[defName="CodZP_Toxic_Burn"]/additionalHediffs</xpath>
                     <value>
                         <additionalHediffs>
 			                <li>
@@ -27,7 +27,7 @@
                 </li>
 
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/DamageDef[defName="CodZP_RaygunYellowBomb"]/additionalHediffs</xpath>
+                    <xpath>Defs/DamageDef[defName="CodZP_RaygunYellowBomb"]/additionalHediffs</xpath>
                     <value>
                         <additionalHediffs>
 			                <li>

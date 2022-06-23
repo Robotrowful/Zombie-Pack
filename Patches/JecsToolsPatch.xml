@@ -10,7 +10,7 @@
                 <!-- === Adds Comps === -->
                 <li Class="PatchOperationAdd">
                     <xpath>
-						/Defs/ThingDef[
+						Defs/ThingDef[
 							defName = "CodZP_Gun_Staff-Ice" or 
 							defName = "CodZP_Gun_Staff-Ice-PAP" or 
 							defName = "CodZP_Gun_Staff-Fire" or
