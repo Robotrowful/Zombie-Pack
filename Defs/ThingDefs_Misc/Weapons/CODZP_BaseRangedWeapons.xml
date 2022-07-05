@@ -5,6 +5,7 @@
 	<ThingDef Name="CODZP_BasePackAPunchGun" Abstract="True" ParentName="BaseHumanMakeableGun">
 		<statBases>
 			<WorkToMake>220</WorkToMake>
+			<MarketValue>5000</MarketValue>
 		</statBases>	
 		<thingCategories Inherit="False">
 			<li>CodZP_PackPunch</li>
@@ -25,6 +26,7 @@
 	<ThingDef Name="CODZP_BaseWonderWeaponGun" Abstract="True" ParentName="BaseHumanMakeableGun">
 		<statBases>
 			<WorkToMake>45000</WorkToMake>
+			<MarketValue>1000</MarketValue>
 		</statBases>
 		<thingCategories Inherit="False">
 			<li>CodZP_WonderWeapons</li>
@@ -44,6 +46,9 @@
 		<thingCategories Inherit="False">
 			<li>CodZP_PunchedWonders</li>
 		</thingCategories>
+		<statBases>
+			<MarketValue>6000</MarketValue>
+		</statBases>
 		<recipeMaker>
   	   	 <researchPrerequisites>
 				<li>CodZP_WonderWorks</li>
@@ -53,6 +58,9 @@
 	 </ThingDef>
 <!--Ammo Matic-->
 	<ThingDef Name="CODZP_BaseAmmoMaticGun" Abstract="True" ParentName="BaseHumanMakeableGun">
+		<statBases>
+			<MarketValue>1000</MarketValue>
+		</statBases>
 		<recipeMaker>
 			<researchPrerequisite>CodZP_AmmoMatic</researchPrerequisite>
 			<skillRequirements>
@@ -67,12 +75,16 @@
 	<ThingDef Name="CODZP_BaseWonderAmmoMaticGun" Abstract="True" ParentName="CODZP_BaseAmmoMaticGun">
 		<statBases>
 			<WorkToMake>23000</WorkToMake>
+			<MarketValue>1500</MarketValue>
 		</statBases>
 		<thingCategories Inherit="False">
 			<li>CodZP_WonderWeapons</li>
 		</thingCategories>
 	 </ThingDef>
 	<ThingDef Name="CODZP_BasePAPWonderAmmoMaticGun" Abstract="True" ParentName="CODZP_BasePackAPunchGun">
+		<statBases>
+			<MarketValue>6500</MarketValue>
+		</statBases>
 		<thingCategories Inherit="False">
 			<li>CodZP_PunchedWonders</li>
 		</thingCategories>

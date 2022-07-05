@@ -42,6 +42,19 @@
     <inspectorTabs>
       <li>ITab_Bills</li>
     </inspectorTabs>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(242,219,10)</glowColor>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <basePowerConsumption>20</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
     <building>
       <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
     </building>
@@ -50,7 +63,7 @@
       <li>CodZP_Mystery-Box</li>
     </researchPrerequisites>
     <designationHotKey>Misc7</designationHotKey>
-    <placeWorkers>
+    <placeWorkers Inherit="False">
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
 </ThingDef>

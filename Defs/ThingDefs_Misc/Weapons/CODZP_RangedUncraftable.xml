@@ -6,6 +6,9 @@
 		<weaponTags>
       		<li>Gun</li>
 		</weaponTags>
+		<statBases>
+			<MarketValue>5000</MarketValue>
+		</statBases>
 		<comps>
 			<li Class="CompProperties_Biocodable"/>
 		</comps>	
@@ -19,6 +22,9 @@
 		<weaponTags>
       		<li>Gun</li>
 		</weaponTags>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+		</statBases>
 		<thingCategories Inherit="False">
 			<li>CodZP_WonderWeapons</li>
 		</thingCategories>
@@ -28,6 +34,9 @@
 		<tradeability>None</tradeability>
 	 </ThingDef>
 	<ThingDef Name="CODZP_UncraftablePAPWonderGun" Abstract="True" ParentName="CODZP_BaseUncraftablePackAPunch">
+		<statBases>
+			<MarketValue>6000</MarketValue>
+		</statBases>
 		<thingCategories Inherit="False">
 			<li>CodZP_PunchedWonders</li>
 		</thingCategories>

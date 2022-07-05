@@ -6,6 +6,9 @@
 		<weaponTags>
       		<li>Gun</li>
 		</weaponTags>
+		<statBases>
+			<MarketValue>5000</MarketValue>
+		</statBases>
 		<thingCategories Inherit="False">
 			<li>CodZP_PackPunch</li>
 		</thingCategories>
@@ -16,6 +19,9 @@
 		<weaponTags>
       		<li>Gun</li>
 		</weaponTags>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+		</statBases>
 		<thingCategories Inherit="False">
 			<li>CodZP_WonderWeapons</li>
 		</thingCategories>
@@ -25,5 +31,8 @@
 		<thingCategories Inherit="False">
 			<li>CodZP_PunchedWonders</li>
 		</thingCategories>
+		<statBases>
+			<MarketValue>6000</MarketValue>
+		</statBases>
 	 </ThingDef>
 </Defs>

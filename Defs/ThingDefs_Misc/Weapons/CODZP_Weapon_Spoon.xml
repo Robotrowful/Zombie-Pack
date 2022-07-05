@@ -17,6 +17,9 @@
 		<Steel>100</Steel>
 		<Silver>10</Silver>
 	</costList>
+	<weaponClasses>
+		<li>MeleeBlunt</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>handle</label>
@@ -54,6 +57,9 @@
 		<Mass>0.8</Mass>
 		<WorkToMake>5000</WorkToMake>
 	</statBases>
+	<weaponClasses>
+		<li>MeleeBlunt</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>handle</label>

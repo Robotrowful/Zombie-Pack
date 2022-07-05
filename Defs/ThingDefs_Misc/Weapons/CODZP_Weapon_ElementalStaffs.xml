@@ -37,6 +37,9 @@
 			<muzzleFlashScale>3</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+      <li>Ranged</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>Sekhmet's Vigor</label>
@@ -83,6 +86,9 @@
 			<forcedMissRadius>0.5</forcedMissRadius>
 		</li>
 	</verbs>
+	<weaponClasses>
+      <li>Ranged</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>Sekhmet's Vigor</label>
@@ -164,6 +170,9 @@
 			<muzzleFlashScale>3</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+      <li>Ranged</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>Sekhmet's Vigor</label>
@@ -212,6 +221,9 @@
 			<forcedMissRadius>0.5</forcedMissRadius>
 		</li>
 	</verbs>
+	<weaponClasses>
+      <li>Ranged</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>Sekhmet's Vigor</label>
@@ -291,6 +303,9 @@
 			<muzzleFlashScale>3</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+      <li>Ranged</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>Sekhmet's Vigor</label>
@@ -336,6 +351,9 @@
 			<muzzleFlashScale>3</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+      <li>Ranged</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>Sekhmet's Vigor</label>
@@ -416,6 +434,9 @@
 			<muzzleFlashScale>3</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+      <li>Ranged</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>Sekhmet's Vigor</label>
@@ -463,6 +484,9 @@
 			<muzzleFlashScale>3</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+      <li>Ranged</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>Sekhmet's Vigor</label>

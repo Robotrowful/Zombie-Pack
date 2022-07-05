@@ -55,6 +55,10 @@
 			<muzzleFlashScale>3</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+		<li>Ultratech</li>
+		<li>RangedLight</li>
+    </weaponClasses>
 </ThingDef>
 <ThingDef ParentName="BaseBullet">
 	<defName>CodZP_Bullet_Zapgun_Red</defName>
@@ -93,6 +97,10 @@
 			<muzzleFlashScale>3</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+		<li>Ultratech</li>
+		<li>RangedLight</li>
+    </weaponClasses>
 </ThingDef>
 <ThingDef ParentName="BaseBullet">
 	<defName>CodZP_Bullet_Zapgun_Blue</defName>
@@ -151,6 +159,11 @@
 			<muzzleFlashScale>3</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+		<li>Ultratech</li>
+		<li>RangedHeavy</li>
+		<li>ShortShots</li>
+    </weaponClasses>
 	<tickerType>Normal</tickerType>
 	<tools>
 		<li>
@@ -187,6 +200,8 @@
 		<damageAmountBase>15</damageAmountBase>
 		<explosionRadius>2</explosionRadius>
 		<speed>70</speed>
+		<arcHeightFactor>0.2</arcHeightFactor>
+		<shadowSize>0.6</shadowSize>
 	</projectile>
 </ThingDef>
 
@@ -244,7 +259,6 @@
 		<shaderType>TransparentPostLight</shaderType>
 		<color>(167, 0, 207)</color>
 	</graphicData>
-	<thingClass>Spark</thingClass>
 	<projectile>
 		<damageDef>CodZP_Shock</damageDef>
 		<damageAmountBase>38</damageAmountBase>
@@ -261,6 +275,10 @@
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<soundInteract>CodZP_Interact_Zapgun_Red</soundInteract>
+	<weaponClasses>
+		<li>Ultratech</li>
+		<li>RangedLight</li>
+    </weaponClasses>
 </ThingDef>
 <ThingDef ParentName="CODZP_BasePAPZapGuns">
 	<defName>CODZP_Gun_Zapgun_Blue-PAP</defName>
@@ -271,6 +289,10 @@
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<soundInteract>CodZP_Interact_Zapgun_Blue</soundInteract>
+	<weaponClasses>
+		<li>Ultratech</li>
+		<li>RangedLight</li>
+    </weaponClasses>
 </ThingDef>
 
 <!--Max Wavegun-->
@@ -311,6 +333,11 @@
 			<muzzleFlashScale>3</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+		<li>Ultratech</li>
+		<li>RangedHeavy</li>
+		<li>ShortShots</li>
+    </weaponClasses>
 	<tickerType>Normal</tickerType>
 	<tools>
 		<li>
@@ -347,6 +374,8 @@
 		<damageAmountBase>30</damageAmountBase>
 		<explosionRadius>2</explosionRadius>
 		<speed>81</speed>
+		<arcHeightFactor>0.2</arcHeightFactor>
+		<shadowSize>0.6</shadowSize>
 	</projectile>
 </ThingDef>
 </Defs>

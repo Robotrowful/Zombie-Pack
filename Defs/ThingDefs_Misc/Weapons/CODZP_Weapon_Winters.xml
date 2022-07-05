@@ -34,6 +34,10 @@
 			<muzzleFlashScale>3</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+		<li>ShortShots</li>
+		<li>RangedLight</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>grip</label>
@@ -86,6 +90,10 @@
 			<muzzleFlashScale>3</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+		<li>ShortShots</li>
+		<li>RangedLight</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>grip</label>

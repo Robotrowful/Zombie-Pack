@@ -40,6 +40,10 @@
 			<muzzleFlashScale>9</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+		<li>RangedLight</li>
+		<li>Ultratech</li>
+    </weaponClasses>
 	<tickerType>Normal</tickerType>
 	<tools>
 		<li>
@@ -98,6 +102,10 @@
 			<muzzleFlashScale>9</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+		<li>RangedLight</li>
+		<li>Ultratech</li>
+    </weaponClasses>
 	<tickerType>Normal</tickerType>
 	<tools>
 		<li>
@@ -197,6 +205,10 @@
 			<muzzleFlashScale>9</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+		<li>RangedHeavy</li>
+		<li>Ultratech</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>stock</label>
@@ -255,6 +267,10 @@
 			<muzzleFlashScale>9</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+		<li>RangedHeavy</li>
+		<li>Ultratech</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>stock</label>
@@ -349,6 +365,10 @@
 			<muzzleFlashScale>9</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+		<li>RangedHeavy</li>
+		<li>Ultratech</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>stock</label>
@@ -407,6 +427,10 @@
 			<muzzleFlashScale>9</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+		<li>RangedHeavy</li>
+		<li>Ultratech</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>stock</label>
@@ -475,7 +499,7 @@
 	</graphicData>
 	<soundInteract>CodZP_Interact_Raygun2</soundInteract>
 	<statBases>
-		<Mass>4.6</Mass>
+		<Mass>2.6</Mass>
 		<AccuracyTouch>0.34</AccuracyTouch>
 		<AccuracyShort>0.68</AccuracyShort>
 		<AccuracyMedium>0.89</AccuracyMedium>
@@ -504,6 +528,10 @@
 			<muzzleFlashScale>9</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+		<li>RangedLight</li>
+		<li>Ultratech</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>stock</label>
@@ -535,7 +563,7 @@
 	</graphicData>
 	<soundInteract>CodZP_Interact_Raygun2</soundInteract>
 	<statBases>
-		<Mass>4.6</Mass>
+		<Mass>2.6</Mass>
 		<AccuracyTouch>0.39</AccuracyTouch>
 		<AccuracyShort>0.78</AccuracyShort>
 		<AccuracyMedium>1.02</AccuracyMedium>
@@ -562,6 +590,10 @@
 			<muzzleFlashScale>9</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+		<li>RangedLight</li>
+		<li>Ultratech</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>stock</label>
@@ -658,6 +690,11 @@
 			</targetParams>
 		</li>
 	</verbs>
+	<weaponClasses>
+		<li>ShortShots</li>
+		<li>RangedHeavy</li>
+		<li>Ultratech</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>stock</label>
@@ -716,6 +753,11 @@
 			<muzzleFlashScale>9</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+		<li>ShortShots</li>
+		<li>RangedHeavy</li>
+		<li>Ultratech</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>stock</label>
@@ -753,6 +795,8 @@
 		<explosionRadius>2</explosionRadius>
 		<preExplosionSpawnChance>0.6</preExplosionSpawnChance>
 		<ai_IsIncendiary>true</ai_IsIncendiary>
+		<arcHeightFactor>0.2</arcHeightFactor>
+		<shadowSize>0.6</shadowSize>
 	</projectile>
 </ThingDef>
 <ThingDef ParentName="BaseBullet">
@@ -772,6 +816,8 @@
 		<explosionRadius>3</explosionRadius>
 		<preExplosionSpawnChance>0.6</preExplosionSpawnChance>
 		<ai_IsIncendiary>true</ai_IsIncendiary>
+		<arcHeightFactor>0.2</arcHeightFactor>
+		<shadowSize>0.6</shadowSize>
 	</projectile>
 </ThingDef> 
 <!--Z-->
@@ -816,6 +862,11 @@
 			<muzzleFlashScale>3</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+		<li>ShortShots</li>
+		<li>RangedHeavy</li>
+		<li>Ultratech</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>stock</label>
@@ -874,6 +925,11 @@
 			<muzzleFlashScale>9</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+		<li>ShortShots</li>
+		<li>RangedHeavy</li>
+		<li>Ultratech</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>stock</label>
@@ -966,6 +1022,10 @@
 			<muzzleFlashScale>9</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+		<li>RangedLight</li>
+		<li>Ultratech</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>grip</label>
@@ -1022,6 +1082,10 @@
 			<muzzleFlashScale>9</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+		<li>RangedLight</li>
+		<li>Ultratech</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>grip</label>
@@ -1115,6 +1179,11 @@
 			<muzzleFlashScale>9</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+		<li>ShortShots</li>
+		<li>RangedLight</li>
+		<li>Ultratech</li>
+    </weaponClasses>
 	<tickerType>Normal</tickerType>
 	<tools>
 		<li>
@@ -1173,6 +1242,11 @@
 			<muzzleFlashScale>9</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+		<li>ShortShots</li>
+		<li>RangedLight</li>
+		<li>Ultratech</li>
+    </weaponClasses>
 	<tickerType>Normal</tickerType>
 	<tools>
 		<li>
@@ -1210,6 +1284,8 @@
 		<armorPenetrationBase>4</armorPenetrationBase>
 		<explosionRadius>2</explosionRadius>
 		<speed>60</speed>
+		<arcHeightFactor>0.2</arcHeightFactor>
+		<shadowSize>0.6</shadowSize>
 	</projectile>
 </ThingDef>
 <ThingDef ParentName="BaseBullet">
@@ -1228,6 +1304,8 @@
 		<armorPenetrationBase>30</armorPenetrationBase>
 		<explosionRadius>3</explosionRadius>
 		<speed>69</speed>
+		<arcHeightFactor>0.2</arcHeightFactor>
+		<shadowSize>0.6</shadowSize>
 	</projectile>
 </ThingDef>
 </Defs> 

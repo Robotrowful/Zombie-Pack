@@ -8,9 +8,6 @@
     <thingClass>Bullet</thingClass>
     <useHitPoints>False</useHitPoints>
     <neverMultiSelect>True</neverMultiSelect>
-    <graphicData>
-      <shaderType>TransparentPostLight</shaderType>
-    </graphicData>
   </ThingDef>
 
 <!--Hell's Retriever Both are the same texture: but Redeemer has a blue glow when thrown-->
@@ -48,6 +45,10 @@
 			<soundCast>CodZP_Shot_Hells</soundCast>
 		</li>
 	</verbs>
+	<weaponClasses>
+		<li>RangedLight</li>
+		<li>Neolithic</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>Retriever's Cinder</label>
@@ -105,6 +106,10 @@
 			<soundCast>CodZP_Shot_Hells</soundCast>
 		</li>
 	</verbs>
+	<weaponClasses>
+		<li>RangedLight</li>
+		<li>Neolithic</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>stock</label>

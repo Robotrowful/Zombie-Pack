@@ -17,11 +17,11 @@
 		</fixedIngredientFilter>
    </RecipeDef>
 <!-- Perk Colas: All values are 10x less within the code, however due to Rimworld logic it becomes to correct price -->
-  <RecipeDef ParentName="CodZP_BuyPerkaColas">
+	<RecipeDef ParentName="CodZP_BuyPerkaColas">
 		<defName>CODZP_BuyJuggernog</defName>
 		<label>Purchase Juggernog</label>
-		<description>Buy a bottle of Juggernog</description>
-    <ingredients>
+		<description>Buy a bottle of Juggernog \nThis drink reduces damage and increases pain threshold</description>
+		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
@@ -36,11 +36,11 @@
 		</products>
 	</RecipeDef>
 
-  <RecipeDef ParentName="CodZP_BuyPerkaColas">
+	<RecipeDef ParentName="CodZP_BuyPerkaColas">
 		<defName>CODZP_BuySpeedCola</defName>
 		<label>Purchase Speed Cola</label>
-		<description>Buy a bottle of Speed Cola.</description>
-    <ingredients>
+		<description>Buy a bottle of Speed Cola. \nThis drink reduces weapon cooldown and increases work speed.</description>
+		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
@@ -55,11 +55,11 @@
 		</products>
 	</RecipeDef>
 
-  <RecipeDef ParentName="CodZP_BuyPerkaColas">
+	<RecipeDef ParentName="CodZP_BuyPerkaColas">
 		<defName>CODZP_BuyDoubleTap</defName>
 		<label>Purchase Double Tap</label>
-		<description>Buy a bottle of Double Tap</description>
-    <ingredients>
+		<description>Buy a bottle of Double Tap \nThis drink reduces aiming time delay</description>
+		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
@@ -74,11 +74,30 @@
 		</products>
 	</RecipeDef>
 
-  <RecipeDef ParentName="CodZP_BuyPerkaColas">
+	<RecipeDef ParentName="CodZP_BuyPerkaColas" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+		<defName>CODZP_BuyDoubleTapII</defName>
+		<label>Purchase Double Tap II</label>
+		<description>Buy a bottle of Double Tap II \nDoubling your bullets, deals double damage.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Silver</li>
+					</thingDefs>
+				</filter>
+				<count>300</count>
+			</li>
+		</ingredients>
+		<products>
+			<CODZP_DoubleTapII>1</CODZP_DoubleTapII>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="CodZP_BuyPerkaColas">
 		<defName>CODZP_BuyQuickRevive</defName>
 		<label>Purchase Quick Revive</label>
-		<description>Buy a bottle of Quick Revive</description>
-    <ingredients>
+		<description>Buy a bottle of Quick Revive \nThis drink increases Surgery Success and Tend quality</description>
+    	<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
@@ -93,11 +112,11 @@
 		</products>
 	</RecipeDef>
 
-  <RecipeDef ParentName="CodZP_BuyPerkaColas">
+  	<RecipeDef ParentName="CodZP_BuyPerkaColas">
 		<defName>CODZP_BuyStaminUp</defName>
 		<label>Purchase Stamin-Up</label>
-		<description>Buy a bottle of Stamin-Up</description>
-    <ingredients>
+		<description>Buy a bottle of Stamin-Up \nThis drink increases movement speed</description>
+    	<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
@@ -112,11 +131,11 @@
 		</products>
 	</RecipeDef>
 
-  <RecipeDef ParentName="CodZP_BuyPerkaColas">
+	<RecipeDef ParentName="CodZP_BuyPerkaColas">
 		<defName>CODZP_BuyDeadshotDaiquiri</defName>
 		<label>Purchase Deadshot Daiquiri</label>
-		<description>Buy a bottle of Deadshot Daiquiri</description>
-    <ingredients>
+		<description>Buy a bottle of Deadshot Daiquiri \nThis drink increases shooting accuracy</description>
+    	<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
@@ -130,4 +149,25 @@
 			<CODZP_DeadshotDaiquiri>1</CODZP_DeadshotDaiquiri>
 		</products>
 	</RecipeDef>
+
+<!-- Isn't used ATM
+	<RecipeDef ParentName="CodZP_BuyPerkaColas">
+		<defName>CODZP_BuyMuleKick</defName>
+		<label>Purchase Mule Kick</label>
+		<description>Buy a bottle of Mule Kick \nThis drink increase carrying capacity</description>
+    	<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Silver</li>
+					</thingDefs>
+				</filter>
+				<count>400</count>
+			</li>
+		</ingredients>
+		<products>
+			<CODZP_MuleKick>1</CODZP_MuleKick>
+		</products>
+	</RecipeDef>
+-->
 </Defs>

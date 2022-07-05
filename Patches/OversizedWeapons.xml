@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>JecsTools</li>
+            <li>Vanilla Expanded Framework</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+        <success>Always</success>
+            <operations>
+                <!-- === Adds Comps === -->
+                <li Class="PatchOperationAdd">
+                    <xpath>
+						Defs/ThingDef[
+							defName = "CodZP_Gun_Staff-Ice" or 
+							defName = "CodZP_Gun_Staff-Ice-PAP" or 
+							defName = "CodZP_Gun_Staff-Fire" or
+							defName = "CodZP_Gun_Staff-Fire-PAP" or
+							defName = "CodZP_Gun_Staff-Wind" or
+                            defName = "CodZP_Gun_Staff-Wind-PAP" or 
+                            defName = "CodZP_Gun_Staff-Lightning" or 
+                            defName = "CodZP_Gun_Staff-Lightning-PAP" or
+                            defName = "CodZP_Gun_Blundergat" or
+                            defName = "CodZP_Gun_Blundergat-PAP" or
+                            defName = "CodZP_Gun_Magmagat" or
+                            defName = "CodZP_Gun_Magmagat-PAP" or
+                            defName = "CodZP_Gun_Acidgat" or
+                            defName = "CodZP_Gun_Acidgat-PAP" or
+                            defName = "CodZP_Gun_Thundergun" or
+                            defName = "CodZP_Gun_Thundergun-PAP" or
+                            defName = "CodZP_Gun_Tundragun" or
+                            defName = "CodZP_Gun_Tundragun-PAP" or
+                            defName = "CodZP_Gun_Wunderwaffe" or
+                            defName = "CodZP_Gun_Wunderwaffe-PAP" or
+                            defName = "CodZP_Gun_Wunderwaffe_Scharf" or
+                            defName = "CodZP_Gun_Wunderwaffe_Scharf-PAP" or
+                            defName = "CodZP_Gun_Wavegun" or
+                            defName = "CodZP_Gun_Wavegun-PAP"
+						]
+                    </xpath>
+                    <value>
+                        <comps>
+                            <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"></li>
+                        </comps>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>

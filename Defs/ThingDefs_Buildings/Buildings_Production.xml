@@ -48,6 +48,12 @@
         <glowRadius>5</glowRadius>
         <glowColor>(35,93,168,40)</glowColor>
       </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <basePowerConsumption>100</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
     <building>
@@ -58,7 +64,7 @@
       <li>CodZP_PackAPunch</li>
     </researchPrerequisites>
     <designationHotKey>Misc7</designationHotKey>
-    <placeWorkers>
+    <placeWorkers Inherit="False">
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
 </ThingDef>
@@ -162,7 +168,7 @@
       <li>ITab_Bills</li>
     </inspectorTabs>
     <comps>
-  <li Class="CompProperties_Power">
+      <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <shortCircuitInRain>false</shortCircuitInRain>
         <basePowerConsumption>70</basePowerConsumption>
@@ -233,6 +239,12 @@
         <glowRadius>5</glowRadius>
         <glowColor>(35,93,168,40)</glowColor>
       </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <basePowerConsumption>5</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
     <building>
@@ -243,7 +255,7 @@
       <li>CodZP_PerkACola</li>
     </researchPrerequisites>
     <designationHotKey>Misc7</designationHotKey>
-    <placeWorkers>
+    <placeWorkers Inherit="False">
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
 </ThingDef>

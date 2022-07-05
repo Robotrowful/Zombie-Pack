@@ -38,6 +38,9 @@
 		<li>SimpleGun</li>
 		<li>Revolver</li>
 	</weaponTags>
+	<weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
 	<tickerType>Normal</tickerType>
 	<tools>
 		<li>
@@ -116,6 +119,9 @@
 	<weaponTags>
 		<li>SimpleGun</li>
 	</weaponTags>
+	<weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
 	<tickerType>Normal</tickerType>
 	<tools>
 		<li>
@@ -191,6 +197,10 @@
 			<muzzleFlashScale>9</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+      <li>RangedLight</li>
+      <li>ShortShots</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>grip</label>
@@ -260,6 +270,9 @@
 			</targetParams>
 		</li>
 	</verbs>
+	<weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>stock</label>
@@ -297,6 +310,8 @@
 		<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
 		<preExplosionSpawnChance>0.6</preExplosionSpawnChance>
 		<ai_IsIncendiary>true</ai_IsIncendiary>
+		<arcHeightFactor>0.2</arcHeightFactor>
+		<shadowSize>0.6</shadowSize>
 	</projectile>
 </ThingDef>
 
@@ -337,6 +352,9 @@
 	<weaponTags Inherit="False">
 		<li>GrenadeSmoke</li>
 	</weaponTags>
+	<weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>stock</label>
@@ -374,6 +392,8 @@
 		<postExplosionSpawnThingDef>Gas_Smoke</postExplosionSpawnThingDef>
 		<postExplosionSpawnChance>2</postExplosionSpawnChance>
 		<ai_IsIncendiary>true</ai_IsIncendiary>
+		<arcHeightFactor>0.2</arcHeightFactor>
+		<shadowSize>0.6</shadowSize>
 	</projectile>
 </ThingDef>
 
@@ -414,6 +434,9 @@
 	<weaponTags>
 		<li>GrenadeEMP</li>
 	</weaponTags>
+	<weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>stock</label>
@@ -449,6 +472,8 @@
 		<damageDef>EMP</damageDef>
 		<explosionRadius>2</explosionRadius>
 		<ai_IsIncendiary>true</ai_IsIncendiary>
+		<arcHeightFactor>0.2</arcHeightFactor>
+		<shadowSize>0.6</shadowSize>
 	</projectile>
 </ThingDef>
 	
@@ -484,6 +509,9 @@
 			<muzzleFlashScale>9</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+      <li>LongShots</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>stock</label>
@@ -553,6 +581,9 @@
 			<muzzleFlashScale>9</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+      <li>ShortShots</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>stock</label>
@@ -610,6 +641,9 @@
 	<weaponTags>
 		<li>IndustrialGunAdvanced</li>
 	</weaponTags>
+	<weaponClasses>
+      <li>ShortShots</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>stock</label>
@@ -685,6 +719,10 @@
 	<weaponTags>
 		<li>IndustrialGunAdvanced</li>
 	</weaponTags>
+	<weaponClasses>
+      <li>ShortShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>grip</label>
@@ -758,6 +796,9 @@
 	<weaponTags>
 		<li>IndustrialGunAdvanced</li>
 	</weaponTags>
+	<weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>stock</label>
@@ -904,6 +945,10 @@
 	<weaponTags Inherit="False">
 		<li>SniperRifle</li>
 	</weaponTags>
+	<weaponClasses>
+      <li>LongShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>stock</label>
@@ -983,6 +1028,9 @@
 	<weaponTags>
 		<li>GunHeavy</li>
 	</weaponTags>
+	<weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>barrel</label>
@@ -1048,6 +1096,9 @@
 	<weaponTags>
 		<li>SpacerGun</li>
 	</weaponTags>
+	<weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>stock</label>

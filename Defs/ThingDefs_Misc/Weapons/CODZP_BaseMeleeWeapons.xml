@@ -4,6 +4,7 @@
 	<ThingDef Name="CODZP_BaseWonderWeaponSharp" Abstract="True" ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<statBases>
 			<WorkToMake>45000</WorkToMake>
+			<MarketValue>1000</MarketValue>
 		</statBases>
 		<thingCategories Inherit="False">
 			<li>CodZP_WonderMelee</li>
@@ -22,6 +23,7 @@
 	<ThingDef Name="CODZP_BaseWonderPackAPunchSharp" Abstract="True" ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<statBases>
 			<WorkToMake>220</WorkToMake>
+			<MarketValue>6000</MarketValue>
 		</statBases>	
 		<thingCategories Inherit="False">
 			<li>CodZP_PunchedMeleeWonders</li>
@@ -48,6 +50,7 @@
 	<ThingDef Name="CODZP_BaseWonderWeaponBlunt" Abstract="True" ParentName="BaseMeleeWeapon_Blunt_Quality">
 		<statBases>
 			<WorkToMake>45000</WorkToMake>
+			<MarketValue>1000</MarketValue>
 		</statBases>
 		<thingCategories Inherit="False">
 			<li>CodZP_WonderMelee</li>
@@ -66,6 +69,7 @@
 	<ThingDef Name="CODZP_BaseWonderPackAPunchBlunt" Abstract="True" ParentName="BaseMeleeWeapon_Blunt_Quality">
 		<statBases>
 			<WorkToMake>220</WorkToMake>
+			<MarketValue>6000</MarketValue>
 		</statBases>	
 		<thingCategories Inherit="False">
 			<li>CodZP_PunchedMeleeWonders</li>

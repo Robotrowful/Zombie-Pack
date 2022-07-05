@@ -36,6 +36,10 @@
 			<muzzleFlashScale>3</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+		<li>ShortShots</li>
+		<li>RangedHeavy</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>stock</label>
@@ -89,6 +93,10 @@
 			<muzzleFlashScale>3</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+		<li>ShortShots</li>
+		<li>RangedHeavy</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>stock</label>
@@ -177,6 +185,10 @@
 			<forcedMissRadius>3</forcedMissRadius>
 		</li>
 	</verbs>
+	<weaponClasses>
+		<li>LongShots</li>
+		<li>RangedHeavy</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>stock</label>
@@ -231,6 +243,10 @@
 			<forcedMissRadius>2</forcedMissRadius>
 		</li>
 	</verbs>
+	<weaponClasses>
+		<li>LongShots</li>
+		<li>RangedHeavy</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>stock</label>

@@ -10,6 +10,7 @@
       <DeteriorationRate>6</DeteriorationRate>
       <Nutrition>0.08</Nutrition>
     </statBases>
+    <uiIconScale>0.85</uiIconScale>
     <ingestible>
       <foodType>Fluid, Processed</foodType>
       <joyKind>Gluttonous</joyKind>
@@ -335,4 +336,63 @@
       </li>
     </stages>
   </ThoughtDef>
+
+<!-- Mule Kick
+  <ThingDef ParentName="CODZP_MakeablePerkACola">
+    <defName>CODZP_MuleKick</defName>
+    <label>Mule Kick</label>
+    <description>Legend tells us of a man, a hero in a tortured land, where Senoritas lived in fear. Their lonely nights in deep despair, he was EL BURRO! (Hee-Haw, Hee-Haw). Across the fields, across the plains. He ran so fast he dodged the rain. He was El Burro! He hurried in to save the day, gun in hand, and thrice they say. He was strong like a Mule, he was stubborn like a Mule, he even kicked like a Mule, El Burro! (El Burro!). A man not equal, so they say. But some and more, it's just the way! He was El Burro! He was EL BURRO! EL BURRO! (Hee-Haw, Hee-Haw).</description>
+    <graphicData>
+      <texPath>Things/Item/Drug/CodZP_Deadshot</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <uiIconPath>UI/Icons/CODZP/CodZP_Deadshot</uiIconPath>
+    <ingestible>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>CODZP_DrankMuleKick</hediffDef>
+          <severity>1</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>CODZP_DrankMuleKick</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0, 255, 0)</defaultLabelColor>
+    <label>Mule Kick Buff</label>
+    <description>A positive effect caused by drinking Mule Kick. Lasts for 5 days</description>
+    <labelNoun>effects of Mule Kick</labelNoun>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.2</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <statOffsets>
+            <CarryingCapacity>75</CarryingCapacity> not correct, want to increase 'Mass Carried' Stat, I saw on the discord that VEF adds it, but cant see it. For now it will be cut
+          </statOffsets>
+        </li>
+      </stages>
+  </HediffDef>
+  
+  <ThoughtDef>
+    <defName>CODZP_DrankMuleKick</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>CODZP_DrankMuleKick</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>Refreshing Mule Kick</label>
+        <description>Went straight for the head.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+-->
 </Defs>

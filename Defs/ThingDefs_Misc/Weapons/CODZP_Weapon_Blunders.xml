@@ -38,6 +38,9 @@
 			<muzzleFlashScale>3</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+      <li>ShortShots</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>stock</label>
@@ -93,6 +96,9 @@
 			<muzzleFlashScale>3</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+      <li>ShortShots</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>stock</label>
@@ -180,6 +186,9 @@
 			<muzzleFlashScale>3</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+      <li>ShortShots</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>stock</label>
@@ -235,6 +244,9 @@
 			<muzzleFlashScale>3</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+      <li>ShortShots</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>stock</label>
@@ -321,6 +333,9 @@
 			<muzzleFlashScale>3</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+      <li>ShortShots</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>stock</label>
@@ -376,6 +391,9 @@
 			<muzzleFlashScale>3</muzzleFlashScale>
 		</li>
 	</verbs>
+	<weaponClasses>
+      <li>ShortShots</li>
+    </weaponClasses>
 	<tools>
 		<li>
 			<label>stock</label>
