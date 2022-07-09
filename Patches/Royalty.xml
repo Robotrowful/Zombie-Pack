@@ -43,6 +43,8 @@
 	<costList>
 		<MeleeWeapon_MonoSword>1</MeleeWeapon_MonoSword>
 	</costList>
+	<statBases />
+	<weaponTags />
 	<tools>
 		<li>
 			<label>handle</label>
@@ -87,6 +89,7 @@
 	<costList>
 		<MeleeWeapon_Zeushammer>1</MeleeWeapon_Zeushammer>
 	</costList>
+	<statBases />
 	<tools>
 		<li>
 			<label>handle</label>
@@ -128,6 +131,7 @@
 	<costList>
 		<MeleeWeapon_PlasmaSword>1</MeleeWeapon_PlasmaSword>
 	</costList>
+	<statBases />
 	<tools>
 		<li>
 			<label>handle</label>

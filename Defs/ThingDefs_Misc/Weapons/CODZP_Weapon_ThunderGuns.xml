@@ -32,7 +32,7 @@
 			<warmupTime>1.60</warmupTime>
 			<range>15.9</range>
 			<soundCast>CodZP_Shot_Thundergun</soundCast>
-			<soundCastTail>GunTail_Medium</soundCastTail>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
 			<muzzleFlashScale>3</muzzleFlashScale>
 		</li>
 	</verbs>

@@ -43,6 +43,7 @@
 			<warmupTime>0.2</warmupTime>
 			<range>23.9</range>
 			<soundCast>CodZP_Shot_Hells</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
 		</li>
 	</verbs>
 	<weaponClasses>
@@ -104,6 +105,7 @@
 			<warmupTime>0.2</warmupTime>
 			<range>28.9</range>
 			<soundCast>CodZP_Shot_Hells</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
 		</li>
 	</verbs>
 	<weaponClasses>
