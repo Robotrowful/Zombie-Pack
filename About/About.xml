@@ -16,8 +16,8 @@ Addes new Weapons, Buildings and Researches based on call of duty zombies
 +7 Perk A Colas
 	</description>
 	<forceLoadBefore>
-    	<li>CETeam.CombatExtended</li>
 		<li>Robotrowful.CODbatExtended</li>
+		<li>CETeam.CombatExtended</li>
   	</forceLoadBefore>
 	<modDependenciesByVersion>
         <v1.3>

@@ -25,8 +25,7 @@
 	<isRanged>true</isRanged>
 </DamageDef>
    
-<!--Ray Guns explosions-->
-	<!-- Green -->
+<!--Explosions-->
 <DamageDef ParentName="Bomb">
 	<defName>CodZP_RaygunGreenBomb</defName>
 	<explosionColorCenter>(0, 1, 0)</explosionColorCenter>
@@ -37,6 +36,12 @@
 	<explosionColorCenter>(1, 0, 0)</explosionColorCenter>
     <explosionColorEdge>(0.8, 0, 0)</explosionColorEdge>
 </DamageDef>
+<DamageDef ParentName="Bomb">
+	<defName>CodZP_WavegunPurpleBomb</defName>
+	<explosionColorCenter>(0.66, 0, 1)</explosionColorCenter>
+    <explosionColorEdge>(0.57, 0, 0.57)</explosionColorEdge>
+</DamageDef>
+
 <DamageDef ParentName="Bomb">
 	<defName>CodZP_RaygunYellowBomb</defName>
 	<explosionColorCenter>(1, 1, 0)</explosionColorCenter>
@@ -50,10 +55,5 @@
 			<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
 		</li>
 	</additionalHediffs>
-</DamageDef>
-<DamageDef ParentName="Bomb">
-	<defName>CodZP_WavegunPurpleBomb</defName>
-	<explosionColorCenter>(0.66, 0, 1)</explosionColorCenter>
-    <explosionColorEdge>(0.57, 0, 0.57)</explosionColorEdge>
 </DamageDef>
 </Defs>

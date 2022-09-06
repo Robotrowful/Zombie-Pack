@@ -69,7 +69,6 @@
 		<shaderType>TransparentPostLight</shaderType>
 		<color>(209, 39, 74)</color>
 	</graphicData>
-	<thingClass>Spark</thingClass>
 	<projectile>
 		<damageDef>CodZP_Shock</damageDef>
 		<damageAmountBase>19</damageAmountBase>
@@ -111,7 +110,6 @@
 		<shaderType>TransparentPostLight</shaderType>
 		<color>(68, 85, 206)</color>
 	</graphicData>
-	<thingClass>Spark</thingClass>
 	<projectile>
 		<damageDef>CodZP_Shock</damageDef>
 		<damageAmountBase>19</damageAmountBase>
