@@ -46,7 +46,7 @@
 		</products>
 	</RecipeDef>
 
-	<MysteryBoxFrameWork.ItemReplacerDef>
+	<MysteryBoxFrameWork.ItemReplacerDef ParentName="GlobalWeaponAllowedStuff">
 		<defName>Replacer_RandomExpandedWeapons</defName>
 		<targetItem>CODZP_Random_Expanded_Weapon</targetItem>
 		<qualityGenerator>Gift</qualityGenerator>
@@ -110,14 +110,6 @@
 			<VFE_Gun_PlasmaScattergun MayRequire="OskarPotocki.VFE.Insectoid">2</VFE_Gun_PlasmaScattergun>
 			<VFE_Plasmasaw MayRequire="OskarPotocki.VFE.Insectoid">2</VFE_Plasmasaw>
 		</producedItems>
-		<allowedStuffs>
-			<WoodLog>10</WoodLog>
-			<Silver>8</Silver>
-			<Steel>5</Steel>
-			<Uranium>2</Uranium>
-			<Plasteel>2</Plasteel>
-			<Gold>1</Gold>
-		</allowedStuffs>
 	</MysteryBoxFrameWork.ItemReplacerDef>
     </value>
     </li> 

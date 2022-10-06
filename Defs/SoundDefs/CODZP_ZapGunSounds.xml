@@ -89,8 +89,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Weapons/CodZP_Shot_Zapgun</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/CodZP_Shot_Zapgun</clipPath>
           </li>
         </grains>
         <pitchRange>0.9311765~1.137647</pitchRange>

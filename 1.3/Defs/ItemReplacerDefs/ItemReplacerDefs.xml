@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<MysteryBoxFrameWork.ItemReplacerDef>
+	<MysteryBoxFrameWork.ItemReplacerDef ParentName="GlobalWeaponAllowedStuff">
 		<defName>Replacer_RandomWeapons</defName>
 		<targetItem>CODZP_Random_Weapons</targetItem>
 		<qualityGenerator>Gift</qualityGenerator>
@@ -39,14 +39,6 @@
 			<MeleeWeapon_PlasmaSword MayRequire="Ludeon.RimWorld.Royalty">1</MeleeWeapon_PlasmaSword>
 			<MeleeWeapon_PsyfocusStaff MayRequire="Ludeon.RimWorld.Royalty">1</MeleeWeapon_PsyfocusStaff>
 		</producedItems>
-		<allowedStuffs>
-			<WoodLog>10</WoodLog>
-			<Silver>8</Silver>
-			<Steel>5</Steel>
-			<Uranium>2</Uranium>
-			<Plasteel>2</Plasteel>
-			<Gold>1</Gold>
-		</allowedStuffs>
 	</MysteryBoxFrameWork.ItemReplacerDef>
 
 	<MysteryBoxFrameWork.ItemReplacerDef>

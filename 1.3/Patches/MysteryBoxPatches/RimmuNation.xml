@@ -38,7 +38,7 @@
 		</products>
 	</RecipeDef>
 
-	<MysteryBoxFrameWork.ItemReplacerDef>
+	<MysteryBoxFrameWork.ItemReplacerDef ParentName="GlobalWeaponAllowedStuff">
 		<defName>Replacer_RandomRimmu_NationWeapons</defName>
 		<targetItem>CODZP_Random_Rimmu_Nation_Weapon</targetItem>
 		<qualityGenerator>Gift</qualityGenerator>
@@ -157,14 +157,6 @@
 			<RNGun_PP19_SMG>1</RNGun_PP19_SMG>
 			<RNGun_KrissVector_PDW>1</RNGun_KrissVector_PDW>
 		</producedItems>
-		<allowedStuffs>
-			<WoodLog>10</WoodLog>
-			<Silver>8</Silver>
-			<Steel>5</Steel>
-			<Uranium>2</Uranium>
-			<Plasteel>2</Plasteel>
-			<Gold>1</Gold>
-		</allowedStuffs>
 	</MysteryBoxFrameWork.ItemReplacerDef>
     </value>
     </li> 

@@ -3,6 +3,7 @@
 <!--Ranged-->
 <!--Pack a Punch-->
 	<ThingDef Name="CODZP_BaseUncraftablePackAPunch" Abstract="True" ParentName="BaseGunWithQuality">
+		<smeltable>false</smeltable>
 		<weaponTags>
       		<li>Gun</li>
 		</weaponTags>
@@ -19,6 +20,7 @@
 	 </ThingDef>
 <!--Wonder Weapons-->
 	<ThingDef Name="CODZP_BaseUncraftableWonderGun" Abstract="True" ParentName="BaseGunWithQuality">
+		<smeltable>false</smeltable>
 		<weaponTags>
       		<li>Gun</li>
 		</weaponTags>

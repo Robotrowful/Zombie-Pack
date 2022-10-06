@@ -41,7 +41,7 @@
 		</products>
 	</RecipeDef>
 
-	<MysteryBoxFrameWork.ItemReplacerDef>
+	<MysteryBoxFrameWork.ItemReplacerDef ParentName="GlobalWeaponAllowedStuff">
 		<defName>Replacer_RandomRimsenalWeapons</defName>
 		<targetItem>CODZP_Random_Rimsenal_Weapon</targetItem>
 		<qualityGenerator>Gift</qualityGenerator>
@@ -146,14 +146,6 @@
 			<SmartMG MayRequire="rimsenal.EVP">1</SmartMG>
 			<Gun_SmartSniperRifle MayRequire="rimsenal.EVP">1</Gun_SmartSniperRifle>
 		</producedItems>
-		<allowedStuffs>
-			<WoodLog>10</WoodLog>
-			<Silver>8</Silver>
-			<Steel>5</Steel>
-			<Uranium>2</Uranium>
-			<Plasteel>2</Plasteel>
-			<Gold>1</Gold>
-		</allowedStuffs>
 	</MysteryBoxFrameWork.ItemReplacerDef>
     </value>
     </li> 

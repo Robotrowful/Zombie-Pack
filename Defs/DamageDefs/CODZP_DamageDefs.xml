@@ -51,7 +51,7 @@
 		<li>
 			<hediff>ToxicBuildup</hediff>
 			<severityPerDamageDealt>0.05</severityPerDamageDealt>
-			<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
+			<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling><!--Change for 1.4+-->
 			<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
 		</li>
 	</additionalHediffs>

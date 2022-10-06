@@ -40,7 +40,7 @@
 		</products>
 	</RecipeDef>
 
-	<MysteryBoxFrameWork.ItemReplacerDef>
+	<MysteryBoxFrameWork.ItemReplacerDef ParentName="GlobalWeaponAllowedStuff">
 		<defName>Replacer_RandomCODWeapons</defName>
 		<targetItem>CODZP_Random_COD_Weapon</targetItem>
 		<qualityGenerator>Gift</qualityGenerator>
@@ -154,14 +154,6 @@
 			<IWWP_Gun_KBS_Longbow MayRequire="HalituisAmaricanous.IWWP">1</IWWP_Gun_KBS_Longbow>
 			<IWWP_Gun_Widowmaker MayRequire="HalituisAmaricanous.IWWP">1</IWWP_Gun_Widowmaker>
 		</producedItems>
-		<allowedStuffs>
-			<WoodLog>10</WoodLog>
-			<Silver>8</Silver>
-			<Steel>5</Steel>
-			<Uranium>2</Uranium>
-			<Plasteel>2</Plasteel>
-			<Gold>1</Gold>
-		</allowedStuffs>
 	</MysteryBoxFrameWork.ItemReplacerDef>
     </value>
     </li> 

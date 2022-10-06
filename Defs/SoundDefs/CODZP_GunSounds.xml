@@ -26,8 +26,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Weapons/CodZP_Shot_Raygun</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/CodZP_Shot_Raygun</clipPath>
           </li>
         </grains>
         <pitchRange>0.8~0.9</pitchRange>
@@ -62,8 +62,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Weapons/CodZP_Shot_Raygun2</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/CodZP_Shot_Raygun2</clipPath>
           </li>
         </grains>
         <pitchRange>0.8~0.9</pitchRange>
@@ -98,8 +98,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Weapons/CodZP_Shot_Blundergat</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/CodZP_Shot_Blundergat</clipPath>
           </li>
         </grains>
         <pitchRange>0.6~0.7</pitchRange>
@@ -134,8 +134,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Weapons/CodZP_Shot_Thundergun</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/CodZP_Shot_Thundergun</clipPath>
           </li>
         </grains>
         <pitchRange>0.8~0.9</pitchRange>
@@ -154,8 +154,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Weapons/CodZP_Shot_PAP</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/CodZP_Shot_PAP</clipPath>
           </li>
         </grains>
         <pitchRange>0.8~0.9</pitchRange>
@@ -190,8 +190,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Weapons/CodZP_Shot_Wintershowl</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/CodZP_Shot_Wintershowl</clipPath>
           </li>
         </grains>
         <pitchRange>0.8~0.9</pitchRange>
@@ -225,8 +225,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Weapons/CodZP_Shot_Wunderwaffe</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/CodZP_Shot_Wunderwaffe</clipPath>
           </li>
         </grains>
         <pitchRange>0.8~0.9</pitchRange>
@@ -277,8 +277,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Weapons/CodZP_Shot_Hells</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Weapons/CodZP_Shot_Hells</clipPath>
           </li>
         </grains>
         <pitchRange>0.8~0.9</pitchRange>

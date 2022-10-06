@@ -10,8 +10,8 @@
       <li>
         <muteWhenPaused>True</muteWhenPaused>      
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Interact/Work/MysteryBox/CodZP_MysteryBoxRandom</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Interact/Work/MysteryBox/CodZP_MysteryBoxRandom</clipPath>
           </li>
         </grains>      
         <volumeRange>12~12</volumeRange>      

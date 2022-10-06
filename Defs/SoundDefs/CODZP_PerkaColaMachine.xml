@@ -10,8 +10,8 @@
       <li>
         <muteWhenPaused>True</muteWhenPaused>      
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Interact/Work/PerkACola/CODZP_BottleDrop</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Interact/Work/PerkACola/CODZP_BottleDrop</clipPath>
           </li>
         </grains>      
         <volumeRange>12~12</volumeRange>      
