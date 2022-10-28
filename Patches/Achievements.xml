@@ -64,6 +64,17 @@
 		<texPath>Things/Building/CodZP_PerkACola_icon</texPath>
 		<points>10</points>
 	 </AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef ParentName="CodZP_AchievementParent">
+		<defName>CodZP_BuildMB</defName>
+		<label>Lost in Random</label>
+		<description>Build a Mystery Box</description>
+		<tracker Class="AchievementsExpanded.BuildingTracker">
+			<def>CodZP_Mystery-Box</def>
+			<count>1</count>
+		</tracker>
+		<texPath>Achievements/CodZP_AchievementMystery</texPath>
+		<points>15</points>
+	 </AchievementsExpanded.AchievementDef>
 
 <!--Weapons-->
 	<AchievementsExpanded.AchievementDef ParentName="CodZP_AchievementParent">

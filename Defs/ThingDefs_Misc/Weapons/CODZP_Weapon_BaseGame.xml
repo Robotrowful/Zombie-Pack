@@ -389,7 +389,7 @@
 		<speed>46</speed>
 		<damageDef>Smoke</damageDef>
 		<explosionRadius>3</explosionRadius>
-		<postExplosionSpawnThingDef>Gas_Smoke</postExplosionSpawnThingDef>
+		<postExplosionGasType>BlindSmoke</postExplosionGasType>
 		<postExplosionSpawnChance>2</postExplosionSpawnChance>
 		<ai_IsIncendiary>true</ai_IsIncendiary>
 		<arcHeightFactor>0.2</arcHeightFactor>

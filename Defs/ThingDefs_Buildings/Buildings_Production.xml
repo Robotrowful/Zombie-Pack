@@ -20,7 +20,7 @@
     <staticSunShadowHeight>0.20</staticSunShadowHeight>
     <costList>
       <Steel>150</Steel>
-	  <Uranium>20</Uranium>
+	    <CODZP_Divinium>20</CODZP_Divinium>
       <ComponentSpacer>5</ComponentSpacer>
     </costList>
     <altitudeLayer>Building</altitudeLayer>

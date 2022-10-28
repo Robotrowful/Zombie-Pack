@@ -1,11 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-<!-- Copy & Modded version of DrugBase to prevent bulk buying-->
-
   <ThingDef Name="CODZP_PerkAColaBase" Abstract="True">
     <thingClass>ThingWithComps</thingClass>
     <category>Item</category>
-    <drawerType>MapMeshAndRealTime</drawerType>
+    <drawerType>MapMeshOnly</drawerType>
     <useHitPoints>true</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
     <selectable>true</selectable>
@@ -15,8 +13,9 @@
       <DeteriorationRate>2</DeteriorationRate>
       <Beauty>1</Beauty>
     </statBases>
+    <tradeability>None</tradeability>
     <altitudeLayer>Item</altitudeLayer>
-    <stackLimit>150</stackLimit>
+    <stackLimit>8</stackLimit>
     <thingCategories>
       <li>CodZP_PerkaColas</li>
     </thingCategories>
@@ -28,13 +27,14 @@
     <burnableByRecipe>true</burnableByRecipe>
     <resourceReadoutPriority>Last</resourceReadoutPriority>
     <drawGUIOverlay>true</drawGUIOverlay>
+    <allowedArchonexusCount>-1</allowedArchonexusCount>
     <ingestible>
       <preferability>NeverForNutrition</preferability>
       <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
-      <chairSearchRadius>8</chairSearchRadius>
+      <chairSearchRadius>16</chairSearchRadius>
     </ingestible>
   </ThingDef>
-
+ 
 <!-- Double Tap -->
   <HediffDef>
     <defName>CODZP_DrankDoubleTap</defName>
@@ -55,11 +55,12 @@
         <li>
           <statOffsets>
             <AimingDelayFactor>-0.5</AimingDelayFactor>
+            <SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.5</SuppressionPower>
           </statOffsets>
         </li>
       </stages>
   </HediffDef>
-  
+
 <!-- Quick Revive -->
   <HediffDef>
     <defName>CODZP_DrankQuickRevive</defName>
@@ -81,6 +82,7 @@
           <statOffsets>
             <SurgerySuccessChanceFactor>0.5</SurgerySuccessChanceFactor>
             <MedicalTendQualityOffset>0.2</MedicalTendQualityOffset>
+            <InjuryHealingFactor>0.15</InjuryHealingFactor>
           </statOffsets>
         </li>
       </stages>

@@ -116,6 +116,54 @@
 		<speed>100</speed>
 	</projectile>
 </ThingDef>
+	<RecipeDef ParentName="CodZP_ZapgunBase">
+		<defName>CODZP_WavegunSplit</defName>
+		<label>Split Wavegun</label>
+		<uiIconThing>CODZP_Icon_Zapguns</uiIconThing>
+		<description>Split the Wavegun into two Zapguns!</description>
+		<soundWorking>CodZP_Work_Wavegun_Separate</soundWorking>
+    	<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CodZP_Gun_Wavegun</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<CODZP_Gun_Zapgun_Blue>1</CODZP_Gun_Zapgun_Blue>
+			<CODZP_Gun_Zapgun_Red>1</CODZP_Gun_Zapgun_Red>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="CodZP_ZapgunBase">
+		<defName>CODZP_Zapguncombine</defName>
+		<label>Combine Zap Guns</label>
+		<description>Combine the Zapguns into one!</description>
+		<soundWorking>CodZP_Work_Wavegun_Join</soundWorking>
+    	<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CODZP_Gun_Zapgun_Blue</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CODZP_Gun_Zapgun_Red</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<CodZP_Gun_Wavegun>1</CodZP_Gun_Wavegun>
+		</products>
+	</RecipeDef>
 
 <!--Wave gun-->
 <ThingDef ParentName="CODZP_BaseWonderWeaponGun">
@@ -202,6 +250,34 @@
 		<shadowSize>0.6</shadowSize>
 	</projectile>
 </ThingDef>
+<ThingDef ParentName="CODZP_BasePAPZapGuns">
+	<defName>CODZP_Gun_Zapgun_Red-PAP</defName>
+	<label>Porter's X2 Zap Gun (red)</label>
+	<description>1 Half a double gun! this one looks like it had it's energy drained</description>
+	<graphicData>
+		<texPath>Things/Item/Equipment/WeaponRanged/Zaps/CodZP_ZapRed_PAP</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<soundInteract>CodZP_Interact_Zapgun_Red</soundInteract>
+	<weaponClasses>
+		<li>Ultratech</li>
+		<li>RangedLight</li>
+    </weaponClasses>
+</ThingDef>
+<ThingDef ParentName="CODZP_BasePAPZapGuns">
+	<defName>CODZP_Gun_Zapgun_Blue-PAP</defName>
+	<label>Porter's X2 Zap Gun (blue)</label>
+	<description>1 Half a double gun! the other one looks like it had it's energy drained</description>
+	<graphicData>
+		<texPath>Things/Item/Equipment/WeaponRanged/Zaps/CodZP_ZapBlue_PAP</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<soundInteract>CodZP_Interact_Zapgun_Blue</soundInteract>
+	<weaponClasses>
+		<li>Ultratech</li>
+		<li>RangedLight</li>
+    </weaponClasses>
+</ThingDef>
 
 <!--Porters Zaps-->
 <ThingDef Name="CODZP_BasePAPZapGuns" Abstract="True" ParentName="CODZP_UncraftablePAPWonderGun">
@@ -262,35 +338,6 @@
 		<damageAmountBase>38</damageAmountBase>
 		<speed>115</speed>
 	</projectile>
-</ThingDef>
-
-<ThingDef ParentName="CODZP_BasePAPZapGuns">
-	<defName>CODZP_Gun_Zapgun_Red-PAP</defName>
-	<label>Porter's X2 Zap Gun (red)</label>
-	<description>1 Half a double gun! this one looks like it had it's energy drained</description>
-	<graphicData>
-		<texPath>Things/Item/Equipment/WeaponRanged/Zaps/CodZP_ZapRed_PAP</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-	</graphicData>
-	<soundInteract>CodZP_Interact_Zapgun_Red</soundInteract>
-	<weaponClasses>
-		<li>Ultratech</li>
-		<li>RangedLight</li>
-    </weaponClasses>
-</ThingDef>
-<ThingDef ParentName="CODZP_BasePAPZapGuns">
-	<defName>CODZP_Gun_Zapgun_Blue-PAP</defName>
-	<label>Porter's X2 Zap Gun (blue)</label>
-	<description>1 Half a double gun! the other one looks like it had it's energy drained</description>
-	<graphicData>
-		<texPath>Things/Item/Equipment/WeaponRanged/Zaps/CodZP_ZapBlue_PAP</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-	</graphicData>
-	<soundInteract>CodZP_Interact_Zapgun_Blue</soundInteract>
-	<weaponClasses>
-		<li>Ultratech</li>
-		<li>RangedLight</li>
-    </weaponClasses>
 </ThingDef>
 
 <!--Max Wavegun-->
@@ -376,4 +423,52 @@
 		<shadowSize>0.6</shadowSize>
 	</projectile>
 </ThingDef>
+	<RecipeDef ParentName="CodZP_PackZapgunBase">
+		<defName>CODZP_MaxWavegunSplit</defName>
+		<label>Split Max Wavegun</label>
+		<uiIconThing>CODZP_Icon_PAPZapguns</uiIconThing>
+		<description>Split the Wavegun into two Porter's Zapguns!</description>
+		<soundWorking>CodZP_Work_Wavegun_Separate</soundWorking>
+    	<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CodZP_Gun_Wavegun-PAP</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<CODZP_Gun_Zapgun_Blue-PAP>1</CODZP_Gun_Zapgun_Blue-PAP>
+			<CODZP_Gun_Zapgun_Red-PAP>1</CODZP_Gun_Zapgun_Red-PAP>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="CodZP_PackZapgunBase">
+		<defName>CODZP_PAPZapguncombine</defName>
+		<label>Combine Porter's X2 Zap Guns</label>
+		<description>Combine the Porter's X2 Zap Gun into one!</description>
+		<soundWorking>CodZP_Work_Wavegun_Join</soundWorking>
+    	<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CODZP_Gun_Zapgun_Blue-PAP</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CODZP_Gun_Zapgun_Red-PAP</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<CodZP_Gun_Wavegun-PAP>1</CodZP_Gun_Wavegun-PAP>
+		</products>
+	</RecipeDef>
 </Defs>
