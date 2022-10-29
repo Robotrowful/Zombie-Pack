@@ -6,7 +6,7 @@
     <description>A place to pack some more punch into your weaponary</description>
     <thingClass>Building_WorkTable</thingClass>
     <graphicData>
-      <texPath>Things/Building/CodZP_PackAPunch</texPath>
+      <texPath>Things/Building/Production/CodZP_PackAPunch</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(5,4)</drawSize>
       <damageData>
@@ -75,7 +75,7 @@
     <description>Allows users to craft wonder weapons</description>
     <thingClass>Building_WorkTable</thingClass>
     <graphicData>
-      <texPath>Things/Building/CodZP_WonderWorkbench</texPath>
+      <texPath>Things/Building/Production/CodZP_WonderWorkbench</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(3.5,1.5)</drawSize>
       <damageData>
@@ -130,7 +130,7 @@
     <description>Allows users to swap ammo on different guns</description>
     <thingClass>Building_WorkTable</thingClass>
     <graphicData>
-      <texPath>Things/Building/CodZP_AmmoMatic</texPath>
+      <texPath>Things/Building/Production/CodZP_AmmoMatic</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(3.55,3.02)</drawSize>
       <damageData>
@@ -140,7 +140,7 @@
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
     </graphicData>
-	  <uiIconPath>Things/Building/CodZP_AmmoMatic_icon</uiIconPath>
+	  <uiIconPath>Things/Building/Production/CodZP_AmmoMatic_icon</uiIconPath>
     <castEdgeShadows>true</castEdgeShadows>
     <staticSunShadowHeight>0.20</staticSunShadowHeight>
     <costList>
@@ -195,7 +195,7 @@
     <description>A vending machine that allows you to buy Perk Colas</description>
     <thingClass>Building_WorkTable</thingClass>
     <graphicData>
-      <texPath>Things/Building/CodZP_PerkACola</texPath>
+      <texPath>Things/Building/Production/CodZP_PerkACola</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(3,3)</drawSize>
       <drawOffset>(0,0,-0.16)</drawOffset>
@@ -206,7 +206,7 @@
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
     </graphicData>
-    <uiIconPath>Things/Building/CodZP_PerkACola_icon</uiIconPath>
+    <uiIconPath>Things/Building/Production/CodZP_PerkACola_icon</uiIconPath>
     <castEdgeShadows>true</castEdgeShadows>
     <staticSunShadowHeight>0.20</staticSunShadowHeight>
     <costList>
@@ -253,6 +253,75 @@
     <constructEffect>ConstructMetal</constructEffect>
     <researchPrerequisites>
       <li>CodZP_PerkACola</li>
+    </researchPrerequisites>
+    <designationHotKey>Misc7</designationHotKey>
+    <placeWorkers Inherit="False">
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+</ThingDef>
+
+<ThingDef ParentName="BenchBase">
+    <defName>CodZP_Mystery-Box</defName>
+    <label>Mystery Box</label>
+    <description>A Random object will appear from within, Nobody knows what it is</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Production/CodZP_Mystery</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.5,1.5)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <costList>
+      <WoodLog>300</WoodLog>
+	    <Steel>50</Steel>
+      <CODZP_Divinium>5</CODZP_Divinium>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>3000</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <size>(3,1)</size>
+    <designationCategory>Production</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(242,219,10)</glowColor>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <basePowerConsumption>20</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisites>
+      <li>CodZP_Mystery-Box</li>
     </researchPrerequisites>
     <designationHotKey>Misc7</designationHotKey>
     <placeWorkers Inherit="False">
