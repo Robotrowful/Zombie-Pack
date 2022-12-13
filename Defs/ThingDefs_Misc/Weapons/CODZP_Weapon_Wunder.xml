@@ -19,6 +19,7 @@
 		<AccuracyLong>0.45</AccuracyLong>
 		<RangedWeapon_Cooldown>1.45</RangedWeapon_Cooldown>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<Steel>100</Steel>
 		<WoodLog>20</WoodLog>
@@ -78,6 +79,7 @@
 		<AccuracyLong>0.52</AccuracyLong>
 		<RangedWeapon_Cooldown>1.14</RangedWeapon_Cooldown>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<CodZP_Gun_Wunderwaffe>1</CodZP_Gun_Wunderwaffe>
 	</costList>
@@ -166,6 +168,7 @@
 		<AccuracyLong>0.81</AccuracyLong>
 		<RangedWeapon_Cooldown>1.42</RangedWeapon_Cooldown>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<CodZP_Gun_Wunderwaffe>1</CodZP_Gun_Wunderwaffe>
 		<WoodLog>50</WoodLog>
@@ -227,6 +230,7 @@
 		<AccuracyLong>0.93</AccuracyLong>
 		<RangedWeapon_Cooldown>1.14</RangedWeapon_Cooldown>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<CodZP_Gun_Wunderwaffe_Scharf>1</CodZP_Gun_Wunderwaffe_Scharf>
 	</costList>
@@ -281,7 +285,7 @@
 		<damageDef>CodZP_Shock</damageDef>
 		<damageAmountBase>15</damageAmountBase>
 		<stoppingPower>20</stoppingPower>
-		<explosionRadius>2</explosionRadius>
+		<explosionRadius>1</explosionRadius>
 		<ai_IsIncendiary>true</ai_IsIncendiary>
 	</projectile>
 </ThingDef>
@@ -299,7 +303,7 @@
 		<damageDef>CodZP_Shock</damageDef>
 		<damageAmountBase>30</damageAmountBase>
 		<stoppingPower>40</stoppingPower>
-		<explosionRadius>2</explosionRadius>
+		<explosionRadius>1</explosionRadius>
 		<ai_IsIncendiary>true</ai_IsIncendiary>
 	</projectile>
 </ThingDef>

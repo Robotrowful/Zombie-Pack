@@ -132,7 +132,7 @@
     <graphicData>
       <texPath>Things/Building/Production/CodZP_AmmoMatic</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(3.55,3.02)</drawSize>
+      <drawSize>(3.5,3)</drawSize>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
         <cornerTR>Damage/Corner</cornerTR>
@@ -268,7 +268,7 @@
     <graphicData>
       <texPath>Things/Building/Production/CodZP_Mystery</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(3.5,1.5)</drawSize>
+      <drawSize>(3.5,1.5)</drawSize> <!--sorry for the weird scale-->
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
         <cornerTR>Damage/Corner</cornerTR>
@@ -315,6 +315,16 @@
       </li>
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_MoteEmitter">
+        <perRotationMotes>
+          <li>CODZP_Mote_MysteryboxNorth</li>
+          <li>CODZP_Mote_MysteryboxEast</li>
+          <li>CODZP_Mote_MysteryboxSouth</li>
+          <li>CODZP_Mote_MysteryboxWest</li>
+        </perRotationMotes>
+        <offsetWest>(-0.28, 0, 0.4)</offsetWest>
+        <offsetEast>(0.28, 0, 0.4)</offsetEast>
+      </li>
     </comps>
     <building>
       <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>

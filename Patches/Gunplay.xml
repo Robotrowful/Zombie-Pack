@@ -170,27 +170,6 @@
         <trail>CODZP_TrailOrange</trail>
     </Gunplay.GunPropDef>
 
-<!--Yellow Trails-->
-    <Gunplay.ProjectileTrailDef ParentName="GunplayProjectileTrailDefault">
-        <defName>CODZP_TrailYellow</defName>
-        <graphicData>
-            <texPath>Gunplay/Effects/Guntrail</texPath>
-            <shaderType>TransparentPostLight</shaderType>
-            <graphicClass>Graphic_Single</graphicClass>
-            <color>(255, 255, 31)</color>
-        </graphicData>
-        <trailWidth>0.15</trailWidth>
-    </Gunplay.ProjectileTrailDef>
-
-    <Gunplay.GunPropDef>
-        <defName>CodZP_Gun_RayGunMkTwo-V</defName>
-        <trail>CODZP_TrailYellow</trail>
-    </Gunplay.GunPropDef>
-    <Gunplay.GunPropDef>
-        <defName>CodZP_Gun_RayGunMkTwo-V-PAP</defName>
-        <trail>CODZP_TrailYellow</trail>
-    </Gunplay.GunPropDef>
-
 <!--White Trails-->
     <Gunplay.ProjectileTrailDef ParentName="GunplayProjectileTrailDefault">
         <defName>CODZP_TrailWhite</defName>

@@ -12,7 +12,10 @@
 	<ThingDef Name="CODZP_BasePackAPunchUltra" Abstract="True" ParentName="MeleeWeaponUltratech">
 		<statBases>
 			<WorkToMake>5000</WorkToMake>
-		</statBases>	
+		</statBases>
+		<weaponTags Inherit="False">
+			<li>PackaPunch</li>
+		</weaponTags>	
 		<thingCategories Inherit="False">
 			<li>CodZP_PunchedMelee</li>
 		</thingCategories>
@@ -26,7 +29,7 @@
 		<costList>
 			<Silver>500</Silver>
 		</costList>
-		<thingSetMakerTags Inherit="False"></thingSetMakerTags>
+		<thingSetMakerTags Inherit="False" />
 	</ThingDef>
 
 <ThingDef ParentName="CODZP_BasePackAPunchUltra" >
@@ -90,6 +93,7 @@
 		<MeleeWeapon_Zeushammer>1</MeleeWeapon_Zeushammer>
 	</costList>
 	<statBases />
+	<weaponTags />
 	<tools>
 		<li>
 			<label>handle</label>
@@ -132,6 +136,7 @@
 		<MeleeWeapon_PlasmaSword>1</MeleeWeapon_PlasmaSword>
 	</costList>
 	<statBases />
+	<weaponTags />
 	<tools>
 		<li>
 			<label>handle</label>

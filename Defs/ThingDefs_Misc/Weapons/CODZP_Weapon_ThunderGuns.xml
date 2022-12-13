@@ -19,6 +19,7 @@
 		<AccuracyLong>0.21</AccuracyLong>
 		<RangedWeapon_Cooldown>1.73</RangedWeapon_Cooldown>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<Steel>150</Steel>
 		<ComponentSpacer>4</ComponentSpacer>
@@ -69,6 +70,7 @@
 		<AccuracyLong>0.24</AccuracyLong>
 		<RangedWeapon_Cooldown>1.38</RangedWeapon_Cooldown>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<CodZP_Gun_Thundergun>1</CodZP_Gun_Thundergun>
 	</costList>
@@ -146,6 +148,7 @@
 		<AccuracyLong>0.21</AccuracyLong>
 		<RangedWeapon_Cooldown>1.73</RangedWeapon_Cooldown>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<CodZP_Gun_Thundergun>1</CodZP_Gun_Thundergun>
 		<Plasteel>20</Plasteel>
@@ -196,6 +199,7 @@
 		<AccuracyLong>0.24</AccuracyLong>
 		<RangedWeapon_Cooldown>1.38</RangedWeapon_Cooldown>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<CodZP_Gun_Tundragun>1</CodZP_Gun_Tundragun>
 	</costList>

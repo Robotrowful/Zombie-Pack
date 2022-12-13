@@ -33,6 +33,9 @@
       <isNaturalRock>false</isNaturalRock>
       <claimable>false</claimable>
     </building>
+    <modExtensions>
+      <li MayRequire="owlchemist.simplefx.shinies" Class="SimpleFxShinies.ShinyStuff" />
+    </modExtensions>
   </ThingDef>
 
   <ThingDef ParentName="ResourceBase">
@@ -79,6 +82,9 @@
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <allowedArchonexusCount>-1</allowedArchonexusCount>
     <tradeability>None</tradeability>
+    <modExtensions>
+      <li MayRequire="owlchemist.simplefx.shinies" Class="SimpleFxShinies.ShinyStuff" />
+    </modExtensions>
   </ThingDef>
 
   <ThingDef ParentName="ResourceBase">
@@ -117,6 +123,9 @@
     <thingSetMakerTags>
       <li>RewardStandardMidFreq</li>
     </thingSetMakerTags>
+    <modExtensions>
+      <li MayRequire="owlchemist.simplefx.shinies" Class="SimpleFxShinies.ShinyStuff" />
+    </modExtensions>
   </ThingDef>
 
 </Defs>

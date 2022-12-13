@@ -2,11 +2,12 @@
 <Defs>
 	<RecipeDef Name="CodZP_MysteryRecipe" Abstract="True">
 		<jobString>Randomizing item</jobString>
-		<workAmount>300</workAmount>
+		<workAmount>240</workAmount>
 		<researchPrerequisites>
 			<li>CodZP_Mystery-Box</li>
 		</researchPrerequisites>
 		<soundWorking>CodZP_Recipe_Randomize</soundWorking>
+		<!--<effectWorking>CODZP_MysteryBox</effectWorking>-->
 		<recipeUsers>
 			<li>CodZP_Mystery-Box</li>
 		</recipeUsers>
@@ -29,7 +30,7 @@
 						<li>Silver</li>
 					</thingDefs>
 				</filter>
-				<count>100</count>
+				<count>150</count>
 			</li>
 		</ingredients>
 		<products>

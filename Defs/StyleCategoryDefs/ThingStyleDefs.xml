@@ -70,7 +70,12 @@
                 <edgeRight>Damage/Edge</edgeRight>
             </damageData>
         </graphicData>
-		<uiIconPath>Things/Building/Linked/CODZP_DiviniumWallSmooth_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/Linked/CODZP_DiviniumWallSmooth_MenuIcon_Red</uiIconPath>
+        <!--<building>
+            <blueprintGraphicData>
+                <texPath>Things/Building/Linked/CODZP_DiviniumWall_Blueprint_Atlas_Red</texPath>
+            </blueprintGraphicData>
+        </building>-->
 	</ThingStyleDef>
 
 
@@ -144,6 +149,11 @@
                 <edgeRight>Damage/Edge</edgeRight>
             </damageData>
         </graphicData>
-		<uiIconPath>Things/Building/Linked/CODZP_DiviniumWallSmooth_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/Linked/CODZP_DiviniumWallSmooth_MenuIcon_Green</uiIconPath>
+        <!--<building>
+            <blueprintGraphicData>
+                <texPath>Things/Building/Linked/CODZP_DiviniumWall_Blueprint_Atlas_Green</texPath>
+            </blueprintGraphicData>
+        </building> -->
 	</ThingStyleDef>
 </Defs>

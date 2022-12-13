@@ -8,7 +8,8 @@
     <priorityMode>PrioritizeNearest</priorityMode>  
     <subSounds>
       <li>
-        <muteWhenPaused>True</muteWhenPaused>      
+        <muteWhenPaused>True</muteWhenPaused>  
+        <tempoAffectedByGameSpeed>True</tempoAffectedByGameSpeed>    
         <grains>
           <li Class="AudioGrain_Clip">
             <clipPath>Interact/Work/MysteryBox/CodZP_MysteryBoxRandom</clipPath>

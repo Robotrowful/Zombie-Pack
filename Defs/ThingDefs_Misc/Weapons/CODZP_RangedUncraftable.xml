@@ -4,11 +4,11 @@
 <!--Pack a Punch-->
 	<ThingDef Name="CODZP_BaseUncraftablePackAPunch" Abstract="True" ParentName="BaseGunWithQuality">
 		<smeltable>false</smeltable>
-		<weaponTags>
-      		<li>Gun</li>
+		<weaponTags Inherit="False">
+			<li>PackaPunch</li>
 		</weaponTags>
 		<statBases>
-			<MarketValue>5000</MarketValue>
+			<MarketValue>3000</MarketValue>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Biocodable"/>
@@ -16,16 +16,16 @@
 		<thingCategories Inherit="False">
 			<li>CodZP_PackPunch</li>
 		</thingCategories>
-		<tradeability>None</tradeability>
+		<tradeability>Sellable</tradeability>
 	 </ThingDef>
 <!--Wonder Weapons-->
 	<ThingDef Name="CODZP_BaseUncraftableWonderGun" Abstract="True" ParentName="BaseGunWithQuality">
 		<smeltable>false</smeltable>
-		<weaponTags>
-      		<li>Gun</li>
+		<weaponTags Inherit="False">
+			<li>WonderWeapons</li>
 		</weaponTags>
 		<statBases>
-			<MarketValue>1000</MarketValue>
+			<MarketValue>100</MarketValue>
 		</statBases>
 		<thingCategories Inherit="False">
 			<li>CodZP_WonderWeapons</li>
@@ -33,12 +33,15 @@
 		<comps>
 			<li Class="CompProperties_Biocodable"/>
 		</comps>
-		<tradeability>None</tradeability>
+		<tradeability>Sellable</tradeability>
 	 </ThingDef>
 	<ThingDef Name="CODZP_UncraftablePAPWonderGun" Abstract="True" ParentName="CODZP_BaseUncraftablePackAPunch">
 		<statBases>
-			<MarketValue>6000</MarketValue>
+			<MarketValue>1000</MarketValue>
 		</statBases>
+		<weaponTags Inherit="False">
+			<li>PackAPunchWonderWeapons</li>
+		</weaponTags>
 		<thingCategories Inherit="False">
 			<li>CodZP_PunchedWonders</li>
 		</thingCategories>

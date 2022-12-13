@@ -19,6 +19,7 @@
 		<AccuracyLong>0.67</AccuracyLong>
 		<RangedWeapon_Cooldown>1.56</RangedWeapon_Cooldown>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<Steel>100</Steel>
 		<WoodLog>10</WoodLog>
@@ -70,6 +71,7 @@
 		<AccuracyLong>0.77</AccuracyLong>
 		<RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<CodZP_Gun_Staff-Ice>1</CodZP_Gun_Staff-Ice>
 	</costList>
@@ -150,6 +152,7 @@
 		<AccuracyLong>0.67</AccuracyLong>
 		<RangedWeapon_Cooldown>1.56</RangedWeapon_Cooldown>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<Steel>100</Steel>
 		<WoodLog>10</WoodLog>
@@ -203,6 +206,7 @@
 		<AccuracyLong>0.77</AccuracyLong>
 		<RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<CodZP_Gun_Staff-Fire>1</CodZP_Gun_Staff-Fire>
 	</costList>
@@ -285,6 +289,7 @@
 		<AccuracyLong>0.67</AccuracyLong>
 		<RangedWeapon_Cooldown>1.56</RangedWeapon_Cooldown>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<Steel>100</Steel>
 		<WoodLog>10</WoodLog>
@@ -336,6 +341,7 @@
 		<AccuracyLong>0.77</AccuracyLong>
 		<RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<CodZP_Gun_Staff-Wind>1</CodZP_Gun_Staff-Wind>
 	</costList>
@@ -414,6 +420,7 @@
 		<AccuracyLong>0.67</AccuracyLong>
 		<RangedWeapon_Cooldown>1.56</RangedWeapon_Cooldown>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<Steel>100</Steel>
 		<WoodLog>10</WoodLog>
@@ -467,6 +474,7 @@
 		<AccuracyLong>0.77</AccuracyLong>
 		<RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<CodZP_Gun_Staff-Lightning>1</CodZP_Gun_Staff-Lightning>
 	</costList>

@@ -7,6 +7,7 @@
         <description>Divinium lining the walls seems to glow brightly! able to support roofing</description>
         <thingClass>Building</thingClass>
         <category>Building</category>
+        <neverMultiSelect>False</neverMultiSelect>
         <graphicData>
             <texPath>Things/Building/Linked/CODZP_DiviniumWall</texPath>
             <graphicClass>Graphic_Appearances</graphicClass>
@@ -67,9 +68,8 @@
                 <glowRadius>4</glowRadius>
                 <glowColor>(144,193,215,0)</glowColor>
                 <colorPickerEnabled>true</colorPickerEnabled>
-                <darklightToggle>true</darklightToggle>
             </li>
-            <li Class="CompProperties_Styleable"></li>
+            <li Class="CompProperties_Styleable" />
         </comps>
     </ThingDef>
 

@@ -28,6 +28,8 @@
     <sustainStopSound>CodZP_PackAPunch_Ding</sustainStopSound>
     <subSounds>
       <li>
+        <muteWhenPaused>True</muteWhenPaused>  
+        <tempoAffectedByGameSpeed>True</tempoAffectedByGameSpeed> 
         <grains>
           <li Class="AudioGrain_Clip">
             <clipPath>Interact/Work/PackAPunch/CODZP_PackAPunchUpgrading</clipPath>

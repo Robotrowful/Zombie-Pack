@@ -9,7 +9,7 @@
     <xpath>Defs</xpath>
     <value>
 
-      <ThingDef ParentName="CODZP_BasePackAPunchGun" MayRequire="Ludeon.RimWorld.Biotech">
+      <ThingDef ParentName="CODZP_BasePackAPunchGun">
 		<defName>CodZP_Gun_ToxbombLauncher-PAP</defName>
 		<label>Lethal dose</label>
 		<description>Covering more area can cause devistating effects</description>
@@ -28,6 +28,7 @@
 			<Mass>3.4</Mass>
 			<RangedWeapon_Cooldown>3.6</RangedWeapon_Cooldown>
 		</statBases>
+		<weaponTags />
 		<costList>
 			<Gun_ToxbombLauncher>1</Gun_ToxbombLauncher>
 		</costList>
@@ -68,7 +69,7 @@
 			</li>
 		</tools>
 	</ThingDef>
-	<ThingDef ParentName="BaseBullet" MayRequire="Ludeon.RimWorld.Biotech">
+	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_ToxbombLauncher_PAP</defName>
 		<label>Lethal dose shell</label>
 		<graphicData>

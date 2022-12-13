@@ -16,6 +16,10 @@ Addes new Weapons, Buildings and Researches based on call of duty zombies
 	<forceLoadBefore>
 		<li>CETeam.CombatExtended</li>
   	</forceLoadBefore>
+	<loadAfter>
+        <li>UnlimitedHugs.HugsLib</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+    </loadAfter>
 	<modDependencies>
             <li>
                 <packageId>brrainz.harmony</packageId>

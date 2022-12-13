@@ -20,6 +20,7 @@
 							<bgtexPath>Achievements/CodZP_AchievementBackground</bgtexPath>
 							<!--<tab>CodZP_Achievements</tab>-->
 						</AchievementsExpanded.AchievementDef>
+						
 					<!--Buildings-->
 						<AchievementsExpanded.AchievementDef ParentName="CodZP_AchievementParent">
 							<defName>CodZP_BuildPAP</defName>
@@ -29,9 +30,10 @@
 								<def>CodZP_Pack-A-Punch</def>
 								<count>1</count>
 							</tracker>
-							<texPath>Achievements/CodZP_AchievementPackAPunch</texPath>
+							<texPath>Things/Building/Production/CodZP_PackAPunch_icon</texPath>
 							<points>20</points>
 						</AchievementsExpanded.AchievementDef>
+
 						<AchievementsExpanded.AchievementDef ParentName="CodZP_AchievementParent">
 							<defName>CodZP_BuildWRW</defName>
 							<label>Wunderbar!</label>
@@ -40,9 +42,10 @@
 								<def>CodZP_Wond-R-Works</def>
 								<count>1</count>
 							</tracker>
-							<texPath>Achievements/CodZP_AchievementWonder</texPath>
+							<texPath>Things/Building/Production/CodZP_WonderWorkbench_icon</texPath>
 							<points>10</points>
 						</AchievementsExpanded.AchievementDef>
+
 						<AchievementsExpanded.AchievementDef ParentName="CodZP_AchievementParent">
 							<defName>CodZP_BuildAOM</defName>
 							<label>Amm-OH!</label>
@@ -54,6 +57,7 @@
 							<texPath>Things/Building/Production/CodZP_AmmoMatic_icon</texPath>
 							<points>10</points>
 						</AchievementsExpanded.AchievementDef>
+
 						<AchievementsExpanded.AchievementDef ParentName="CodZP_AchievementParent">
 							<defName>CodZP_BuildPAC</defName>
 							<label>Drinks Ahoy!</label>
@@ -65,6 +69,7 @@
 							<texPath>Things/Building/Production/CodZP_PerkACola_icon</texPath>
 							<points>10</points>
 						</AchievementsExpanded.AchievementDef>
+
 						<AchievementsExpanded.AchievementDef ParentName="CodZP_AchievementParent">
 							<defName>CodZP_BuildMB</defName>
 							<label>Lost in Random</label>
@@ -73,9 +78,10 @@
 								<def>CodZP_Mystery-Box</def>
 								<count>1</count>
 							</tracker>
-							<texPath>Achievements/CodZP_AchievementMystery</texPath>
+							<texPath>Things/Building/Production/CodZP_Mystery_icon</texPath>
 							<points>15</points>
 						</AchievementsExpanded.AchievementDef>
+
 					<!--Weapons-->
 						<AchievementsExpanded.AchievementDef ParentName="CodZP_AchievementParent">
 							<defName>CodZP_RayGun</defName>

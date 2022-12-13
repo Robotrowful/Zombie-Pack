@@ -41,7 +41,6 @@
 	<techLevel>Spacer</techLevel>
 	<tab>CODZP_ResearchTab</tab>
 	<prerequisites>
-		<li>Fabrication</li>
 		<li>CODZP_Divinium</li>
 	</prerequisites>
 	<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -60,7 +59,6 @@
 	<techLevel>Spacer</techLevel>
 	<tab>CODZP_ResearchTab</tab>
 	<prerequisites>
-		<li>Fabrication</li>
 		<li>CODZP_Divinium</li>
 	</prerequisites>
 	<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -76,7 +74,6 @@
 	<techLevel>Spacer</techLevel>
 	<tab>CODZP_ResearchTab</tab>
 	<prerequisites>
-		<li>Fabrication</li>
 		<li>CODZP_Divinium</li>
 	</prerequisites>
 	<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>

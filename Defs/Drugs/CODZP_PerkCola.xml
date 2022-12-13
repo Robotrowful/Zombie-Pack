@@ -1,41 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ThingDef Name="CODZP_MakeablePerkACola" ParentName="CODZP_PerkAColaBase" Abstract="True">
-    <techLevel>Industrial</techLevel>
-    <rotatable>false</rotatable>
-    <statBases>
-      <WorkToMake>200</WorkToMake>
-      <MarketValue>500</MarketValue>
-      <Mass>0.05</Mass>
-      <DeteriorationRate>6</DeteriorationRate>
-      <Nutrition>0.08</Nutrition>
-    </statBases>
-    <uiIconScale>0.85</uiIconScale>
-    <ingestible>
-      <foodType>Fluid, Processed</foodType>
-      <joyKind>Gluttonous</joyKind>
-      <joy>0.18</joy>
-      <baseIngestTicks>210</baseIngestTicks>
-      <nurseable>false</nurseable>
-      <drugCategory>Social</drugCategory>
-      <ingestSound>Ingest_Drink</ingestSound>
-      <ingestHoldOffsetStanding>
-        <northDefault>
-          <offset>(0.18,0,0)</offset>
-      </northDefault>
-      </ingestHoldOffsetStanding>
-      <ingestHoldUsesTable>false</ingestHoldUsesTable>
-      <ingestCommandString>Drink {0}</ingestCommandString>
-      <ingestReportString>Drinking {0}.</ingestReportString>
-    </ingestible>
-    <comps>
-      <li Class="CompProperties_Drug">
-        <listOrder>9</listOrder>
-      </li>
-    </comps>
-  </ThingDef>
 
-<!-- Juggernog -->
+  <!-- Juggernog -->
   <ThingDef ParentName="CODZP_MakeablePerkACola">
     <defName>CODZP_Juggernog</defName>
     <label>Juggernog</label>
@@ -54,7 +20,6 @@
       </outcomeDoers>
     </ingestible>
   </ThingDef>
-
   <HediffDef>
     <defName>CODZP_DrankJuggernog</defName>
     <hediffClass>HediffWithComps</hediffClass>
@@ -70,16 +35,15 @@
         <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
-      <stages>
-        <li>
-          <statOffsets>
-            <PainShockThreshold>0.5</PainShockThreshold>
-            <IncomingDamageFactor>-0.7</IncomingDamageFactor>
-          </statOffsets>
-        </li>
-      </stages>
+    <stages>
+      <li>
+        <statOffsets>
+          <PainShockThreshold>0.5</PainShockThreshold>
+          <IncomingDamageFactor>-0.7</IncomingDamageFactor>
+        </statOffsets>
+      </li>
+    </stages>
   </HediffDef>
-  
   <ThoughtDef>
     <defName>CODZP_DrankJuggernog</defName>
     <workerClass>ThoughtWorker_Hediff</workerClass>
@@ -92,9 +56,8 @@
         <baseMoodEffect>5</baseMoodEffect>
       </li>
     </stages>
-  </ThoughtDef> 
-
-<!-- Speed Cola -->
+  </ThoughtDef>
+  <!-- Speed Cola -->
   <ThingDef ParentName="CODZP_MakeablePerkACola">
     <defName>CODZP_SpeedCola</defName>
     <label>Speed Cola</label>
@@ -113,7 +76,6 @@
       </outcomeDoers>
     </ingestible>
   </ThingDef>
-
   <HediffDef>
     <defName>CODZP_DrankSpeedCola</defName>
     <hediffClass>HediffWithComps</hediffClass>
@@ -129,16 +91,15 @@
         <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
-      <stages>
-        <li>
-          <statOffsets>
-            <RangedWeapon_Cooldown>-0.5</RangedWeapon_Cooldown>
-            <WorkSpeedGlobal>0.2</WorkSpeedGlobal>
-          </statOffsets>
-        </li>
-      </stages>
+    <stages>
+      <li>
+        <statOffsets>
+          <RangedWeapon_Cooldown>-0.5</RangedWeapon_Cooldown>
+          <WorkSpeedGlobal>0.2</WorkSpeedGlobal>
+        </statOffsets>
+      </li>
+    </stages>
   </HediffDef>
-  
   <ThoughtDef>
     <defName>CODZP_DrankSpeedCola</defName>
     <workerClass>ThoughtWorker_Hediff</workerClass>
@@ -152,9 +113,9 @@
       </li>
     </stages>
   </ThoughtDef>
-
-<!-- Double Tap -->
-  <ThingDef ParentName="CODZP_MakeablePerkACola">
+  <!-- Double Tap -->
+  <ThingDef
+    ParentName="CODZP_MakeablePerkACola">
     <defName>CODZP_DoubleTap</defName>
     <label>Double Tap</label>
     <description>Cowboys can't shoot slow or they'll end up below. When they need some help, they reach for the Root beer shelf (Ye-haa) Cowboys can't shoot slow, or they'll end up below, when they need some help, they reach for the Root beer shelf. YA THIRSTY PARTNER!?</description>
@@ -172,7 +133,30 @@
       </outcomeDoers>
     </ingestible>
   </ThingDef>
-
+  <HediffDef>
+    <defName>CODZP_DrankDoubleTap</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>Double Tap Buff</label>
+    <defaultLabelColor>(255, 180, 50)</defaultLabelColor>
+    <description>A positive effect caused by drinking Double Tap. Lasts for 5 days</description>
+    <labelNoun>effects of Double Tap</labelNoun>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.2</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <statOffsets>
+            <AimingDelayFactor>-0.5</AimingDelayFactor>
+            <SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.5</SuppressionPower>
+          </statOffsets>
+        </li>
+      </stages>
+  </HediffDef>
   <ThoughtDef>
     <defName>CODZP_DrankDoubleTap</defName>
     <workerClass>ThoughtWorker_Hediff</workerClass>
@@ -185,10 +169,63 @@
         <baseMoodEffect>5</baseMoodEffect>
       </li>
     </stages>
-  </ThoughtDef> 
-
-
-<!-- Quick Revive -->
+  </ThoughtDef>
+  <!-- Double Tap 2 -->
+  <ThingDef ParentName="CODZP_MakeablePerkACola" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+    <defName>CODZP_DoubleTapII</defName>
+    <label>Double Tap II</label>
+    <description>Cowboys can move slow they'll end up dead or old, When they need some help, they reach out for the shelf, Cowboys can't shoot slow,  they'll end up dead below, when they need some help, they reach out for the shelf, have no fear, but that double tap root beer, get all the damage done, Double Tap Root Beer,  will Double damage fun, Oh Yeah, Get Thirsty.</description>
+    <graphicData>
+      <texPath>Things/Item/Drug/CodZP_DDTap</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <uiIconPath>UI/Icons/CODZP/CodZP_DoubleTapTwo</uiIconPath>
+    <ingestible>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>CODZP_DrankDoubleTapII</hediffDef>
+          <severity>1</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+  </ThingDef>
+  <ThoughtDef MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+    <defName>CODZP_DrankDoubleTapII</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>CODZP_DrankDoubleTapII</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>Double Tap warmth</label>
+        <description>Drinking that Double Tap made me shoot better!</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <HediffDef MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+    <defName>CODZP_DrankDoubleTapII</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>Double Tap II Buff</label>
+    <defaultLabelColor>(255, 180, 50)</defaultLabelColor>
+    <description>A positive effect caused by drinking Double Tap. Lasts for 1 days</description>
+    <labelNoun>effects of Double Tap</labelNoun>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <statOffsets>
+          <VEF_RangeAttackDamageFactor>2</VEF_RangeAttackDamageFactor>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  <!-- Quick Revive -->
   <ThingDef ParentName="CODZP_MakeablePerkACola">
     <defName>CODZP_QuickRevive</defName>
     <label>Quick Revive</label>
@@ -200,14 +237,39 @@
     <uiIconPath>UI/Icons/CODZP/CodZP_QuickRevive</uiIconPath>
     <ingestible>
       <outcomeDoers>
-        <li Class="IngestionOutcomeDoer_GiveHediff">
+        <li
+          Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>CODZP_DrankQuickRevive</hediffDef>
           <severity>1</severity>
         </li>
       </outcomeDoers>
     </ingestible>
   </ThingDef>
-  
+  <HediffDef>
+    <defName>CODZP_DrankQuickRevive</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>Quick Revive Buff</label>
+    <defaultLabelColor>(0, 0, 255)</defaultLabelColor>
+    <description>A positive effect caused by drinking Quick Revive. Lasts for 5 days</description>
+    <labelNoun>effects of Quick Revive</labelNoun>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.2</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <statOffsets>
+            <SurgerySuccessChanceFactor>0.5</SurgerySuccessChanceFactor>
+            <MedicalTendQualityOffset>0.2</MedicalTendQualityOffset>
+            <InjuryHealingFactor>0.15</InjuryHealingFactor>
+          </statOffsets>
+        </li>
+      </stages>
+  </HediffDef>
   <ThoughtDef>
     <defName>CODZP_DrankQuickRevive</defName>
     <workerClass>ThoughtWorker_Hediff</workerClass>
@@ -220,9 +282,8 @@
         <baseMoodEffect>5</baseMoodEffect>
       </li>
     </stages>
-  </ThoughtDef> 
-
-<!-- Stamin-Up -->
+  </ThoughtDef>
+  <!-- Stamin-Up -->
   <ThingDef ParentName="CODZP_MakeablePerkACola">
     <defName>CODZP_StaminUp</defName>
     <label>Stamin-Up</label>
@@ -241,7 +302,6 @@
       </outcomeDoers>
     </ingestible>
   </ThingDef>
-
   <HediffDef>
     <defName>CODZP_DrankStaminUp</defName>
     <hediffClass>HediffWithComps</hediffClass>
@@ -257,15 +317,14 @@
         <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
-      <stages>
-        <li>
-          <statOffsets>
-            <MoveSpeed>0.7</MoveSpeed>
-          </statOffsets>
-        </li>
-      </stages>
+    <stages>
+      <li>
+        <statOffsets>
+          <MoveSpeed>0.7</MoveSpeed>
+        </statOffsets>
+      </li>
+    </stages>
   </HediffDef>
-  
   <ThoughtDef>
     <defName>CODZP_DrankStaminUp</defName>
     <workerClass>ThoughtWorker_Hediff</workerClass>
@@ -278,9 +337,8 @@
         <baseMoodEffect>5</baseMoodEffect>
       </li>
     </stages>
-  </ThoughtDef> 
-
-<!-- Deadshot Daiquiri-->
+  </ThoughtDef>
+  <!-- Deadshot Daiquiri -->
   <ThingDef ParentName="CODZP_MakeablePerkACola">
     <defName>CODZP_DeadshotDaiquiri</defName>
     <label>Deadshot Daiquiri</label>
@@ -299,7 +357,6 @@
       </outcomeDoers>
     </ingestible>
   </ThingDef>
-
   <HediffDef>
     <defName>CODZP_DrankDeadshot</defName>
     <hediffClass>HediffWithComps</hediffClass>
@@ -314,15 +371,14 @@
         <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
-      <stages>
-        <li>
-          <statOffsets>
-            <ShootingAccuracyPawn>16</ShootingAccuracyPawn>
-          </statOffsets>
-        </li>
-      </stages>
+    <stages>
+      <li>
+        <statOffsets>
+          <ShootingAccuracyPawn>16</ShootingAccuracyPawn>
+        </statOffsets>
+      </li>
+    </stages>
   </HediffDef>
-  
   <ThoughtDef>
     <defName>CODZP_DrankDeadshot</defName>
     <workerClass>ThoughtWorker_Hediff</workerClass>
@@ -336,8 +392,7 @@
       </li>
     </stages>
   </ThoughtDef>
-
-<!-- Mule Kick
+  <!-- Mule Kick
   <ThingDef ParentName="CODZP_MakeablePerkACola">
     <defName>CODZP_MuleKick</defName>
     <label>Mule Kick</label>
@@ -393,6 +448,5 @@
         <baseMoodEffect>5</baseMoodEffect>
       </li>
     </stages>
-  </ThoughtDef>
--->
+  </ThoughtDef> -->
 </Defs>

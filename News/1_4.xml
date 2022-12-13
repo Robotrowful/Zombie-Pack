@@ -30,4 +30,29 @@ Reearches have been reordered for better progression
 
         </content>
 	</HugsLib.UpdateFeatureDef>
+	<HugsLib.UpdateFeatureDef ParentName="CODZP_UpdateFeatureBase">
+		<defName>CallOfDutyZombiesPack_1_4_5</defName>
+		<assemblyVersion>1.4.5</assemblyVersion>
+		<content>Call of Duty: Zombies Pack has been updated to Version 1.4.5
+|A minor version update 
+|New:
+New mote for Pack a Punch Machine.
+Mystery Box now opens when in use.
+Added Mod settings (if XML Extensions is installed)
+
+|Changes: 
+Removed Factions from using Wonder Weapons and Pack a Punch Weapons. 
+Crematior, S.D launcher and Disruptor launcher now shoot in a Arch
+Pack a punch, Mystery Box and Der Wunderfizz sounds now speedup with gamespeed and can mute when paused
+Changed the Amm-O-Matic Icon
+Removed Fabrications from T2 Researchs
+Made Weapons Sellable
+Updated Preview.png again
+you can multiselect Divinium Walls
+Optimized some Patches
+Added new Icons for style Divinium Walls (Red and Green)
+Reduce the Explosion radius of most weapons
+
+        </content>
+	</HugsLib.UpdateFeatureDef>
 </Defs>

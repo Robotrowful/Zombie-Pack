@@ -18,6 +18,7 @@
 		<AccuracyLong>0.40</AccuracyLong>
 		<RangedWeapon_Cooldown>1.28</RangedWeapon_Cooldown>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<Gun_Revolver>1</Gun_Revolver>
 	</costList>
@@ -34,10 +35,6 @@
 			<muzzleFlashScale>9</muzzleFlashScale>
 		</li>
 	</verbs>
-	<weaponTags>
-		<li>SimpleGun</li>
-		<li>Revolver</li>
-	</weaponTags>
 	<weaponClasses>
       <li>RangedLight</li>
     </weaponClasses>
@@ -75,7 +72,7 @@
 	<projectile>
 		<damageDef>CodZP_RaygunRedBomb</damageDef>
 		<damageAmountBase>24</damageAmountBase>
-		<explosionRadius>3</explosionRadius>
+		<explosionRadius>1.9</explosionRadius>
 		<preExplosionSpawnChance>0.6</preExplosionSpawnChance>
 		<speed>63</speed>
 		<stoppingPower>1.5</stoppingPower>
@@ -100,6 +97,7 @@
 		<AccuracyLong>0.35</AccuracyLong>
 		<RangedWeapon_Cooldown>0.80</RangedWeapon_Cooldown>
 		</statBases>
+	<weaponTags />
 		<costList>
 			<Gun_Autopistol>1</Gun_Autopistol>
 		</costList>
@@ -116,9 +114,6 @@
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
-	<weaponTags>
-		<li>SimpleGun</li>
-	</weaponTags>
 	<weaponClasses>
       <li>RangedLight</li>
     </weaponClasses>
@@ -180,6 +175,7 @@
 		<AccuracyLong>0.17</AccuracyLong>
 		<RangedWeapon_Cooldown>0.72</RangedWeapon_Cooldown>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<Gun_MachinePistol>1</Gun_MachinePistol>
 	</costList>
@@ -250,23 +246,27 @@
 		<Mass>3.4</Mass>
 		<RangedWeapon_Cooldown>2.8</RangedWeapon_Cooldown>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<Gun_IncendiaryLauncher>1</Gun_IncendiaryLauncher>
 	</costList>
 	<verbs>
 		<li>
-			<verbClass>Verb_Shoot</verbClass>
+			<verbClass>Verb_ArcSprayProjectile</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
 			<defaultProjectile>CodZP_Bullet_PAP_IncendiaryLauncher</defaultProjectile>
 			<warmupTime>3.15</warmupTime>
 			<range>28.9</range>
-			<forcedMissRadius>1.9</forcedMissRadius>
 			<burstShotCount>4</burstShotCount>
+			<sprayWidth>5.5</sprayWidth>
+			<sprayArching>1.5</sprayArching>
+			<sprayThicknessCells>4</sprayThicknessCells>
+			<sprayNumExtraCells>3</sprayNumExtraCells>
 			<soundCast>Shot_IncendiaryLauncher</soundCast>
 			<soundCastTail>GunTail_Medium</soundCastTail>
 			<muzzleFlashScale>14</muzzleFlashScale>
 			<targetParams>
-			<canTargetLocations>true</canTargetLocations>
+				<canTargetLocations>true</canTargetLocations>
 			</targetParams>
 		</li>
 	</verbs>
@@ -329,29 +329,31 @@
 		<Mass>3.4</Mass>
 		<RangedWeapon_Cooldown>2.8</RangedWeapon_Cooldown>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<Gun_SmokeLauncher>1</Gun_SmokeLauncher>
 	</costList>
 	<verbs>
 		<li>
-			<verbClass>Verb_Shoot</verbClass>
+			<verbClass>Verb_ArcSprayProjectile</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
 			<defaultProjectile>CodZP_Bullet_PAP_SmokeLauncher</defaultProjectile>
 			<warmupTime>3.15</warmupTime>
 			<range>28.9</range>
-			<forcedMissRadius>6</forcedMissRadius>
-			<burstShotCount>5</burstShotCount>
+			<burstShotCount>3</burstShotCount>
+			<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 			<soundCast>Shot_IncendiaryLauncher</soundCast>
 			<soundCastTail>GunTail_Medium</soundCastTail>
 			<muzzleFlashScale>14</muzzleFlashScale>
+			<sprayWidth>5.5</sprayWidth>
+			<sprayArching>2.5</sprayArching>
+			<sprayThicknessCells>4</sprayThicknessCells>
+			<sprayNumExtraCells>2</sprayNumExtraCells>
 			<targetParams>
-			<canTargetLocations>true</canTargetLocations>
+				<canTargetLocations>true</canTargetLocations>
 			</targetParams>
 		</li>
 	</verbs>
-	<weaponTags Inherit="False">
-		<li>GrenadeSmoke</li>
-	</weaponTags>
 	<weaponClasses>
       <li>RangedHeavy</li>
     </weaponClasses>
@@ -410,19 +412,23 @@
 		<Mass>3.4</Mass>
 		<RangedWeapon_Cooldown>2.8</RangedWeapon_Cooldown>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<Gun_EmpLauncher>1</Gun_EmpLauncher>
 	</costList>
 	<verbs>
 		<li>
-			<verbClass>Verb_Shoot</verbClass>
+			<verbClass>Verb_ArcSprayProjectile</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
 			<defaultProjectile>CodZP_Bullet_PAP_EMPLauncher</defaultProjectile>
 			<warmupTime>3.15</warmupTime>
 			<range>28.9</range>
-			<forcedMissRadius>2</forcedMissRadius>
 			<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
 			<burstShotCount>3</burstShotCount>
+			<sprayWidth>3.5</sprayWidth>
+			<sprayArching>1.5</sprayArching>
+			<sprayThicknessCells>3</sprayThicknessCells>
+			<sprayNumExtraCells>2</sprayNumExtraCells>
 			<soundCast>Shot_IncendiaryLauncher</soundCast>
 			<soundCastTail>GunTail_Medium</soundCastTail>
 			<muzzleFlashScale>14</muzzleFlashScale>
@@ -431,9 +437,6 @@
 			</targetParams>
 		</li>
 	</verbs>
-	<weaponTags>
-		<li>GrenadeEMP</li>
-	</weaponTags>
 	<weaponClasses>
       <li>RangedHeavy</li>
     </weaponClasses>
@@ -470,7 +473,7 @@
 	<projectile>
 		<speed>46</speed>
 		<damageDef>EMP</damageDef>
-		<explosionRadius>2</explosionRadius>
+		<explosionRadius>3</explosionRadius>
 		<ai_IsIncendiary>true</ai_IsIncendiary>
 		<arcHeightFactor>0.2</arcHeightFactor>
 		<shadowSize>0.6</shadowSize>
@@ -494,6 +497,7 @@
 		<AccuracyLong>0.92</AccuracyLong>
 		<RangedWeapon_Cooldown>1.20</RangedWeapon_Cooldown>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<Gun_BoltActionRifle>1</Gun_BoltActionRifle>
 	</costList>
@@ -566,6 +570,7 @@
 		<AccuracyLong>0.74</AccuracyLong>
 		<RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<Gun_PumpShotgun>1</Gun_PumpShotgun>
 	</costList>
@@ -621,6 +626,7 @@
 		<AccuracyLong>0.52</AccuracyLong>
 		<RangedWeapon_Cooldown>1.08</RangedWeapon_Cooldown>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<Gun_ChainShotgun>1</Gun_ChainShotgun>
 	</costList>
@@ -638,9 +644,6 @@
 			<muzzleFlashScale>9</muzzleFlashScale>
 		</li>
 	</verbs>
-	<weaponTags>
-		<li>IndustrialGunAdvanced</li>
-	</weaponTags>
 	<weaponClasses>
       <li>ShortShots</li>
     </weaponClasses>
@@ -699,6 +702,7 @@
 		<AccuracyLong>0.23</AccuracyLong>
 		<RangedWeapon_Cooldown>1.32</RangedWeapon_Cooldown>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<Gun_HeavySMG>1</Gun_HeavySMG>
 	</costList>
@@ -716,9 +720,6 @@
 			<muzzleFlashScale>9</muzzleFlashScale>
 		</li>
 	</verbs>
-	<weaponTags>
-		<li>IndustrialGunAdvanced</li>
-	</weaponTags>
 	<weaponClasses>
       <li>ShortShots</li>
       <li>RangedHeavy</li>
@@ -776,6 +777,7 @@
 		<AccuracyLong>0.30</AccuracyLong>
 		<RangedWeapon_Cooldown>1.44</RangedWeapon_Cooldown>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<Gun_LMG>1</Gun_LMG>
 	</costList>
@@ -793,9 +795,6 @@
 			<muzzleFlashScale>9</muzzleFlashScale>
 		</li>
 	</verbs>
-	<weaponTags>
-		<li>IndustrialGunAdvanced</li>
-	</weaponTags>
 	<weaponClasses>
       <li>RangedHeavy</li>
     </weaponClasses>
@@ -853,6 +852,7 @@
 		<AccuracyLong>0.63</AccuracyLong>
 		<RangedWeapon_Cooldown>1.36</RangedWeapon_Cooldown>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<Gun_AssaultRifle>1</Gun_AssaultRifle>
 	</costList>
@@ -870,10 +870,6 @@
 			<muzzleFlashScale>9</muzzleFlashScale>
 		</li>
 	</verbs>
-	<weaponTags>
-		<li>IndustrialGunAdvanced</li>
-		<li>AssaultRifle</li>
-	</weaponTags>
 	<tools>
 		<li>
 			<label>grip</label>
@@ -927,6 +923,7 @@
 		<AccuracyLong>1.01</AccuracyLong>
 		<RangedWeapon_Cooldown>1.84</RangedWeapon_Cooldown>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<Gun_SniperRifle>1</Gun_SniperRifle>
 	</costList>
@@ -942,9 +939,6 @@
 			<muzzleFlashScale>9</muzzleFlashScale>
 		</li>
 	</verbs>
-	<weaponTags Inherit="False">
-		<li>SniperRifle</li>
-	</weaponTags>
 	<weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -1005,6 +999,7 @@
 		<AccuracyLong>0.21</AccuracyLong>
 		<RangedWeapon_Cooldown>1.84</RangedWeapon_Cooldown>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<Gun_Minigun>1</Gun_Minigun>
 	</costList>
@@ -1025,9 +1020,6 @@
 			<muzzleFlashScale>9</muzzleFlashScale>
 		</li>
 	</verbs>
-	<weaponTags>
-		<li>GunHeavy</li>
-	</weaponTags>
 	<weaponClasses>
       <li>RangedHeavy</li>
     </weaponClasses>
@@ -1076,6 +1068,7 @@
 		<AccuracyLong>0.52</AccuracyLong>
 		<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<Gun_ChargeRifle>1</Gun_ChargeRifle>
 	</costList>
@@ -1093,9 +1086,6 @@
 			<muzzleFlashScale>9</muzzleFlashScale>
 		</li>
 	</verbs>
-	<weaponTags>
-		<li>SpacerGun</li>
-	</weaponTags>
 	<weaponClasses>
       <li>RangedLight</li>
     </weaponClasses>

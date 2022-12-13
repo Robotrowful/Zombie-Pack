@@ -19,6 +19,7 @@
 		<AccuracyLong>0.34</AccuracyLong>
 		<RangedWeapon_Cooldown>0.96</RangedWeapon_Cooldown>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<ComponentIndustrial>4</ComponentIndustrial>
 		<Steel>100</Steel>
@@ -79,6 +80,7 @@
 		<AccuracyLong>0.39</AccuracyLong>
 		<RangedWeapon_Cooldown>0.77</RangedWeapon_Cooldown>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<CodZP_Gun_Blundergat>1</CodZP_Gun_Blundergat>
 	</costList>
@@ -166,6 +168,7 @@
 		<AccuracyLong>0.34</AccuracyLong>
 		<RangedWeapon_Cooldown>0.96</RangedWeapon_Cooldown>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<CodZP_Gun_Blundergat>1</CodZP_Gun_Blundergat>
 		<ComponentIndustrial>2</ComponentIndustrial>
@@ -227,6 +230,7 @@
 		<AccuracyLong>0.39</AccuracyLong>
 		<RangedWeapon_Cooldown>0.77</RangedWeapon_Cooldown>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<CodZP_Gun_Acidgat>1</CodZP_Gun_Acidgat>
 	</costList>
@@ -314,6 +318,7 @@
 		<AccuracyLong>0.34</AccuracyLong>
 		<RangedWeapon_Cooldown>0.96</RangedWeapon_Cooldown>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<CodZP_Gun_Blundergat>1</CodZP_Gun_Blundergat>
 		<ComponentIndustrial>2</ComponentIndustrial>
@@ -374,6 +379,7 @@
 		<AccuracyLong>0.39</AccuracyLong>
 		<RangedWeapon_Cooldown>0.77</RangedWeapon_Cooldown>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<CodZP_Gun_Magmagat>1</CodZP_Gun_Magmagat>
 	</costList>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   
-<ThingDef ParentName="MoteBase" Name="CODZP_BeamCopy" Abstract="True" MayRequire="Ludeon.RimWorld.Biotech">
+  <ThingDef ParentName="MoteBase" Name="CODZP_BeamCopy" Abstract="True" MayRequire="Ludeon.RimWorld.Biotech">
     <defName>CODZP_Mote_GraserBeamCopy</defName>
     <thingClass>MoteDualAttached</thingClass>
     <altitudeLayer>MoteOverhead</altitudeLayer>
@@ -32,8 +32,120 @@
   <ThingDef ParentName="CODZP_BeamCopy" MayRequire="Ludeon.RimWorld.Biotech">
     <defName>CODZP_Mote_Beam_Yellow</defName>
     <graphicData>
-		<color>(255, 191, 0)</color>
+		  <color>(255, 191, 0)</color>
     </graphicData>
   </ThingDef>
+
+  <ThingDef ParentName="CODZP_BeamCopy" MayRequire="Ludeon.RimWorld.Biotech">
+    <defName>CODZP_Mote_Beam_Blue</defName>
+    <graphicData>
+		  <color>(17, 0, 143)</color>
+    </graphicData>
+  </ThingDef>
+
+  <!--Mystery Box Motes-->
+
+  <ThingDef ParentName="MoteBase" Abstract="True" Name="CODZP_MysteryBoxMoteBase">
+    <thingClass>MoteAttached</thingClass>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <graphicData Inherit="False">
+      <graphicClass>Graphic_Mote</graphicClass>
+      <drawSize>(3.5)</drawSize>
+    </graphicData>
+    <mote>
+      <fadeInTime>0.1</fadeInTime>
+      <solidTime>7</solidTime>
+      <fadeOutTime>0.1</fadeOutTime>
+    </mote>
+  </ThingDef>
+
+  <ThingDef ParentName="CODZP_MysteryBoxMoteBase">
+    <defName>CODZP_Mote_MysteryboxNorth</defName>
+    <graphicData>
+      <texPath>Things/Building/Production/CodZP_MysteryOpen_north</texPath>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="CODZP_MysteryBoxMoteBase">
+    <defName>CODZP_Mote_MysteryboxSouth</defName>
+    <altitudeLayer>Pawn</altitudeLayer>
+    <graphicData>
+      <texPath>Things/Building/Production/CodZP_MysteryOpen_south</texPath>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="CODZP_MysteryBoxMoteBase">
+    <defName>CODZP_Mote_MysteryboxEast</defName>
+    <graphicData>
+      <texPath>Things/Building/Production/CodZP_MysteryOpen_east</texPath>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="CODZP_MysteryBoxMoteBase">
+    <defName>CODZP_Mote_MysteryboxWest</defName>
+    <graphicData>
+      <texPath>Things/Building/Production/CodZP_MysteryOpen_west</texPath>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="FoodBitBase">
+    <defName>CODZP_Mote_RandomWeapon</defName>
+    <altitudeLayer>Pawn</altitudeLayer>
+    <graphicData> <!-- If possible to link to ItemReplacerDef producedItems-->
+      <texPath>UI/Icons/CODZP/CodZP_RandomWeapon</texPath>
+      <graphicClass>Graphic_Mote</graphicClass> <!-- Doesn't work with subfolders / found it to be a bit too limited-->
+      <shaderType>Mote</shaderType>
+    </graphicData>
+    <mote>
+      <fadeInTime>0.1</fadeInTime>
+      <solidTime>0.333</solidTime>
+      <fadeOutTime>0.1</fadeOutTime>
+    </mote>
+  </ThingDef>
+
+  <EffecterDef> <!-- Gets linked with the mystery box building-->
+    <defName>CODZP_MysteryBox</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+        <ticksBetweenMotes>20</ticksBetweenMotes>
+        <moteDef>CODZP_Mote_RandomWeapon</moteDef>
+        <spawnLocType>OnTarget</spawnLocType>
+        <rotation>0</rotation>
+      </li>
+    </children>
+  </EffecterDef>
+
+  <!--Pack a Punch-->
+
+  <ThingDef ParentName="FoodBitBase">
+    <defName>CODZP_Mote_PackAPunch</defName>
+    <altitudeLayer>Pawn</altitudeLayer>
+    <graphicData>
+      <texPath>Things/Mote/BlastEMP</texPath> 
+      <graphicClass>Graphic_Mote</graphicClass>
+      <shaderType>Mote</shaderType>
+      <color>(144,193,215)</color>
+    </graphicData>
+    <mote>
+      <fadeInTime>0.1</fadeInTime>
+      <solidTime>0.33</solidTime>
+      <fadeOutTime>0.1</fadeOutTime>
+      <growthRate>0.5</growthRate>
+    </mote>
+  </ThingDef>
+
+  <EffecterDef>
+    <defName>CODZP_PackAPunch</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+        <ticksBetweenMotes>20</ticksBetweenMotes>
+        <moteDef>CODZP_Mote_PackAPunch</moteDef>
+        <spawnLocType>OnTarget</spawnLocType>
+        <positionOffset>(0,0,-0.60)</positionOffset>
+      </li>
+    </children>
+  </EffecterDef>
   
 </Defs>

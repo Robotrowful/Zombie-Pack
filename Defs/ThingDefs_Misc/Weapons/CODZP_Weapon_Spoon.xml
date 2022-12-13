@@ -13,6 +13,7 @@
 		<Mass>0.8</Mass>
 		<WorkToMake>5000</WorkToMake>
 	</statBases>
+	<weaponTags />
 	<costList>
 		<Steel>100</Steel>
 		<Silver>10</Silver>
@@ -57,6 +58,7 @@
 		<Mass>0.8</Mass>
 		<WorkToMake>5000</WorkToMake>
 	</statBases>
+	<weaponTags />
 	<weaponClasses>
 		<li>MeleeBlunt</li>
     </weaponClasses>

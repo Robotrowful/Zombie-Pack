@@ -6,117 +6,41 @@
         </mods>
         <match Class="PatchOperationSequence">
             <operations>
+                <!--Change Hediifs-->
                 <li Class="PatchOperationReplace">
                     <xpath>Defs/DamageDef[defName="CodZP_Toxic_Burn"]/hediff</xpath>
                     <value>
                         <hediff>VEF_AcidBurn</hediff>
                     </value>
                 </li>
-
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/DamageDef[defName="CodZP_Toxic_Burn"]/additionalHediffs</xpath>
+                    <xpath>Defs/DamageDef[defName="CodZP_Toxic_Burn" or defName="CodZP_RaygunYellowBomb"]/additionalHediffs/li/hediff</xpath>
                     <value>
-                        <additionalHediffs>
-			                <li>
-                                <hediff>VEF_AcidBuildup</hediff>
-                                <severityPerDamageDealt>0.005</severityPerDamageDealt>
-                                <victimSeverityScaling>ToxicResistance</victimSeverityScaling>
-			                </li>
-                        </additionalHediffs>
+                        <hediff>VEF_AcidBuildup</hediff>
                     </value>
                 </li>
-
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/DamageDef[defName="CodZP_RaygunYellowBomb"]/additionalHediffs</xpath>
+                    <xpath>Defs/DamageDef[defName="CodZP_Frostbite"]/additionalHediffs/li/hediff</xpath>
                     <value>
-                        <additionalHediffs>
-			                <li>
-                                <hediff>VEF_AcidBuildup</hediff>
-                                <severityPerDamageDealt>0.02</severityPerDamageDealt>
-                                <victimSeverityScaling>ToxicResistance</victimSeverityScaling>
-			                </li>
-                        </additionalHediffs>
+                        <hediff>VFEP_HypothermicSlowdown</hediff>
                     </value>
                 </li>
 
+                <!--Change Severity-->
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/DamageDef[defName="CodZP_Frostbite"]/additionalHediffs</xpath>
+                    <xpath>Defs/DamageDef[defName="CodZP_Toxic_Burn" or defName="CodZP_Frostbite"]/additionalHediffs/li/severityPerDamageDealt</xpath>
                     <value>
-                        <additionalHediffs>
-			                <li>
-                                <hediff>VFEP_HypothermicSlowdown</hediff>
-                                <severityPerDamageDealt>0.005</severityPerDamageDealt>
-			                </li>
-                        </additionalHediffs>
+                        <severityPerDamageDealt>0.005</severityPerDamageDealt>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/DamageDef[defName="CodZP_RaygunYellowBomb"]/additionalHediffs/li/severityPerDamageDealt</xpath>
+                    <value>
+                        <severityPerDamageDealt>0.02</severityPerDamageDealt>
                     </value>
                 </li>
 
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs</xpath>
-                    <value>
-
-                <!-- Double Tap 2-->
-                    <ThingDef ParentName="CODZP_MakeablePerkACola">
-                        <defName>CODZP_DoubleTapII</defName>
-                        <label>Double Tap II</label>
-                        <description>Cowboys can move slow they'll end up dead or old, When they need some help, they reach out for the shelf, Cowboys can't shoot slow,  they'll end up dead below, when they need some help, they reach out for the shelf, have no fear, but that double tap root beer, get all the damage done, Double Tap Root Beer,  will Double damage fun, Oh Yeah, Get Thirsty.</description>
-                        <graphicData>
-                            <texPath>Things/Item/Drug/CodZP_DDTap</texPath>
-                            <graphicClass>Graphic_StackCount</graphicClass>
-                        </graphicData>
-                        <uiIconPath>UI/Icons/CODZP/CodZP_DoubleTapTwo</uiIconPath>
-                        <ingestible>
-                            <outcomeDoers>
-                                <li Class="IngestionOutcomeDoer_GiveHediff">
-                                    <hediffDef>CODZP_DrankDoubleTapII</hediffDef>
-                                    <severity>1</severity>
-                                </li>
-                            </outcomeDoers>
-                        </ingestible>
-                    </ThingDef>
-
-                    <HediffDef>
-                        <defName>CODZP_DrankDoubleTapII</defName>
-                        <hediffClass>HediffWithComps</hediffClass>
-                        <label>Double Tap II Buff</label>
-                        <defaultLabelColor>(255, 180, 50)</defaultLabelColor>
-                        <description>A positive effect caused by drinking Double Tap. Lasts for 1 days</description>
-                        <labelNoun>effects of Double Tap</labelNoun>
-                        <maxSeverity>1.0</maxSeverity>
-                        <isBad>false</isBad>
-                        <comps>
-                            <li Class="HediffCompProperties_SeverityPerDay">
-                                <severityPerDay>-1</severityPerDay>
-                                <showHoursToRecover>true</showHoursToRecover>
-                            </li>
-                        </comps>
-                        <stages>
-                            <li>
-                                <statOffsets>
-                                    <VEF_RangeAttackDamageFactor>2</VEF_RangeAttackDamageFactor>
-                                </statOffsets>
-                            </li>
-                        </stages>
-                    </HediffDef>
-
-                    <ThoughtDef>
-                        <defName>CODZP_DrankDoubleTapII</defName>
-                        <workerClass>ThoughtWorker_Hediff</workerClass>
-                        <hediff>CODZP_DrankDoubleTapII</hediff>
-                        <validWhileDespawned>true</validWhileDespawned>
-                        <stages>
-                            <li>
-                                <label>Double Tap warmth</label>
-                                <description>Drinking that Double Tap made me shoot better!</description>
-                                <baseMoodEffect>5</baseMoodEffect>
-                            </li>
-                        </stages>
-                    </ThoughtDef> 
-
-                    </value>
-                </li>
             </operations>
         </match>
     </Operation>
-
 </Patch>
