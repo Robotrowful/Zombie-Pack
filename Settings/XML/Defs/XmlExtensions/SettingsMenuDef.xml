@@ -75,7 +75,7 @@
         <label>Double Tap Price</label>
         <defaultValue>200</defaultValue>
       </li>
-      <li Class="XmlExtensions.Setting.Textbox" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+      <li Class="XmlExtensions.Setting.Textbox">
         <key>PerkColaCost_DDTap</key>
         <label>Double Tap II Price</label>
         <defaultValue>300</defaultValue>

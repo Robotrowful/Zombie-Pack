@@ -35,6 +35,7 @@
 			<soundCast>CodZP_Shot_Wunderwaffe</soundCast>
 			<soundCastTail>GunTail_Medium</soundCastTail>
 			<muzzleFlashScale>3</muzzleFlashScale>
+			<warmupEffecter>CODZP_Effecter_WunderCharge</warmupEffecter>
 		</li>
 	</verbs>
 	<weaponClasses>
@@ -93,6 +94,7 @@
 			<soundCast>CodZP_Shot_Wunderwaffe</soundCast>
 			<soundCastTail>GunTail_Medium</soundCastTail>
 			<muzzleFlashScale>3</muzzleFlashScale>
+			<warmupEffecter>CODZP_Effecter_WunderCharge</warmupEffecter>
 		</li>
 	</verbs>
 	<weaponClasses>
@@ -123,9 +125,8 @@
 	<defName>CodZP_Bullet_Wunderwaffe</defName>
 	<label>Wunderwaffe DG-2 Bolt</label>
 	<graphicData>
-		<texPath>Things/Projectile/CodZP_ShockBolt</texPath>
+		<texPath>Things/Item/Equipment/WeaponRanged/Misc/CodZP_Hidden</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
-		<shaderType>TransparentPostLight</shaderType>
 	</graphicData>
 	<projectile>
 		<speed>100</speed>
@@ -133,14 +134,18 @@
 		<damageAmountBase>19</damageAmountBase>
 		<stoppingPower>20</stoppingPower>
 	</projectile>
+	<modExtensions>
+		<li Class="AthenaFramework.BeamProjectile">
+        	<beamType>CODZP_Beam_Lightning</beamType>
+		</li>
+    </modExtensions>
 </ThingDef>
 <ThingDef ParentName="BaseBullet">
 	<defName>CodZP_Bullet_Wunderwaffe-PAP</defName>
 	<label>Wunderwaffe DG-3 JZ Bolt</label>
 	<graphicData>
-		<texPath>Things/Projectile/CodZP_ShockBolt</texPath>
+		<texPath>Things/Item/Equipment/WeaponRanged/Misc/CodZP_Hidden</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
-		<shaderType>TransparentPostLight</shaderType>
 	</graphicData>
 	<projectile>
 		<speed>115</speed>
@@ -148,6 +153,11 @@
 		<damageAmountBase>38</damageAmountBase>
 		<stoppingPower>40</stoppingPower>
 	</projectile>
+	<modExtensions>
+		<li Class="AthenaFramework.BeamProjectile">
+        	<beamType>CODZP_Beam_Lightning</beamType>
+		</li>
+    </modExtensions>
 </ThingDef>
 <!--Wunderwaffe DG-Scharfschutze-->
 <ThingDef ParentName="CODZP_BaseWonderAmmoMaticGun">
@@ -185,7 +195,8 @@
 			<soundCast>CodZP_Shot_Wunderwaffe</soundCast>
 			<soundCastTail>GunTail_Medium</soundCastTail>
 			<muzzleFlashScale>3</muzzleFlashScale>
-			<forcedMissRadius>3</forcedMissRadius>
+			<forcedMissRadius>2</forcedMissRadius>
+			<warmupEffecter>CODZP_Effecter_WunderCharge</warmupEffecter>
 		</li>
 	</verbs>
 	<weaponClasses>
@@ -244,7 +255,8 @@
 			<soundCast>CodZP_Shot_Wunderwaffe</soundCast>
 			<soundCastTail>GunTail_Medium</soundCastTail>
 			<muzzleFlashScale>3</muzzleFlashScale>
-			<forcedMissRadius>2</forcedMissRadius>
+			<forcedMissRadius>1.49</forcedMissRadius>
+			<warmupEffecter>CODZP_Effecter_WunderCharge</warmupEffecter>
 		</li>
 	</verbs>
 	<weaponClasses>
@@ -275,7 +287,7 @@
 	<defName>CodZP_Bullet_Wunderwaffe_S</defName>
 	<label>Scharfschutze Bolt</label>
 	<graphicData>
-		<texPath>Things/Projectile/CodZP_ShockBolt</texPath>
+		<texPath>Things/Item/Equipment/WeaponRanged/Misc/CodZP_Hidden</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<shaderType>TransparentPostLight</shaderType>
 	</graphicData>
@@ -288,12 +300,17 @@
 		<explosionRadius>1</explosionRadius>
 		<ai_IsIncendiary>true</ai_IsIncendiary>
 	</projectile>
+	<modExtensions>
+		<li Class="AthenaFramework.BeamProjectile">
+        	<beamType>CODZP_Beam_Lightning</beamType>
+		</li>
+    </modExtensions>
 </ThingDef>
 <ThingDef ParentName="BaseBullet">
 	<defName>CodZP_Bullet_Wunderwaffe_S-PAP</defName>
 	<label>Funkenschutze Bolt</label>
 	<graphicData>
-		<texPath>Things/Projectile/CodZP_ShockBolt</texPath>
+		<texPath>Things/Item/Equipment/WeaponRanged/Misc/CodZP_Hidden</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<shaderType>TransparentPostLight</shaderType>
 	</graphicData>
@@ -306,5 +323,10 @@
 		<explosionRadius>1</explosionRadius>
 		<ai_IsIncendiary>true</ai_IsIncendiary>
 	</projectile>
+	<modExtensions>
+		<li Class="AthenaFramework.BeamProjectile">
+        	<beamType>CODZP_Beam_Lightning</beamType>
+		</li>
+    </modExtensions>
 </ThingDef>
 </Defs>

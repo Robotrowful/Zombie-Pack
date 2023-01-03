@@ -127,11 +127,11 @@
 		<defName>CodZP_Bullet_Raygun</defName>
 		<label>Raygun Plasma</label>
 		<graphicData>
-			<texPath>Things/Projectile/CodZP_Bullet_Plasma_Normal</texPath>
+			<texPath>Things/Projectile/CODZP/Tip_Ball_Green</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-			<color>(100,255,60)</color>
+			<shaderType>MoteGlow</shaderType>
 		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
 		<thingClass>Projectile_Explosive</thingClass>
 		<projectile>
 			<speed>70</speed>
@@ -140,16 +140,21 @@
 			<explosionRadius>2</explosionRadius>
 			<ai_IsIncendiary>true</ai_IsIncendiary>
 		</projectile>
+		<modExtensions>
+			<li Class="AthenaFramework.BeamProjectile">
+        		<beamType>CODZP_Beam_Green</beamType>
+			</li>
+    	</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>CodZP_Bullet_Raygun-PAP</defName>
 		<label>Porter Raygun Plasma</label>
 		<graphicData>
-			<texPath>Things/Projectile/CodZP_Bullet_Plasma_Normal</texPath>
+			<texPath>Things/Projectile/CODZP/Tip_Ball_Red</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-			<color>(255,31,31)</color>
+			<shaderType>MoteGlow</shaderType>
 		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
 		<thingClass>Projectile_Explosive</thingClass>
 		<projectile>
 			<speed>81</speed>
@@ -158,6 +163,11 @@
 			<explosionRadius>3</explosionRadius>
 			<ai_IsIncendiary>true</ai_IsIncendiary>
 		</projectile>
+		<modExtensions>
+			<li Class="AthenaFramework.BeamProjectile">
+        		<beamType>CODZP_Beam_Red</beamType>
+			</li>
+    	</modExtensions>
 	</ThingDef>
 	<!--Mark 2-->
 	<ThingDef ParentName="CODZP_BaseWonderWeaponGun">
@@ -287,10 +297,8 @@
 		<defName>CodZP_Bullet_RaygunTwo</defName>
 		<label>Raygun Mark 2 Plasma</label>
 		<graphicData>
-			<texPath>Things/Projectile/CodZP_Bullet_Plasma_Normal</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/Misc/CodZP_Hidden</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-			<color>(100,255,60)</color>
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
@@ -298,15 +306,18 @@
 			<armorPenetrationBase>4</armorPenetrationBase>
 			<speed>60</speed>
 		</projectile>
+		<modExtensions>
+			<li Class="AthenaFramework.BeamProjectile">
+        		<beamType>CODZP_Beam_Green</beamType>
+			</li>
+    	</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>CodZP_Bullet_RaygunTwo-PAP</defName>
 		<label>Porter Raygun Mark 2 Plasma</label>
 		<graphicData>
-			<texPath>Things/Projectile/CodZP_Bullet_Plasma_Normal</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/Misc/CodZP_Hidden</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-			<color>(255,31,31)</color>
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
@@ -314,9 +325,14 @@
 			<armorPenetrationBase>10</armorPenetrationBase>
 			<speed>69</speed>
 		</projectile>
+		<modExtensions>
+			<li Class="AthenaFramework.BeamProjectile">
+        		<beamType>CODZP_Beam_Red</beamType>
+			</li>
+    	</modExtensions>
 	</ThingDef>
 	<!--V-->
-	<ThingDef ParentName="CODZP_BaseWonderAmmoMaticGun" MayRequire="Ludeon.RimWorld.Biotech">
+	<ThingDef ParentName="CODZP_BaseWonderAmmoMaticGun">
 		<defName>CodZP_Gun_RayGunMkTwo-V</defName>
 		<label>RayGun Mk.2 V</label>
 		<description>Firing a congealed laser beam</description>
@@ -332,7 +348,7 @@
 			<AccuracyShort>0.67</AccuracyShort>
 			<AccuracyMedium>0.71</AccuracyMedium>
 			<AccuracyLong>0.86</AccuracyLong>
-			<RangedWeapon_Cooldown>1.18</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>2.18</RangedWeapon_Cooldown>
 		</statBases>
 		<weaponTags />
 		<costList>
@@ -342,31 +358,16 @@
 		</costList>
 		<verbs>
 			<li>
-				<verbClass>Verb_ShootBeam</verbClass>
+				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<warmupTime>1.89</warmupTime>
-				<range>25.9</range>
-				<beamFullWidthRange>6.9</beamFullWidthRange>
-				<burstShotCount>5</burstShotCount>
-				<beamWidth>6</beamWidth>
-				<ticksBetweenBurstShots>22</ticksBetweenBurstShots>
-				<beamDamageDef>CodZP_Biotech_Beam</beamDamageDef>
+				<defaultProjectile>CodZP_Bullet_RaygunTwoV</defaultProjectile>
+				<range>9.9</range>
+				<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+				<burstShotCount>30</burstShotCount>
+				<soundCast>CodZP_Shot_Raygun2</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
+				<warmupTime>1.89</warmupTime>
 				<muzzleFlashScale>9</muzzleFlashScale>
-				<soundCastBeam>BeamGraser_Shooting</soundCastBeam>
-				<beamFleckChancePerTick>0.32</beamFleckChancePerTick>
-				<beamMaxDeviation>1.5</beamMaxDeviation>
-				<beamCurvature>0.6</beamCurvature>
-				<beamMoteDef>CODZP_Mote_Beam_Yellow</beamMoteDef>
-				<beamLineFleckDef>Fleck_BeamSpark</beamLineFleckDef>
-				<beamStartOffset>0.8</beamStartOffset>
-				<beamLineFleckChanceCurve>
-					<points>
-						<li>(0, 0)</li>
-						<li>(0.65, 0.4)</li>
-						<li>(1, 0.75)</li>
-					</points>
-				</beamLineFleckChanceCurve>
 			</li>
 		</verbs>
 		<weaponClasses>
@@ -393,7 +394,7 @@
 			</li>
 		</tools>
 	</ThingDef>
-	<ThingDef ParentName="CODZP_BasePAPWonderAmmoMaticGun" MayRequire="Ludeon.RimWorld.Biotech">
+	<ThingDef ParentName="CODZP_BasePAPWonderAmmoMaticGun">
 		<defName>CodZP_Gun_RayGunMkTwo-V-PAP</defName>
 		<label>Porter's RayGun Mk.2 V</label>
 		<description>Laser is much more faster.</description>
@@ -409,7 +410,7 @@
 			<AccuracyShort>0.77</AccuracyShort>
 			<AccuracyMedium>0.82</AccuracyMedium>
 			<AccuracyLong>0.99</AccuracyLong>
-			<RangedWeapon_Cooldown>0.94</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1.96</RangedWeapon_Cooldown>
 		</statBases>
 		<weaponTags />
 		<costList>
@@ -417,32 +418,16 @@
 		</costList>
 		<verbs>
 			<li>
-				<verbClass>Verb_ShootBeam</verbClass>
+				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<warmupTime>1.7</warmupTime>
-				<range>31.9</range>
-				<beamFullWidthRange>6.9</beamFullWidthRange>
-				<burstShotCount>5</burstShotCount>
-				<beamWidth>6</beamWidth>
-				<ticksBetweenBurstShots>11</ticksBetweenBurstShots>
-				<beamDamageDef>CodZP_Beam_PAP</beamDamageDef>
+				<defaultProjectile>CodZP_Bullet_RaygunTwoV-PAP</defaultProjectile>
+				<range>11.9</range>
+				<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+				<burstShotCount>45</burstShotCount>
+				<soundCast>CodZP_Shot_Raygun2</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
+				<warmupTime>1.7</warmupTime>
 				<muzzleFlashScale>9</muzzleFlashScale>
-				<soundCastBeam>BeamGraser_Shooting</soundCastBeam>
-				<beamFleckChancePerTick>0.32</beamFleckChancePerTick>
-				<beamMaxDeviation>1.5</beamMaxDeviation>
-				<beamCurvature>0.6</beamCurvature>
-				<beamMoteDef>CODZP_Mote_Beam_Yellow</beamMoteDef>
-				<beamEndEffecterDef>GraserBeam_End</beamEndEffecterDef>
-				<beamLineFleckDef>Fleck_BeamSpark</beamLineFleckDef>
-				<beamStartOffset>0.8</beamStartOffset>
-				<beamLineFleckChanceCurve>
-					<points>
-						<li>(0, 0)</li>
-						<li>(0.65, 0.4)</li>
-						<li>(1, 0.75)</li>
-					</points>
-				</beamLineFleckChanceCurve>
 			</li>
 		</verbs>
 		<weaponClasses>
@@ -468,6 +453,44 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>CodZP_Bullet_RaygunTwoV</defName>
+		<label>Raygun Mark 2 V Plasma</label>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/Misc/CodZP_Hidden</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>CodZP_Shock</damageDef>
+			<damageAmountBase>2</damageAmountBase>
+			<armorPenetrationBase>3</armorPenetrationBase>
+			<speed>60</speed>
+		</projectile>
+		<modExtensions>
+			<li Class="AthenaFramework.BeamProjectile">
+        		<beamType>CODZP_Beam_Yellow</beamType>
+			</li>
+    	</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>CodZP_Bullet_RaygunTwoV-PAP</defName>
+		<label>Porter's Raygun Mark 2 V Plasma</label>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/Misc/CodZP_Hidden</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>CodZP_Shock</damageDef>
+			<damageAmountBase>4</damageAmountBase>
+			<armorPenetrationBase>6</armorPenetrationBase>
+			<speed>69</speed>
+		</projectile>
+		<modExtensions>
+			<li Class="AthenaFramework.BeamProjectile">
+        		<beamType>CODZP_Beam_Yellow</beamType>
+			</li>
+    	</modExtensions>
 	</ThingDef>
 	<!--X-->
 	<ThingDef ParentName="CODZP_BaseWonderAmmoMaticGun">
@@ -596,10 +619,8 @@
 		<defName>CodZP_Bullet_RaygunTwoX</defName>
 		<label>Raygun Mark 2 X Plasma</label>
 		<graphicData>
-			<texPath>Things/Projectile/CodZP_Bullet_Plasma_Normal</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/Misc/CodZP_Hidden</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-			<color>(0, 70, 230)</color>
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
@@ -607,15 +628,18 @@
 			<armorPenetrationBase>0</armorPenetrationBase>
 			<speed>60</speed>
 		</projectile>
+		<modExtensions>
+			<li Class="AthenaFramework.BeamProjectile">
+        		<beamType>CODZP_Beam_Blue</beamType>
+			</li>
+    	</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>CodZP_Bullet_RaygunTwoX-PAP</defName>
 		<label>Porter Raygun Mark 2 X Plasma</label>
 		<graphicData>
-			<texPath>Things/Projectile/CodZP_Bullet_Plasma_Normal</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/Misc/CodZP_Hidden</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-			<color>(0, 70, 230)</color>
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
@@ -623,6 +647,11 @@
 			<armorPenetrationBase>10</armorPenetrationBase>
 			<speed>69</speed>
 		</projectile>
+		<modExtensions>
+			<li Class="AthenaFramework.BeamProjectile">
+        		<beamType>CODZP_Beam_Blue</beamType>
+			</li>
+    	</modExtensions>
 	</ThingDef>
 	<!--Y-->
 	<ThingDef ParentName="CODZP_BaseWonderAmmoMaticGun">
@@ -756,10 +785,9 @@
 		<defName>CodZP_Bullet_RaygunTwoY</defName>
 		<label>Raygun Mark 2 Y Plasma</label>
 		<graphicData>
-			<texPath>Things/Projectile/CodZP_Bullet_Plasma_Trail</texPath>
+			<texPath>Things/Projectile/CODZP/Tip_Ball_Orange</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
-			<color>(250, 90, 10)</color>
 		</graphicData>
 		<thingClass>Projectile_Explosive</thingClass>
 		<projectile>
@@ -772,15 +800,19 @@
 			<arcHeightFactor>0.2</arcHeightFactor>
 			<shadowSize>0.6</shadowSize>
 		</projectile>
+		<modExtensions>
+			<li Class="AthenaFramework.BeamProjectile">
+        		<beamType>CODZP_Beam_Orange</beamType>
+			</li>
+    	</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>CodZP_Bullet_RaygunTwoY-PAP</defName>
 		<label>Porter Raygun Mark 2 Y Plasma</label>
 		<graphicData>
-			<texPath>Things/Projectile/CodZP_Bullet_Plasma_Trail</texPath>
+			<texPath>Things/Projectile/CODZP/Tip_Ball_Orange</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
-			<color>(250, 90, 10)</color>
 		</graphicData>
 		<thingClass>Projectile_Explosive</thingClass>
 		<projectile>
@@ -793,6 +825,11 @@
 			<arcHeightFactor>0.2</arcHeightFactor>
 			<shadowSize>0.6</shadowSize>
 		</projectile>
+		<modExtensions>
+			<li Class="AthenaFramework.BeamProjectile">
+        		<beamType>CODZP_Beam_Orange</beamType>
+			</li>
+    	</modExtensions>
 	</ThingDef>
 	<!--Z-->
 	<ThingDef ParentName="CODZP_BaseWonderAmmoMaticGun">
@@ -822,18 +859,24 @@
 		</costList>
 		<verbs>
 			<li>
-				<verbClass>Verb_Shoot</verbClass>
+				<verbClass>AthenaFramework.Verb_ShootAngularShotgun</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>CodZP_Bullet_RaygunTwoZ</defaultProjectile>
 				<warmupTime>2.31</warmupTime>
-				<range>16.9</range>
-				<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
 				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<range>16.9</range>
 				<soundCast>CodZP_Shot_Raygun2</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>3</muzzleFlashScale>
 			</li>
 		</verbs>
+		<modExtensions>
+			<li Class="AthenaFramework.AngularShotgunExtension">
+				<pelletCount>3</pelletCount>
+				<pelletAngle>9</pelletAngle>
+			</li>
+		</modExtensions>
 		<weaponClasses>
 			<li>ShortShots</li>
 			<li>RangedHeavy</li>
@@ -883,7 +926,7 @@
 		</costList>
 		<verbs>
 			<li>
-				<verbClass>Verb_Shoot</verbClass>
+				<verbClass>AthenaFramework.Verb_ShootAngularShotgun</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>CodZP_Bullet_RaygunTwoZ-PAP</defaultProjectile>
 				<warmupTime>2.08</warmupTime>
@@ -895,6 +938,12 @@
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
+		<modExtensions>
+			<li Class="AthenaFramework.AngularShotgunExtension">
+				<pelletCount>3</pelletCount>
+				<pelletAngle>9</pelletAngle>
+			</li>
+		</modExtensions>
 		<weaponClasses>
 			<li>ShortShots</li>
 			<li>RangedHeavy</li>
@@ -924,33 +973,41 @@
 		<defName>CodZP_Bullet_RaygunTwoZ</defName>
 		<label>Raygun Mark 2 Z Plasma</label>
 		<graphicData>
-			<texPath>Things/Projectile/CodZP_Bullet_Plasma_Ringed</texPath>
+			<texPath>Things/Projectile/CODZP/Trail_Ball_Purple</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
-			<color>(140, 0, 255)</color>
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>16</damageAmountBase>
+			<damageAmountBase>5</damageAmountBase>
 			<armorPenetrationBase>10</armorPenetrationBase>
-			<speed>60</speed>
+			<speed>100</speed>
 		</projectile>
+		<modExtensions>
+			<li Class="AthenaFramework.BeamProjectile">
+        		<beamType>CODZP_Beam_Purple</beamType>
+			</li>
+    	</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>CodZP_Bullet_RaygunTwoZ-PAP</defName>
 		<label>Porter Raygun Mark 2 Z Plasma</label>
 		<graphicData>
-			<texPath>Things/Projectile/CodZP_Bullet_Plasma_Ringed</texPath>
+			<texPath>Things/Projectile/CODZP/Trail_Ball_Purple</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
-			<color>(140, 0, 255)</color>
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>32</damageAmountBase>
+			<damageAmountBase>10</damageAmountBase>
 			<armorPenetrationBase>10</armorPenetrationBase>
-			<speed>69</speed>
+			<speed>111</speed>
 		</projectile>
+		<modExtensions>
+			<li Class="AthenaFramework.BeamProjectile">
+        		<beamType>CODZP_Beam_Purple</beamType>
+			</li>
+    	</modExtensions>
 	</ThingDef>
 	<!--Mark 3-->
 	<ThingDef ParentName="CODZP_BaseWonderWeaponGun">
@@ -1076,10 +1133,8 @@
 		<defName>CodZP_Bullet_RaygunMkThree</defName>
 		<label>Raygun Mark 3 Plasma</label>
 		<graphicData>
-			<texPath>Things/Projectile/CodZP_Bullet_Plasma_Normal</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/Misc/CodZP_Hidden</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-			<color>(100,255,60)</color>
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
@@ -1092,10 +1147,8 @@
 		<defName>CodZP_Bullet_RaygunMkThree-PAP</defName>
 		<label>Eris's Plasma Projectile</label>
 		<graphicData>
-			<texPath>Things/Projectile/CodZP_Bullet_Plasma_Normal</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/Misc/CodZP_Hidden</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-			<color>(255,31,31)</color>
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
@@ -1234,10 +1287,9 @@
 		<defName>CodZP_Bullet_GKZ</defName>
 		<label>GKZ-45 Plasma</label>
 		<graphicData>
-			<texPath>Things/Projectile/CodZP_Bullet_Plasma_Normal</texPath>
+			<texPath>Things/Projectile/CODZP/Tip_Ball_Yellow</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
-			<color>(255, 255, 31)</color>
 		</graphicData>
 		<thingClass>Projectile_Explosive</thingClass>
 		<projectile>
@@ -1254,10 +1306,9 @@
 		<defName>CodZP_Bullet_GKZ-PAP</defName>
 		<label>Maelstorm's Plasma</label>
 		<graphicData>
-			<texPath>Things/Projectile/CodZP_Bullet_Plasma_Normal</texPath>
+			<texPath>Things/Projectile/CODZP/Tip_Ball_Yellow</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
-			<color>(255, 255, 31)</color>
 		</graphicData>
 		<thingClass>Projectile_Explosive</thingClass>
 		<projectile>

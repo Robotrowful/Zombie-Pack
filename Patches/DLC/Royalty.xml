@@ -32,7 +32,7 @@
 		<thingSetMakerTags Inherit="False" />
 	</ThingDef>
 
-<ThingDef ParentName="CODZP_BasePackAPunchUltra" >
+<ThingDef ParentName="CODZP_BasePackAPunchUltra">
 	<defName>CodZP_MeleeWeapon_MonoSword</defName>
 	<label>Bisword</label>
 	<description>Doubles the sword, Doubles the damage.</description>
@@ -181,7 +181,9 @@
     </value>
     </li>
 	<li Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName = "CodZP_MeleeWeapon_Spoon" or defName = "CodZP_MeleeWeapon_Spoon-PAP"]</xpath>
+        <xpath>Defs/ThingDef[
+								defName = "CodZP_MeleeWeapon_Spoon" or 
+								defName = "CodZP_MeleeWeapon_Spoon-PAP"]</xpath>
             <value>
                 <soundInteract>Interact_MonoSword</soundInteract>
 				<meleeHitSound>MeleeHit_MonoSword</meleeHitSound>

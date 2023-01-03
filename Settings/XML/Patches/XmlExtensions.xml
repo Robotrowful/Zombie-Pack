@@ -29,6 +29,7 @@
 				<Operation Class="PatchOperationReplace">
 					<xpath>Defs/RecipeDef[	defName="CODZP_BuyDeadshotDaiquiri" or 
 											defName="CODZP_BuyDoubleTap" or 
+											defName="CODZP_BuyDoubleTapII" or
 											defName="CODZP_BuyJuggernog" or
 											defName="CODZP_BuyQuickRevive" or
 											defName="CODZP_BuySpeedCola" or
@@ -37,40 +38,13 @@
 						<li>{PerkColaingredients}</li>
 					</value>
 				</Operation>
-				<!-- -><Operation Class="PatchOperationFindMod">
-    				<mods>
-						<li>Vanilla Expanded Framework</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-						<li Class="PatchOperationAdd">
-							<xpath>Defs/RecipeDef[defName="CODZP_BuyDoubleTapII"]/ingredients/li/filter/thingDefs/li</xpath>
-							<value>
-								<li>{PerkColaingredients}</li>
-							</value>
-						</li>
-					</operations>
-					</match>
-				</Operation>-->
+				
 				<Operation Class="PatchOperationReplace">
 					<xpath>Defs/RecipeDef[@Name="CodZP_BuyPerkaColas"]/fixedIngredientFilter/thingDefs</xpath>
 					<value>
 						<thingDefs>
 							<li>{PerkColaingredients}</li>
 						</thingDefs>
-					</value>
-				</Operation>
-			</apply>
-		</li>
-		<li Class="XmlExtensions.UseSetting" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
-			<modId>Robotrowful.CODZombies</modId>
-			<key>PerkColaingredients</key>
-			<defaultValue>Silver</defaultValue>
-			<apply>
-				<Operation Class="PatchOperationReplace">
-					<xpath>Defs/RecipeDef[defName="CODZP_BuyDoubleTapII"]/ingredients/li/filter/thingDefs/li</xpath>
-					<value>
-						<li>{PerkColaingredients}</li>
 					</value>
 				</Operation>
 			</apply>
@@ -104,7 +78,7 @@
 			</apply>
 		</li>
 
-		<li Class="XmlExtensions.UseSetting" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+		<li Class="XmlExtensions.UseSetting">
 			<modId>Robotrowful.CODZombies</modId>
 			<key>PerkColaCost_DDTap</key>
 			<defaultValue>300</defaultValue>

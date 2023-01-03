@@ -62,7 +62,7 @@
 	<defName>CodZP_Bullet_Zapgun_Red</defName>
 	<label>Zap Gun electric bullet</label>
 	<graphicData>
-		<texPath>Things/Projectile/CodZP_ShockBolt</texPath>
+		<texPath>Things/Item/Equipment/WeaponRanged/Misc/CodZP_Hidden</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<shaderType>TransparentPostLight</shaderType>
 		<color>(209, 39, 74)</color>
@@ -73,6 +73,11 @@
 		<damageAmountBase>19</damageAmountBase>
 		<speed>100</speed>
 	</projectile>
+	<modExtensions>
+			<li Class="AthenaFramework.BeamProjectile">
+        		<beamType>CODZP_Beam_Red</beamType>
+			</li>
+    	</modExtensions>
 </ThingDef>
 <ThingDef ParentName="CODZP_BaseZapGuns">
 	<defName>CODZP_Gun_Zapgun_Blue</defName>
@@ -104,7 +109,7 @@
 	<defName>CodZP_Bullet_Zapgun_Blue</defName>
 	<label>Zap Gun electric bullet</label>
 	<graphicData>
-		<texPath>Things/Projectile/CodZP_ShockBolt</texPath>
+		<texPath>Things/Item/Equipment/WeaponRanged/Misc/CodZP_Hidden</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<shaderType>TransparentPostLight</shaderType>
 		<color>(68, 85, 206)</color>
@@ -114,6 +119,11 @@
 		<damageAmountBase>19</damageAmountBase>
 		<speed>100</speed>
 	</projectile>
+	<modExtensions>
+			<li Class="AthenaFramework.BeamProjectile">
+        		<beamType>CODZP_Beam_Blue</beamType>
+			</li>
+    	</modExtensions>
 </ThingDef>
 	<RecipeDef ParentName="CodZP_ZapgunBase">
 		<defName>CODZP_WavegunSplit</defName>
@@ -324,7 +334,7 @@
 	<defName>CodZP_Bullet_Zapgun-PAP</defName>
 	<label>Zap Gun electric bullet</label>
 	<graphicData>
-		<texPath>Things/Projectile/CodZP_ShockBolt</texPath>
+		<texPath>Things/Item/Equipment/WeaponRanged/Misc/CodZP_Hidden</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<shaderType>TransparentPostLight</shaderType>
 		<color>(167, 0, 207)</color>
@@ -334,6 +344,11 @@
 		<damageAmountBase>38</damageAmountBase>
 		<speed>115</speed>
 	</projectile>
+	<modExtensions>
+			<li Class="AthenaFramework.BeamProjectile">
+        		<beamType>CODZP_Beam_Purple</beamType>
+			</li>
+    	</modExtensions>
 </ThingDef>
 
 <!--Max Wavegun-->

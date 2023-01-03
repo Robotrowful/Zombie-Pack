@@ -74,6 +74,8 @@
 		<speed>70</speed>
 		<damageDef>Blunt</damageDef>
 		<damageAmountBase>45</damageAmountBase>
+		<arcHeightFactor>0.2</arcHeightFactor>
+		<shadowSize>0.6</shadowSize>
 	</projectile>
 </ThingDef>
 <ThingDef ParentName="CODZP_BasePAPWonderWeaponGun">
@@ -137,6 +139,8 @@
 		<speed>81</speed>
 		<damageDef>Blunt</damageDef>
 		<damageAmountBase>80</damageAmountBase>
+		<arcHeightFactor>0.2</arcHeightFactor>
+		<shadowSize>0.6</shadowSize>
 	</projectile>
 </ThingDef>
 </Defs>

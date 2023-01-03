@@ -2,12 +2,12 @@
 <Defs>
 	<RecipeDef Name="CodZP_MysteryRecipe" Abstract="True">
 		<jobString>Randomizing item</jobString>
-		<workAmount>240</workAmount>
+		<workAmount>330</workAmount>
+		<effectWorking>CODZP_MysteryBox</effectWorking> <!--To make sure Things will still get an effect, Even if it's wrong-->
 		<researchPrerequisites>
 			<li>CodZP_Mystery-Box</li>
 		</researchPrerequisites>
 		<soundWorking>CodZP_Recipe_Randomize</soundWorking>
-		<!--<effectWorking>CODZP_MysteryBox</effectWorking>-->
 		<recipeUsers>
 			<li>CodZP_Mystery-Box</li>
 		</recipeUsers>
@@ -23,6 +23,7 @@
 		<defName>CODZP_RandomizeWeapon</defName>
 		<label>Random Weapon</label>
 		<description>Get a random weapon</description>
+		<effectWorking>CODZP_MysteryBox</effectWorking>
 		<ingredients>
 			<li>
 				<filter>
@@ -43,6 +44,7 @@
 		<defName>CODZP_RandomizePerkCola</defName>
 		<label>Random Perk A Cola</label>
 		<description>Get a random Perk A Cola</description>
+		<effectWorking>CODZP_MysteryBox_PerkACola</effectWorking>
 		<researchPrerequisites>
 			<li>CodZP_Mystery-Box</li>
 			<li>CodZP_PerkACola</li>
@@ -66,6 +68,7 @@
 		<defName>CODZP_RandomizePerkColaMachine</defName>
 		<label>Random Perk A Cola</label>
 		<description>Get a random Perk A Cola</description>
+		<effectWorking>CODZP_Wunderfizz_PerkACola</effectWorking>
 		<researchPrerequisites>
 			<li>CodZP_Mystery-Box</li>
 			<li>CodZP_PerkACola</li>

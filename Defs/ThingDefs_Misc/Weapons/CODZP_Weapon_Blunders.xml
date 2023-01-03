@@ -125,7 +125,7 @@
 	<defName>CodZP_Bullet_Blundergat</defName>
 	<label>Blundergat bullet</label>
 	<graphicData>
-		<texPath>Things/Projectile/CodZP_BlunderBullet</texPath>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<color>(255, 0, 0)</color>
 	</graphicData>
@@ -139,7 +139,7 @@
 	<defName>CodZP_Bullet_PAP_Blundergat</defName>
 	<label>Sweeper bullet</label>
 	<graphicData>
-		<texPath>Things/Projectile/CodZP_BlunderBullet</texPath>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<color>(255, 0, 0)</color>
 	</graphicData>
@@ -275,7 +275,7 @@
 	<defName>CodZP_Bullet_Acidgat</defName>
 	<label>Acidgat bullet</label>
 	<graphicData>
-		<texPath>Things/Projectile/CodZP_BlunderBullet</texPath>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<color>(0, 160, 20)</color>
 	</graphicData>
@@ -289,7 +289,7 @@
 	<defName>CodZP_Bullet_PAP_Acidgat</defName>
 	<label>Vitriolic Withering bullet</label>
 	<graphicData>
-		<texPath>Things/Projectile/CodZP_BlunderBullet</texPath>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<color>(0, 160, 20)</color>
 	</graphicData>
@@ -424,7 +424,7 @@
 	<defName>CodZP_Bullet_Magmagat</defName>
 	<label>Magmagat bullet</label>
 	<graphicData>
-		<texPath>Things/Projectile/CodZP_BlunderBullet</texPath>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<color>(255, 100, 0)</color>
 	</graphicData>
@@ -438,7 +438,7 @@
 	<defName>CodZP_Bullet_PAP_Magmagat</defName>
 	<label>Magmus Operandi bullet</label>
 	<graphicData>
-		<texPath>Things/Projectile/CodZP_BlunderBullet</texPath>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<color>(255, 100, 0)</color>
 	</graphicData>

@@ -36,6 +36,7 @@
 			<soundCast>Shot_ChargeBlaster</soundCast>
 			<soundCastTail>GunTail_Medium</soundCastTail>
 			<muzzleFlashScale>3</muzzleFlashScale>
+			<warmupEffecter>CODZP_Effecter_SnowingCharge</warmupEffecter>
 		</li>
 	</verbs>
 	<weaponClasses>
@@ -86,6 +87,7 @@
 			<soundCastTail>GunTail_Medium</soundCastTail>
 			<muzzleFlashScale>3</muzzleFlashScale>
 			<forcedMissRadius>0.5</forcedMissRadius>
+			<warmupEffecter>CODZP_Effecter_SnowingCharge</warmupEffecter>
 		</li>
 	</verbs>
 	<weaponClasses>
@@ -107,7 +109,7 @@
 	<defName>CodZP_Bullet_CodZP_StaffIce</defName>
 	<label>Elemental Ice staff projectile</label>
 	<graphicData>
-		<texPath>Things/Projectile/CodZP_StaffProjectile</texPath>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<color>(220,243,255)</color>
 	</graphicData>
@@ -121,7 +123,7 @@
 	<defName>CodZP_Bullet_CodZP_StaffIcePAP</defName>
 	<label>PAP Elemental Ice staff projectile</label>
 	<graphicData>
-		<texPath>Things/Projectile/CodZP_StaffProjectile</texPath>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<color>(162,210,223)</color>
 	</graphicData>
@@ -161,18 +163,23 @@
 	</costList>
 	<verbs>
 		<li>
-			<verbClass>Verb_Shoot</verbClass>
+			<verbClass>AthenaFramework.Verb_ShootAngularShotgun</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
 			<defaultProjectile>CodZP_Bullet_CodZP_StaffFlame</defaultProjectile>
 			<warmupTime>1.43</warmupTime>
 			<range>23.9</range>
-			<burstShotCount>3</burstShotCount>
-			<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
 			<soundCast>Shot_ChargeBlaster</soundCast>
 			<soundCastTail>GunTail_Medium</soundCastTail>
 			<muzzleFlashScale>3</muzzleFlashScale>
+			<warmupEffecter>CODZP_Effecter_Orange_Lightning</warmupEffecter>
 		</li>
 	</verbs>
+	<modExtensions>
+		<li Class="AthenaFramework.AngularShotgunExtension">
+			<pelletCount>3</pelletCount>
+			<pelletAngle>15</pelletAngle>
+		</li>
+	</modExtensions>
 	<weaponClasses>
       <li>Ranged</li>
     </weaponClasses>
@@ -212,19 +219,24 @@
 	</costList>
 	<verbs>
 		<li>
-			<verbClass>Verb_Shoot</verbClass>
+			<verbClass>AthenaFramework.Verb_ShootAngularShotgun</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
 			<defaultProjectile>CodZP_Bullet_CodZP_StaffFlamePAP</defaultProjectile>
 			<warmupTime>1.29</warmupTime>
 			<range>28.9</range>
-			<burstShotCount>3</burstShotCount>
-			<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
 			<soundCast>Shot_ChargeBlaster</soundCast>
 			<soundCastTail>GunTail_Medium</soundCastTail>
 			<muzzleFlashScale>3</muzzleFlashScale>
 			<forcedMissRadius>0.5</forcedMissRadius>
+			<warmupEffecter>CODZP_Effecter_Orange_Lightning</warmupEffecter>
 		</li>
 	</verbs>
+	<modExtensions>
+		<li Class="AthenaFramework.AngularShotgunExtension">
+			<pelletCount>3</pelletCount>
+			<pelletAngle>15</pelletAngle>
+		</li>
+	</modExtensions>
 	<weaponClasses>
       <li>Ranged</li>
     </weaponClasses>
@@ -244,9 +256,8 @@
 	<defName>CodZP_Bullet_CodZP_StaffFlame</defName>
 	<label>Elemental Flame staff projectile</label>
 	<graphicData>
-		<texPath>Things/Projectile/CodZP_StaffProjectile</texPath>
+		<texPath>Things/Projectile/CODZP/Fireball</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
-		<color>(255,48,48)</color>
 	</graphicData>
 	<projectile>
 		<speed>40</speed>
@@ -258,9 +269,8 @@
 	<defName>CodZP_Bullet_CodZP_StaffFlamePAP</defName>
 	<label>PAP Elemental Flame staff projectile</label>
 	<graphicData>
-		<texPath>Things/Projectile/CodZP_StaffProjectile</texPath>
+		<texPath>Things/Projectile/CODZP/Fireball</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
-		<color>(255,48,48)</color>
 	</graphicData>
 	<thingClass>Projectile_Explosive</thingClass>
 	<projectile>
@@ -306,6 +316,7 @@
 			<soundCast>Shot_ChargeBlaster</soundCast>
 			<soundCastTail>GunTail_Medium</soundCastTail>
 			<muzzleFlashScale>3</muzzleFlashScale>
+			<warmupEffecter>CODZP_Effecter_WunderCharge</warmupEffecter>
 		</li>
 	</verbs>
 	<weaponClasses>
@@ -355,6 +366,7 @@
 			<soundCast>Shot_ChargeBlaster</soundCast>
 			<soundCastTail>GunTail_Medium</soundCastTail>
 			<muzzleFlashScale>3</muzzleFlashScale>
+			<warmupEffecter>CODZP_Effecter_WunderCharge</warmupEffecter>
 		</li>
 	</verbs>
 	<weaponClasses>
@@ -376,7 +388,7 @@
 	<defName>CodZP_Bullet_CodZP_StaffWind</defName>
 	<label>Elemental Wind staff projectile</label>
 	<graphicData>
-		<texPath>Things/Projectile/CodZP_StaffProjectile</texPath>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<color>(0, 255, 0)</color>
 	</graphicData>
@@ -390,7 +402,7 @@
 	<defName>CodZP_Bullet_CodZP_StaffWindPAP</defName>
 	<label>PAP Elemental Wind staff projectile</label>
 	<graphicData>
-		<texPath>Things/Projectile/CodZP_StaffProjectile</texPath>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<color>(0, 255, 0)</color>
 	</graphicData>
@@ -439,6 +451,7 @@
 			<soundCast>Shot_ChargeBlaster</soundCast>
 			<soundCastTail>GunTail_Medium</soundCastTail>
 			<muzzleFlashScale>3</muzzleFlashScale>
+			<warmupEffecter>CODZP_Effecter_Purple_Lightning</warmupEffecter>
 		</li>
 	</verbs>
 	<weaponClasses>
@@ -490,6 +503,7 @@
 			<soundCast>Shot_ChargeBlaster</soundCast>
 			<soundCastTail>GunTail_Medium</soundCastTail>
 			<muzzleFlashScale>3</muzzleFlashScale>
+			<warmupEffecter>CODZP_Effecter_Purple_Lightning</warmupEffecter>
 		</li>
 	</verbs>
 	<weaponClasses>
@@ -511,7 +525,7 @@
 	<defName>CodZP_Bullet_CodZP_StaffElectric</defName>
 	<label>Elemental Lightning staff projectile</label>
 	<graphicData>
-		<texPath>Things/Projectile/CodZP_StaffProjectile</texPath>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<shaderType>TransparentPostLight</shaderType>
 		<color>(138, 4, 255)</color>
@@ -527,7 +541,7 @@
 	<defName>CodZP_Bullet_CodZP_StaffElectricPAP</defName>
 	<label>PAP Elemental Lightning staff projectile</label>
 	<graphicData>
-		<texPath>Things/Projectile/CodZP_StaffProjectile</texPath>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<shaderType>TransparentPostLight</shaderType>
 		<color>(113, 4, 255)</color>

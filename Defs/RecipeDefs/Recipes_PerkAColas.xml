@@ -22,6 +22,7 @@
 		<defName>CODZP_BuyDeadshotDaiquiri</defName>
 		<label>Purchase Deadshot Daiquiri</label>
 		<description>Buy a bottle of Deadshot Daiquiri \nThis drink increases shooting accuracy</description>
+		<effectWorking>CODZP_Effecter_Wunderfizz_Dead</effectWorking>
     	<ingredients>
 			<li>
 				<filter>
@@ -41,6 +42,7 @@
 		<defName>CODZP_BuyDoubleTap</defName>
 		<label>Purchase Double Tap</label>
 		<description>Buy a bottle of Double Tap \nThis drink reduces aiming time delay</description>
+		<effectWorking>CODZP_Effecter_Wunderfizz_DTap</effectWorking>
 		<ingredients>
 			<li>
 				<filter>
@@ -56,10 +58,11 @@
 		</products>
 	</RecipeDef>
 
-	<RecipeDef ParentName="CodZP_BuyPerkaColas" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+	<RecipeDef ParentName="CodZP_BuyPerkaColas">
 		<defName>CODZP_BuyDoubleTapII</defName>
 		<label>Purchase Double Tap II</label>
 		<description>Buy a bottle of Double Tap II \nDoubling your bullets, deals double damage.</description>
+		<effectWorking>CODZP_Effecter_Wunderfizz_DDTap</effectWorking>
 		<ingredients>
 			<li>
 				<filter>
@@ -79,6 +82,7 @@
 		<defName>CODZP_BuyJuggernog</defName>
 		<label>Purchase Juggernog</label>
 		<description>Buy a bottle of Juggernog \nThis drink reduces damage and increases pain threshold</description>
+		<effectWorking>CODZP_Effecter_Wunderfizz_Jug</effectWorking>
 		<ingredients>
 			<li>
 				<filter>
@@ -98,6 +102,7 @@
 		<defName>CODZP_BuyQuickRevive</defName>
 		<label>Purchase Quick Revive</label>
 		<description>Buy a bottle of Quick Revive \nThis drink increases Surgery Success and Tend quality</description>
+		<effectWorking>CODZP_Effecter_Wunderfizz_Quick</effectWorking>
     	<ingredients>
 			<li>
 				<filter>
@@ -117,6 +122,7 @@
 		<defName>CODZP_BuySpeedCola</defName>
 		<label>Purchase Speed Cola</label>
 		<description>Buy a bottle of Speed Cola. \nThis drink reduces weapon cooldown and increases work speed.</description>
+		<effectWorking>CODZP_Effecter_Wunderfizz_Speed</effectWorking>
 		<ingredients>
 			<li>
 				<filter>
@@ -136,7 +142,8 @@
 		<defName>CODZP_BuyStaminUp</defName>
 		<label>Purchase Stamin-Up</label>
 		<description>Buy a bottle of Stamin-Up \nThis drink increases movement speed</description>
-    	<ingredients>
+    	<effectWorking>CODZP_Effecter_Wunderfizz_Stam</effectWorking>
+		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>

@@ -479,6 +479,89 @@
 		<shadowSize>0.6</shadowSize>
 	</projectile>
 </ThingDef>
+
+	<ThingDef ParentName="CODZP_BasePackAPunchGun" MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>CodZP_Gun_ToxbombLauncher-PAP</defName>
+		<label>Lethal dose</label>
+		<description>Covering more area can cause devistating effects</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/CodZP_ToxbombLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<weaponTags Inherit="False">
+			<li>HeavyTox</li>
+		</weaponTags>
+		<statBases>
+			<Mass>3.4</Mass>
+			<RangedWeapon_Cooldown>3.6</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Gun_ToxbombLauncher>1</Gun_ToxbombLauncher>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_ToxbombLauncher_PAP</defaultProjectile>
+				<warmupTime>3.15</warmupTime>
+				<range>28.9</range>
+				<forcedMissRadius>2.9</forcedMissRadius>
+				<burstShotCount>2</burstShotCount>
+				<soundCast>Shot_IncendiaryLauncher</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet" MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Bullet_ToxbombLauncher_PAP</defName>
+		<label>Lethal dose shell</label>
+		<graphicData>
+			<texPath>Things/Projectile/LauncherShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<color>(101,128,99)</color>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<speed>46</speed>
+			<damageDef>ToxGas</damageDef>
+			<explosionRadius>2.9</explosionRadius>
+			<explosionRadiusDisplayPadding>3</explosionRadiusDisplayPadding>
+			<postExplosionGasType>ToxGas</postExplosionGasType>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+			<arcHeightFactor>0.2</arcHeightFactor>
+			<shadowSize>0.6</shadowSize>
+			<screenShakeFactor>0.1</screenShakeFactor>
+		</projectile>
+	</ThingDef>
 	
 <ThingDef ParentName="CODZP_BasePackAPunchGun">
 	<defName>CodZP_Gun_BoltActionRifle-PAP</defName>

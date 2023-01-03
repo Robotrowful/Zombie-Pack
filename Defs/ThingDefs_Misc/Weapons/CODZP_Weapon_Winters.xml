@@ -33,6 +33,7 @@
 			<soundCast>CodZP_Shot_Wintershowl</soundCast>
 			<soundCastTail>GunTail_Medium</soundCastTail>
 			<muzzleFlashScale>3</muzzleFlashScale>
+			<warmupEffecter>CODZP_Effecter_SnowingCharge</warmupEffecter>
 		</li>
 	</verbs>
 	<weaponClasses>
@@ -90,6 +91,7 @@
 			<soundCast>CodZP_Shot_Wintershowl</soundCast>
 			<soundCastTail>GunTail_Medium</soundCastTail>
 			<muzzleFlashScale>3</muzzleFlashScale>
+			<warmupEffecter>CODZP_Effecter_SnowingCharge</warmupEffecter>
 		</li>
 	</verbs>
 	<weaponClasses>
@@ -120,7 +122,7 @@
 	<defName>CodZP_Bullet_WintersHowl</defName>
 	<label>WintersHowl Bullet</label>
 	<graphicData>
-		<texPath>Things/Projectile/CodZP_StaffProjectile</texPath>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<shaderType>TransparentPostLight</shaderType>
 	</graphicData>
@@ -135,7 +137,7 @@
 	<defName>CodZP_Bullet_WintersHowl-PAP</defName>
 	<label>Winter's Fury Bullet</label>
 	<graphicData>
-		<texPath>Things/Projectile/CodZP_StaffProjectile</texPath>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<shaderType>TransparentPostLight</shaderType>
 	</graphicData>

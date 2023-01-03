@@ -57,6 +57,7 @@
       </li>
     </stages>
   </ThoughtDef>
+  
   <!-- Speed Cola -->
   <ThingDef ParentName="CODZP_MakeablePerkACola">
     <defName>CODZP_SpeedCola</defName>
@@ -113,9 +114,9 @@
       </li>
     </stages>
   </ThoughtDef>
+
   <!-- Double Tap -->
-  <ThingDef
-    ParentName="CODZP_MakeablePerkACola">
+  <ThingDef ParentName="CODZP_MakeablePerkACola">
     <defName>CODZP_DoubleTap</defName>
     <label>Double Tap</label>
     <description>Cowboys can't shoot slow or they'll end up below. When they need some help, they reach for the Root beer shelf (Ye-haa) Cowboys can't shoot slow, or they'll end up below, when they need some help, they reach for the Root beer shelf. YA THIRSTY PARTNER!?</description>
@@ -170,8 +171,9 @@
       </li>
     </stages>
   </ThoughtDef>
+
   <!-- Double Tap 2 -->
-  <ThingDef ParentName="CODZP_MakeablePerkACola" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+  <ThingDef ParentName="CODZP_MakeablePerkACola">
     <defName>CODZP_DoubleTapII</defName>
     <label>Double Tap II</label>
     <description>Cowboys can move slow they'll end up dead or old, When they need some help, they reach out for the shelf, Cowboys can't shoot slow,  they'll end up dead below, when they need some help, they reach out for the shelf, have no fear, but that double tap root beer, get all the damage done, Double Tap Root Beer,  will Double damage fun, Oh Yeah, Get Thirsty.</description>
@@ -189,7 +191,7 @@
       </outcomeDoers>
     </ingestible>
   </ThingDef>
-  <ThoughtDef MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+  <ThoughtDef>
     <defName>CODZP_DrankDoubleTapII</defName>
     <workerClass>ThoughtWorker_Hediff</workerClass>
     <hediff>CODZP_DrankDoubleTapII</hediff>
@@ -202,7 +204,7 @@
       </li>
     </stages>
   </ThoughtDef>
-  <HediffDef MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+  <HediffDef>
     <defName>CODZP_DrankDoubleTapII</defName>
     <hediffClass>HediffWithComps</hediffClass>
     <label>Double Tap II Buff</label>
@@ -211,20 +213,23 @@
     <labelNoun>effects of Double Tap</labelNoun>
     <maxSeverity>1.0</maxSeverity>
     <isBad>false</isBad>
+    <modExtensions>
+    <li Class="AthenaFramework.DamageAmplifierExtension">
+      <modifiers>
+        <li>
+          <modifier>2</modifier>
+        </li>
+      </modifiers>
+    </li>
+    </modExtensions>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-1</severityPerDay>
         <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
-    <stages>
-      <li>
-        <statOffsets>
-          <VEF_RangeAttackDamageFactor>2</VEF_RangeAttackDamageFactor>
-        </statOffsets>
-      </li>
-    </stages>
   </HediffDef>
+
   <!-- Quick Revive -->
   <ThingDef ParentName="CODZP_MakeablePerkACola">
     <defName>CODZP_QuickRevive</defName>
@@ -283,6 +288,7 @@
       </li>
     </stages>
   </ThoughtDef>
+
   <!-- Stamin-Up -->
   <ThingDef ParentName="CODZP_MakeablePerkACola">
     <defName>CODZP_StaminUp</defName>
@@ -338,6 +344,7 @@
       </li>
     </stages>
   </ThoughtDef>
+
   <!-- Deadshot Daiquiri -->
   <ThingDef ParentName="CODZP_MakeablePerkACola">
     <defName>CODZP_DeadshotDaiquiri</defName>

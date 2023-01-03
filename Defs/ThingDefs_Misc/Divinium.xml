@@ -90,7 +90,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>CODZP_Divinium</defName>
     <label>Divinium</label>
-    <description>After refining this new element it's power can be harnessed into powerful creation!</description>
+    <description>After refining this new element it's power can be harnessed into powerful creations!</description>
     <graphicData>
       <texPath>Things/Item/Resource/StoneBlocks</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
