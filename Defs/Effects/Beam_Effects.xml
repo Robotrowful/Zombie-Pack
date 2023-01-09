@@ -3,8 +3,8 @@
   
   <!--New Framework Stuff-->
   <ThingDef Abstract="True" Name="CODZP_TrailBase">
-    <thingClass>AthenaFramework.BeamRenderer</thingClass>
     <description>A specialized tote beam using Athena Framework, it's some good stuff</description>
+    <thingClass>AthenaFramework.Beam</thingClass>
     <graphicData>
       <shaderType>MoteGlow</shaderType>
       <graphicClass>Graphic_Single</graphicClass>
@@ -107,7 +107,7 @@
 
   <ThingDef ParentName="CODZP_BeamBase">
 	  <defName>CODZP_Beam_DarkBlue</defName>
-    <label>Lightning</label>
+    <label>Dark Blue</label>
     <graphicData>
       <texPath>Things/Effects/CODZP_Beams/Beam_Dark_Blue</texPath>
     </graphicData>

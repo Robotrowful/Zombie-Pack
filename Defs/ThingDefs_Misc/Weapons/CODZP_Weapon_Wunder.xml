@@ -134,11 +134,11 @@
 		<damageAmountBase>19</damageAmountBase>
 		<stoppingPower>20</stoppingPower>
 	</projectile>
-	<modExtensions>
-		<li Class="AthenaFramework.BeamProjectile">
-        	<beamType>CODZP_Beam_Lightning</beamType>
+	<comps>
+      <li Class="AthenaFramework.CompProperties_BeamProjectile">
+        	<beamDef>CODZP_Beam_Lightning</beamDef>
 		</li>
-    </modExtensions>
+    </comps>
 </ThingDef>
 <ThingDef ParentName="BaseBullet">
 	<defName>CodZP_Bullet_Wunderwaffe-PAP</defName>
@@ -153,11 +153,11 @@
 		<damageAmountBase>38</damageAmountBase>
 		<stoppingPower>40</stoppingPower>
 	</projectile>
-	<modExtensions>
-		<li Class="AthenaFramework.BeamProjectile">
-        	<beamType>CODZP_Beam_Lightning</beamType>
+	<comps>
+      <li Class="AthenaFramework.CompProperties_BeamProjectile">
+        	<beamDef>CODZP_Beam_Lightning</beamDef>
 		</li>
-    </modExtensions>
+    </comps>
 </ThingDef>
 <!--Wunderwaffe DG-Scharfschutze-->
 <ThingDef ParentName="CODZP_BaseWonderAmmoMaticGun">
@@ -300,11 +300,11 @@
 		<explosionRadius>1</explosionRadius>
 		<ai_IsIncendiary>true</ai_IsIncendiary>
 	</projectile>
-	<modExtensions>
-		<li Class="AthenaFramework.BeamProjectile">
-        	<beamType>CODZP_Beam_Lightning</beamType>
+	<comps>
+      <li Class="AthenaFramework.CompProperties_BeamProjectile">
+        	<beamDef>CODZP_Beam_Lightning</beamDef>
 		</li>
-    </modExtensions>
+    </comps>
 </ThingDef>
 <ThingDef ParentName="BaseBullet">
 	<defName>CodZP_Bullet_Wunderwaffe_S-PAP</defName>
@@ -323,10 +323,10 @@
 		<explosionRadius>1</explosionRadius>
 		<ai_IsIncendiary>true</ai_IsIncendiary>
 	</projectile>
-	<modExtensions>
-		<li Class="AthenaFramework.BeamProjectile">
-        	<beamType>CODZP_Beam_Lightning</beamType>
+	<comps>
+      <li Class="AthenaFramework.CompProperties_BeamProjectile">
+        	<beamDef>CODZP_Beam_Lightning</beamDef>
 		</li>
-    </modExtensions>
+    </comps>
 </ThingDef>
 </Defs>

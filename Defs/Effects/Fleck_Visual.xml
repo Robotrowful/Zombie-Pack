@@ -411,7 +411,7 @@
 
   <!--Pack a Punch-->
   <fleckDef ParentName="FleckBase_Thrown">
-    <defName>CODZP_Mote_PackAPunch</defName>
+    <defName>CODZP_Fleck_PackAPunch</defName>
     <altitudeLayer>BuildingOnTop</altitudeLayer>
     <graphicData>
       <texPath>Things/Mote/BlastEMP</texPath> 
@@ -430,7 +430,7 @@
       <li>
         <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
         <ticksBetweenMotes>20</ticksBetweenMotes>
-        <fleckDef>CODZP_Mote_PackAPunch</fleckDef>
+        <fleckDef>CODZP_Fleck_PackAPunch</fleckDef>
         <spawnLocType>OnTarget</spawnLocType>
         <positionOffset>(0,0,-0.60)</positionOffset>
       </li>

@@ -73,11 +73,11 @@
 		<damageAmountBase>19</damageAmountBase>
 		<speed>100</speed>
 	</projectile>
-	<modExtensions>
-			<li Class="AthenaFramework.BeamProjectile">
-        		<beamType>CODZP_Beam_Red</beamType>
+	<comps>
+      <li Class="AthenaFramework.CompProperties_BeamProjectile">
+        		<beamDef>CODZP_Beam_Red</beamDef>
 			</li>
-    	</modExtensions>
+    </comps>
 </ThingDef>
 <ThingDef ParentName="CODZP_BaseZapGuns">
 	<defName>CODZP_Gun_Zapgun_Blue</defName>
@@ -119,11 +119,11 @@
 		<damageAmountBase>19</damageAmountBase>
 		<speed>100</speed>
 	</projectile>
-	<modExtensions>
-			<li Class="AthenaFramework.BeamProjectile">
-        		<beamType>CODZP_Beam_Blue</beamType>
+	<comps>
+      <li Class="AthenaFramework.CompProperties_BeamProjectile">
+        		<beamDef>CODZP_Beam_Blue</beamDef>
 			</li>
-    	</modExtensions>
+    </comps>
 </ThingDef>
 	<RecipeDef ParentName="CodZP_ZapgunBase">
 		<defName>CODZP_WavegunSplit</defName>
@@ -344,11 +344,11 @@
 		<damageAmountBase>38</damageAmountBase>
 		<speed>115</speed>
 	</projectile>
-	<modExtensions>
-			<li Class="AthenaFramework.BeamProjectile">
-        		<beamType>CODZP_Beam_Purple</beamType>
+	<comps>
+      <li Class="AthenaFramework.CompProperties_BeamProjectile">
+        		<beamDef>CODZP_Beam_Purple</beamDef>
 			</li>
-    	</modExtensions>
+    </comps>
 </ThingDef>
 
 <!--Max Wavegun-->

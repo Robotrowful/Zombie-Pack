@@ -20,6 +20,18 @@
 			<RangedWeapon_Cooldown>1.21</RangedWeapon_Cooldown>
 		</statBases>
 		<weaponTags />
+		<!--<randomStyleChance>0.75</randomStyleChance>
+        <randomStyle>
+            <li><styleDef>TestSwordVariant1</styleDef></li>
+            <li><styleDef>TestSwordVariant2</styleDef></li>
+            <li><styleDef>TestSwordVariant3</styleDef></li>
+            <li><styleDef>TestSwordVariant4</styleDef></li>
+            <li><styleDef>TestSwordVariant5</styleDef></li>
+            <li><styleDef>TestSwordVariant6</styleDef></li>
+            <li><styleDef>TestSwordVariant7</styleDef></li>
+            <li><styleDef>TestSwordVariant8</styleDef></li>
+            <li><styleDef>TestSwordVariant9</styleDef></li>
+        </randomStyle>-->
 		<costList>
 			<CODZP_Divinium>10</CODZP_Divinium>
 			<Plasteel>100</Plasteel>
@@ -140,11 +152,11 @@
 			<explosionRadius>2</explosionRadius>
 			<ai_IsIncendiary>true</ai_IsIncendiary>
 		</projectile>
-		<modExtensions>
-			<li Class="AthenaFramework.BeamProjectile">
-        		<beamType>CODZP_Beam_Green</beamType>
+		<comps>
+			<li Class="AthenaFramework.CompProperties_BeamProjectile">
+				<beamDef>CODZP_Beam_Green</beamDef>
 			</li>
-    	</modExtensions>
+    	</comps>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>CodZP_Bullet_Raygun-PAP</defName>
@@ -163,11 +175,11 @@
 			<explosionRadius>3</explosionRadius>
 			<ai_IsIncendiary>true</ai_IsIncendiary>
 		</projectile>
-		<modExtensions>
-			<li Class="AthenaFramework.BeamProjectile">
-        		<beamType>CODZP_Beam_Red</beamType>
+		<comps>
+      <li Class="AthenaFramework.CompProperties_BeamProjectile">
+        		<beamDef>CODZP_Beam_Red</beamDef>
 			</li>
-    	</modExtensions>
+    	</comps>
 	</ThingDef>
 	<!--Mark 2-->
 	<ThingDef ParentName="CODZP_BaseWonderWeaponGun">
@@ -306,11 +318,14 @@
 			<armorPenetrationBase>4</armorPenetrationBase>
 			<speed>60</speed>
 		</projectile>
-		<modExtensions>
-			<li Class="AthenaFramework.BeamProjectile">
-        		<beamType>CODZP_Beam_Green</beamType>
+		<comps>
+			<!--<li Class="AthenaFramework.ProjectileEffectExtension">
+				<fleck>CODZP_Fleck_Impact_RaygunTwo</fleck>
+			</li>-->
+			<li Class="AthenaFramework.CompProperties_BeamProjectile">
+				<beamDef>CODZP_Beam_Green</beamDef>
 			</li>
-    	</modExtensions>
+    	</comps>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>CodZP_Bullet_RaygunTwo-PAP</defName>
@@ -325,11 +340,14 @@
 			<armorPenetrationBase>10</armorPenetrationBase>
 			<speed>69</speed>
 		</projectile>
-		<modExtensions>
-			<li Class="AthenaFramework.BeamProjectile">
-        		<beamType>CODZP_Beam_Red</beamType>
+		<comps>
+      <li Class="AthenaFramework.CompProperties_BeamProjectile">
+        		<beamDef>CODZP_Beam_Red</beamDef>
 			</li>
-    	</modExtensions>
+			<!--<li Class="AthenaFramework.ProjectileEffectExtension">
+				<fleck>CODZP_Fleck_Impact_RaygunTwo_Red</fleck>
+			</li>-->
+    	</comps>
 	</ThingDef>
 	<!--V-->
 	<ThingDef ParentName="CODZP_BaseWonderAmmoMaticGun">
@@ -467,11 +485,11 @@
 			<armorPenetrationBase>3</armorPenetrationBase>
 			<speed>60</speed>
 		</projectile>
-		<modExtensions>
-			<li Class="AthenaFramework.BeamProjectile">
-        		<beamType>CODZP_Beam_Yellow</beamType>
+		<comps>
+      <li Class="AthenaFramework.CompProperties_BeamProjectile">
+        		<beamDef>CODZP_Beam_Yellow</beamDef>
 			</li>
-    	</modExtensions>
+    	</comps>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>CodZP_Bullet_RaygunTwoV-PAP</defName>
@@ -486,11 +504,11 @@
 			<armorPenetrationBase>6</armorPenetrationBase>
 			<speed>69</speed>
 		</projectile>
-		<modExtensions>
-			<li Class="AthenaFramework.BeamProjectile">
-        		<beamType>CODZP_Beam_Yellow</beamType>
+		<comps>
+      <li Class="AthenaFramework.CompProperties_BeamProjectile">
+        		<beamDef>CODZP_Beam_Yellow</beamDef>
 			</li>
-    	</modExtensions>
+    	</comps>
 	</ThingDef>
 	<!--X-->
 	<ThingDef ParentName="CODZP_BaseWonderAmmoMaticGun">
@@ -628,11 +646,11 @@
 			<armorPenetrationBase>0</armorPenetrationBase>
 			<speed>60</speed>
 		</projectile>
-		<modExtensions>
-			<li Class="AthenaFramework.BeamProjectile">
-        		<beamType>CODZP_Beam_Blue</beamType>
+		<comps>
+      <li Class="AthenaFramework.CompProperties_BeamProjectile">
+        		<beamDef>CODZP_Beam_Blue</beamDef>
 			</li>
-    	</modExtensions>
+    	</comps>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>CodZP_Bullet_RaygunTwoX-PAP</defName>
@@ -647,11 +665,11 @@
 			<armorPenetrationBase>10</armorPenetrationBase>
 			<speed>69</speed>
 		</projectile>
-		<modExtensions>
-			<li Class="AthenaFramework.BeamProjectile">
-        		<beamType>CODZP_Beam_Blue</beamType>
+		<comps>
+      <li Class="AthenaFramework.CompProperties_BeamProjectile">
+        		<beamDef>CODZP_Beam_Blue</beamDef>
 			</li>
-    	</modExtensions>
+    	</comps>
 	</ThingDef>
 	<!--Y-->
 	<ThingDef ParentName="CODZP_BaseWonderAmmoMaticGun">
@@ -800,11 +818,11 @@
 			<arcHeightFactor>0.2</arcHeightFactor>
 			<shadowSize>0.6</shadowSize>
 		</projectile>
-		<modExtensions>
-			<li Class="AthenaFramework.BeamProjectile">
-        		<beamType>CODZP_Beam_Orange</beamType>
+		<comps>
+      <li Class="AthenaFramework.CompProperties_BeamProjectile">
+        		<beamDef>CODZP_Beam_Orange</beamDef>
 			</li>
-    	</modExtensions>
+    	</comps>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>CodZP_Bullet_RaygunTwoY-PAP</defName>
@@ -825,11 +843,11 @@
 			<arcHeightFactor>0.2</arcHeightFactor>
 			<shadowSize>0.6</shadowSize>
 		</projectile>
-		<modExtensions>
-			<li Class="AthenaFramework.BeamProjectile">
-        		<beamType>CODZP_Beam_Orange</beamType>
+		<comps>
+      <li Class="AthenaFramework.CompProperties_BeamProjectile">
+        		<beamDef>CODZP_Beam_Orange</beamDef>
 			</li>
-    	</modExtensions>
+    	</comps>
 	</ThingDef>
 	<!--Z-->
 	<ThingDef ParentName="CODZP_BaseWonderAmmoMaticGun">
@@ -983,11 +1001,11 @@
 			<armorPenetrationBase>10</armorPenetrationBase>
 			<speed>100</speed>
 		</projectile>
-		<modExtensions>
-			<li Class="AthenaFramework.BeamProjectile">
-        		<beamType>CODZP_Beam_Purple</beamType>
+		<comps>
+      <li Class="AthenaFramework.CompProperties_BeamProjectile">
+        		<beamDef>CODZP_Beam_Purple</beamDef>
 			</li>
-    	</modExtensions>
+    	</comps>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>CodZP_Bullet_RaygunTwoZ-PAP</defName>
@@ -1003,11 +1021,11 @@
 			<armorPenetrationBase>10</armorPenetrationBase>
 			<speed>111</speed>
 		</projectile>
-		<modExtensions>
-			<li Class="AthenaFramework.BeamProjectile">
-        		<beamType>CODZP_Beam_Purple</beamType>
+		<comps>
+      <li Class="AthenaFramework.CompProperties_BeamProjectile">
+        		<beamDef>CODZP_Beam_Purple</beamDef>
 			</li>
-    	</modExtensions>
+    	</comps>
 	</ThingDef>
 	<!--Mark 3-->
 	<ThingDef ParentName="CODZP_BaseWonderWeaponGun">
@@ -1301,6 +1319,16 @@
 			<arcHeightFactor>0.2</arcHeightFactor>
 			<shadowSize>0.6</shadowSize>
 		</projectile>
+		<!--<modExtensions>
+			<li Class="AthenaFramework.ProjectileEffectExtension">
+      			<fleck>Fleck_BeamBurn</fleck>
+      			<effecter>DryadEmergeFromCocoon</effecter>
+      		</li>
+			<li Class="AthenaFramework.ProjectileEffectExtension">
+      			<fleck>Fleck_BeamBurn</fleck>
+      			<effecter>CODZP_BlackHole_Tier_A</effecter>
+      		</li>
+		</modExtensions> -->
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>CodZP_Bullet_GKZ-PAP</defName>
