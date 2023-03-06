@@ -13,7 +13,7 @@
     <drawOffscreen>true</drawOffscreen>
     <category>Projectile</category>
     <tickerType>Normal</tickerType>
-    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <altitudeLayer>Projectile</altitudeLayer>
     <useHitPoints>false</useHitPoints>
     <selectable>false</selectable>
     <neverMultiSelect>true</neverMultiSelect>

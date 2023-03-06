@@ -115,7 +115,7 @@
       <li Class="XmlExtensions.Setting.Textbox">
         <key>MysteryWorkAmount</key>
         <label>Mystery Box Work Amount (Lower = Faster)</label>
-        <defaultValue>320</defaultValue>
+        <defaultValue>330</defaultValue>
       </li>
       <li Class="XmlExtensions.Setting.Gap" />
       <li Class="XmlExtensions.Setting.ResetSettings"/>

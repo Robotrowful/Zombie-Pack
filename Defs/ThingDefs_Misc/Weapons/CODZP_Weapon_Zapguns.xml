@@ -74,7 +74,7 @@
 		<speed>100</speed>
 	</projectile>
 	<comps>
-      <li Class="AthenaFramework.CompProperties_BeamProjectile">
+      <li Class="AthenaFramework.CompProperties_ProjectileTrail">
         		<beamDef>CODZP_Beam_Red</beamDef>
 			</li>
     </comps>
@@ -120,7 +120,7 @@
 		<speed>100</speed>
 	</projectile>
 	<comps>
-      <li Class="AthenaFramework.CompProperties_BeamProjectile">
+      <li Class="AthenaFramework.CompProperties_ProjectileTrail">
         		<beamDef>CODZP_Beam_Blue</beamDef>
 			</li>
     </comps>
@@ -345,7 +345,7 @@
 		<speed>115</speed>
 	</projectile>
 	<comps>
-      <li Class="AthenaFramework.CompProperties_BeamProjectile">
+      <li Class="AthenaFramework.CompProperties_ProjectileTrail">
         		<beamDef>CODZP_Beam_Purple</beamDef>
 			</li>
     </comps>

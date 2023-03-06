@@ -153,7 +153,7 @@
 		<li Class="XmlExtensions.UseSetting">
 			<modId>Robotrowful.CODZombies</modId>
 			<key>MysteryWorkAmount</key>
-			<defaultValue>320</defaultValue>
+			<defaultValue>330</defaultValue>
 			<apply>
 				<Operation Class="PatchOperationReplace">
 					<xpath>Defs/RecipeDef[@Name="CodZP_MysteryRecipe"]/workAmount</xpath>
@@ -284,38 +284,20 @@
 					</value>
 				</Operation>
 				<!--Royalty Support-->
-				<Operation Class="PatchOperationFindMod">
-    				<mods>
-						<li>Royalty</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-						<li Class="PatchOperationAdd">
-						<xpath>Defs/ThingDef[@Name="CODZP_BasePackAPunchUltra"]/weaponTags</xpath>
-							<value>
-								<li>UltratechMelee</li>
-							</value>
-						</li>
-					</operations>
-					</match>
-				</Operation>
-				<!--Biotech Support-->
-				<Operation Class="PatchOperationFindMod">
-    				<mods>
-						<li>Biotech</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-						<li Class="PatchOperationAdd">
-						<xpath>Defs/ThingDef[defName="CodZP_Gun_ToxbombLauncher-PAP"]/weaponTags</xpath>
-							<value>
-								<li>HeavyTox</li>
-							</value>
-						</li>
-					</operations>
-					</match>
+				<Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
+					<xpath>Defs/ThingDef[@Name="CODZP_BasePackAPunchUltra"]/weaponTags</xpath>
+					<value>
+						<li>UltratechMelee</li>
+					</value>
 				</Operation>
 
+				<!--Biotech Support-->
+				<Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Biotech">
+					<xpath>Defs/ThingDef[defName="CodZP_Gun_ToxbombLauncher-PAP"]/weaponTags</xpath>
+						<value>
+							<li>HeavyTox</li>
+						</value>
+				</Operation>
 			</caseTrue>
    		</li>
 
@@ -369,6 +351,7 @@
 											defName="CodZP_Gun_Staff-Lightning" or
 											defName="CodZP_Gun_RayGun" or
 											defName="CodZP_Gun_RayGunMkTwo" or
+											defName="CodZP_Gun_RayGunMkTwo-V" or
 											defName="CodZP_Gun_RayGunMkTwo-X" or
 											defName="CodZP_Gun_RayGunMkTwo-Y" or
 											defName="CodZP_Gun_RayGunMkTwo-Z" or
@@ -392,22 +375,6 @@
 					<value>
 						<li>LongSword</li>
 					</value>
-				</Operation>
-				<!--Biotech Support-->
-				<Operation Class="PatchOperationFindMod">
-    				<mods>
-						<li>Biotech</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-						<li Class="PatchOperationAdd">
-						<xpath>Defs/ThingDef[defName="CodZP_Gun_RayGunMkTwo-V"]/weaponTags</xpath>
-							<value>
-								<li>SpacerGun</li>
-							</value>
-						</li>
-					</operations>
-					</match>
 				</Operation>
 			</caseTrue>
    		</li>
@@ -462,6 +429,7 @@
 											defName="CodZP_Gun_Staff-Lightning-PAP" or
 											defName="CodZP_Gun_RayGun-PAP" or
 											defName="CodZP_Gun_RayGunMkTwo-PAP" or
+											defName="CodZP_Gun_RayGunMkTwo-V-PAP" or
 											defName="CodZP_Gun_RayGunMkTwo-X-PAP" or
 											defName="CodZP_Gun_RayGunMkTwo-Y-PAP" or
 											defName="CodZP_Gun_RayGunMkTwo-Z-PAP" or
@@ -485,22 +453,6 @@
 					<value>
 						<li>LongSword</li>
 					</value>
-				</Operation>
-				<!--Biotech Support-->
-				<Operation Class="PatchOperationFindMod">
-    				<mods>
-						<li>Biotech</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-						<li Class="PatchOperationAdd">
-						<xpath>Defs/ThingDef[defName="CodZP_Gun_RayGunMkTwo-V-PAP"]/weaponTags</xpath>
-							<value>
-								<li>SpacerGun</li>
-							</value>
-						</li>
-					</operations>
-					</match>
 				</Operation>
 			</caseTrue>
    		</li>

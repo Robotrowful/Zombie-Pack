@@ -213,19 +213,13 @@
     <labelNoun>effects of Double Tap</labelNoun>
     <maxSeverity>1.0</maxSeverity>
     <isBad>false</isBad>
-    <modExtensions>
-    <li Class="AthenaFramework.DamageAmplifierExtension">
-      <modifiers>
-        <li>
-          <modifier>2</modifier>
-        </li>
-      </modifiers>
-    </li>
-    </modExtensions>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-1</severityPerDay>
         <showHoursToRecover>true</showHoursToRecover>
+      </li>
+      <li Class="AthenaFramework.HediffCompProperties_DamageModifier">
+        <outgoingDamageMultiplier>2</outgoingDamageMultiplier>
       </li>
     </comps>
   </HediffDef>
