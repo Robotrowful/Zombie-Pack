@@ -101,6 +101,54 @@
         <defaultValue>200</defaultValue>
       </li>
       <li Class="XmlExtensions.Setting.GapLine" />
+      <!--Duration-->
+      <li Class="XmlExtensions.Setting.Gap" />
+      <li Class="XmlExtensions.Setting.Text">
+        <text>Time duration for perk a colas. All perk a colas lose 1 Severity Per day. However Double Tap II loses 5 Per day.</text>
+        <anchor>Middle</anchor>
+      </li>
+      <li Class="XmlExtensions.Setting.Text">
+        <text>Each Value is counted in days till perk wear out</text>
+        <anchor>Middle</anchor>
+      </li>
+      <li Class="XmlExtensions.Setting.Gap" />
+      
+      <li Class="XmlExtensions.Setting.Textbox">
+        <key>PerkColaDuration_Dead</key>
+        <label>Deadshot Daiquiri Duration</label>
+        <defaultValue>5</defaultValue>
+      </li>
+      <li Class="XmlExtensions.Setting.Textbox">
+        <key>PerkColaDuration_DTap</key>
+        <label>Double Tap Duration</label>
+        <defaultValue>5</defaultValue>
+      </li>
+      <li Class="XmlExtensions.Setting.Textbox">
+        <key>PerkColaDuration_DDTap</key>
+        <label>Double Tap II Duration</label>
+        <defaultValue>5</defaultValue>
+      </li>
+      <li Class="XmlExtensions.Setting.Textbox">
+        <key>PerkColaDuration_Jug</key>
+        <label>Juggernog Duration</label>
+        <defaultValue>5</defaultValue>
+      </li>
+      <li Class="XmlExtensions.Setting.Textbox">
+        <key>PerkColaDuration_Quick</key>
+        <label>Quick Revive Duration</label>
+        <defaultValue>5</defaultValue>
+      </li>
+      <li Class="XmlExtensions.Setting.Textbox">
+        <key>PerkColaDuration_Speed</key>
+        <label>Speed Cola Duration</label>
+        <defaultValue>5</defaultValue>
+      </li>
+      <li Class="XmlExtensions.Setting.Textbox">
+        <key>PerkColaDuration_Stam</key>
+        <label>Stamin-Up Duration</label>
+        <defaultValue>5</defaultValue>
+      </li>
+      <li Class="XmlExtensions.Setting.GapLine" />
     <!--Mystery Box-->
       <li Class="XmlExtensions.Setting.Textbox">
         <key>MysteryWorkingredients</key>

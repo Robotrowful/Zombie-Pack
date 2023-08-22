@@ -186,6 +186,12 @@
 		<defName>CodZP_Gun_RayGunMkTwo</defName>
 		<label>RayGun Mk.2</label>
 		<description>The sucsessor of the raygun. a three round burst</description>
+		<descriptionHyperlinks>
+			<ThingDef>CodZP_Gun_RayGunMkTwo-V</ThingDef>
+			<ThingDef>CodZP_Gun_RayGunMkTwo-X</ThingDef>
+			<ThingDef>CodZP_Gun_RayGunMkTwo-Y</ThingDef>
+			<ThingDef>CodZP_Gun_RayGunMkTwo-Z</ThingDef>
+		</descriptionHyperlinks>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/Rays/CodZP_RayGun_Two</texPath>
@@ -1032,6 +1038,9 @@
 		<defName>CodZP_Gun_RayGunMkThree</defName>
 		<label>RayGun Mk.3</label>
 		<description>It's the third version of the Raygun Series, but it looks like somethings is missing....</description>
+		<descriptionHyperlinks>
+			<ThingDef>CodZP_Gun_GKZ</ThingDef>
+		</descriptionHyperlinks>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/Rays/CodZP_RayGun_Three</texPath>
@@ -1093,6 +1102,9 @@
 		<defName>CodZP_Gun_RayGunMkThree-PAP</defName>
 		<label>Eris</label>
 		<description>Despite being stronger than ever. it's real strength is currently lost</description>
+		<descriptionHyperlinks>
+			<ThingDef>CodZP_Gun_GKZ-PAP</ThingDef>
+		</descriptionHyperlinks>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/Rays/CodZP_RayGun_Three_PAP</texPath>
@@ -1180,6 +1192,9 @@
 		<defName>CodZP_Gun_GKZ</defName>
 		<label>GKZ-45</label>
 		<description>A weapon often paired with the Raygun Mark 3, but it looks like somethings is missing....</description>
+		<descriptionHyperlinks>
+			<ThingDef>CodZP_Gun_RayGunMkThree</ThingDef>
+		</descriptionHyperlinks>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/Rays/CodZP_GKZ-45</texPath>
@@ -1244,6 +1259,9 @@
 		<defName>CodZP_Gun_GKZ-PAP</defName>
 		<label>Maelstorm</label>
 		<description>An engulfing Black Hole. it's real strength is currently lost</description>
+		<descriptionHyperlinks>
+			<ThingDef>CodZP_Gun_RayGunMkThree-PAP</ThingDef>
+		</descriptionHyperlinks>
 		<techLevel>Spacer</techLevel>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/Rays/CodZP_GKZ-45_PAP</texPath>

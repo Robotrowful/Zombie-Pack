@@ -35,6 +35,10 @@
 	<defName>CODZP_Gun_Zapgun_Red</defName>
 	<label>Zap Gun (red)</label>
 	<description>1 Half a double gun! this one is coloured \nRed!</description>
+	<descriptionHyperlinks>
+		<ThingDef>CODZP_Gun_Zapgun_Blue</ThingDef>
+		<ThingDef>CodZP_Gun_Wavegun</ThingDef>
+	</descriptionHyperlinks>
 	<graphicData>
 		<texPath>Things/Item/Equipment/WeaponRanged/Zaps/CodZP_ZapRed</texPath> 
 		<graphicClass>Graphic_Single</graphicClass>
@@ -83,6 +87,10 @@
 	<defName>CODZP_Gun_Zapgun_Blue</defName>
 	<label>Zap Gun (blue)</label>
 	<description>1 Half a double gun! this one is coloured \nBlue!</description>
+	<descriptionHyperlinks>
+		<ThingDef>CODZP_Gun_Zapgun_Red</ThingDef>
+		<ThingDef>CodZP_Gun_Wavegun</ThingDef>
+	</descriptionHyperlinks>
 	<graphicData>
 		<texPath>Things/Item/Equipment/WeaponRanged/Zaps/CodZP_ZapBlue</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
@@ -179,6 +187,10 @@
 	<defName>CodZP_Gun_Wavegun</defName>
 	<label>Wavegun</label>
 	<description>A combinations of both Zaps guns into one!</description>
+	<descriptionHyperlinks>
+		<ThingDef>CODZP_Gun_Zapgun_Blue</ThingDef>
+		<ThingDef>CODZP_Gun_Zapgun_Red</ThingDef>
+	</descriptionHyperlinks>
 	<graphicData>
 		<texPath>Things/Item/Equipment/WeaponRanged/Zaps/CodZP_Wavegun</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
@@ -304,6 +316,10 @@
 	<defName>CODZP_Gun_Zapgun_Red-PAP</defName>
 	<label>Porter's X2 Zap Gun (red)</label>
 	<description>1 Half a double gun! this one looks like it had it's energy drained</description>
+	<descriptionHyperlinks>
+		<ThingDef>CODZP_Gun_Zapgun_Blue-PAP</ThingDef>
+		<ThingDef>CodZP_Gun_Wavegun-PAP</ThingDef>
+	</descriptionHyperlinks>
 	<graphicData>
 		<texPath>Things/Item/Equipment/WeaponRanged/Zaps/CodZP_ZapRed_PAP</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
@@ -319,6 +335,10 @@
 	<defName>CODZP_Gun_Zapgun_Blue-PAP</defName>
 	<label>Porter's X2 Zap Gun (blue)</label>
 	<description>1 Half a double gun! the other one looks like it had it's energy drained</description>
+	<descriptionHyperlinks>
+		<ThingDef>CODZP_Gun_Zapgun_Red-PAP</ThingDef>
+		<ThingDef>CodZP_Gun_Wavegun-PAP</ThingDef>
+	</descriptionHyperlinks>
 	<graphicData>
 		<texPath>Things/Item/Equipment/WeaponRanged/Zaps/CodZP_ZapBlue_PAP</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
@@ -356,6 +376,10 @@
 	<defName>CodZP_Gun_Wavegun-PAP</defName>
 	<label>Max Wavegun</label>
 	<description>The combinded efforts will excel all records</description>
+	<descriptionHyperlinks>
+		<ThingDef>CODZP_Gun_Zapgun_Blue-PAP</ThingDef>
+		<ThingDef>CODZP_Gun_Zapgun_Red-PAP</ThingDef>
+	</descriptionHyperlinks>
 	<graphicData>
 		<texPath>Things/Item/Equipment/WeaponRanged/Zaps/CodZP_Wavegun_PAP</texPath>
 		<graphicClass>Graphic_Single</graphicClass>

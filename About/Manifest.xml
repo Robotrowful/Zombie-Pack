@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest>
   <identifier>CallOfDutyZombiesPack</identifier>
-  <version>1.4.5</version>
+  <version>1.5.1</version>
   <loadAfter>
     <li>2288125657</li> <!-- Vanilla Achievements -->
   </loadAfter>

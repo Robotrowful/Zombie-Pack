@@ -5,6 +5,10 @@
 	<defName>CodZP_Gun_Blundergat</defName>
 	<label>Blundergat</label>
 	<description>A shotgun that fires 4 bullets at once</description>
+	<descriptionHyperlinks>
+			<ThingDef>CodZP_Gun_Acidgat</ThingDef>
+			<ThingDef>CodZP_Gun_Magmagat</ThingDef>
+	</descriptionHyperlinks>
 	<graphicData>
 		<texPath>Things/Item/Equipment/WeaponRanged/Blunders/CodZP_Blundergat</texPath>
 		<graphicClass>Graphic_Single</graphicClass>

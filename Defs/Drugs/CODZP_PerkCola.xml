@@ -15,7 +15,7 @@
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>CODZP_DrankJuggernog</hediffDef>
-          <severity>1</severity>
+          <severity>5</severity>
         </li>
       </outcomeDoers>
     </ingestible>
@@ -27,11 +27,10 @@
     <defaultLabelColor>(255, 0, 0)</defaultLabelColor>
     <description>A positive effect caused by drinking Juggernog. Lasts for 5 days</description>
     <labelNoun>effects of Juggernog</labelNoun>
-    <maxSeverity>1.0</maxSeverity>
     <isBad>false</isBad>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.2</severityPerDay>
+        <severityPerDay>-1</severityPerDay>
         <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
@@ -72,7 +71,7 @@
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>CODZP_DrankSpeedCola</hediffDef>
-          <severity>1</severity>
+          <severity>5</severity>
         </li>
       </outcomeDoers>
     </ingestible>
@@ -84,11 +83,10 @@
     <defaultLabelColor>(0, 255, 0)</defaultLabelColor>
     <description>A positive effect caused by drinking Speed Cola. Lasts for 5 days</description>
     <labelNoun>effects of SpeedCola</labelNoun>
-    <maxSeverity>1.0</maxSeverity>
     <isBad>false</isBad>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.2</severityPerDay>
+        <severityPerDay>-1</severityPerDay>
         <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
@@ -129,7 +127,7 @@
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>CODZP_DrankDoubleTap</hediffDef>
-          <severity>1</severity>
+          <severity>5</severity>
         </li>
       </outcomeDoers>
     </ingestible>
@@ -141,11 +139,10 @@
     <defaultLabelColor>(255, 180, 50)</defaultLabelColor>
     <description>A positive effect caused by drinking Double Tap. Lasts for 5 days</description>
     <labelNoun>effects of Double Tap</labelNoun>
-    <maxSeverity>1.0</maxSeverity>
     <isBad>false</isBad>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.2</severityPerDay>
+        <severityPerDay>-1</severityPerDay>
         <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
@@ -186,7 +183,7 @@
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>CODZP_DrankDoubleTapII</hediffDef>
-          <severity>1</severity>
+          <severity>5</severity>
         </li>
       </outcomeDoers>
     </ingestible>
@@ -211,11 +208,10 @@
     <defaultLabelColor>(255, 180, 50)</defaultLabelColor>
     <description>A positive effect caused by drinking Double Tap. Lasts for 1 days</description>
     <labelNoun>effects of Double Tap</labelNoun>
-    <maxSeverity>1.0</maxSeverity>
     <isBad>false</isBad>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-1</severityPerDay>
+        <severityPerDay>-5</severityPerDay>
         <showHoursToRecover>true</showHoursToRecover>
       </li>
       <li Class="AthenaFramework.HediffCompProperties_DamageModifier">
@@ -239,7 +235,7 @@
         <li
           Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>CODZP_DrankQuickRevive</hediffDef>
-          <severity>1</severity>
+          <severity>5</severity>
         </li>
       </outcomeDoers>
     </ingestible>
@@ -251,11 +247,10 @@
     <defaultLabelColor>(0, 0, 255)</defaultLabelColor>
     <description>A positive effect caused by drinking Quick Revive. Lasts for 5 days</description>
     <labelNoun>effects of Quick Revive</labelNoun>
-    <maxSeverity>1.0</maxSeverity>
     <isBad>false</isBad>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.2</severityPerDay>
+        <severityPerDay>-1</severityPerDay>
         <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
@@ -297,7 +292,7 @@
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>CODZP_DrankStaminUp</hediffDef>
-          <severity>1</severity>
+          <severity>5</severity>
         </li>
       </outcomeDoers>
     </ingestible>
@@ -309,11 +304,10 @@
     <defaultLabelColor>(255, 151, 0)</defaultLabelColor>
     <description>A positive effect caused by drinking Stamin-Up. Lasts for 5 days</description>
     <labelNoun>effects of Stamin-Up</labelNoun>
-    <maxSeverity>1.0</maxSeverity>
     <isBad>false</isBad>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.2</severityPerDay>
+        <severityPerDay>-1</severityPerDay>
         <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
@@ -353,7 +347,7 @@
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>CODZP_DrankDeadshot</hediffDef>
-          <severity>1</severity>
+          <severity>5</severity>
         </li>
       </outcomeDoers>
     </ingestible>
@@ -364,11 +358,10 @@
     <label>Deadshot Buff</label>
     <description>A positive effect caused by drinking Deadshot Daiquiri. Lasts for 5 days</description>
     <labelNoun>effects of Deadshot</labelNoun>
-    <maxSeverity>1.0</maxSeverity>
     <isBad>false</isBad>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.2</severityPerDay>
+        <severityPerDay>-1</severityPerDay>
         <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
@@ -420,7 +413,6 @@
     <label>Mule Kick Buff</label>
     <description>A positive effect caused by drinking Mule Kick. Lasts for 5 days</description>
     <labelNoun>effects of Mule Kick</labelNoun>
-    <maxSeverity>1.0</maxSeverity>
     <isBad>false</isBad>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">

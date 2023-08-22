@@ -5,6 +5,9 @@
 	<defName>CodZP_Gun_Thundergun</defName>
 	<label>Thundergun</label>
 	<description>A Contraption that fires a powerful jet of air.</description>
+	<descriptionHyperlinks>
+			<ThingDef>CodZP_Gun_Tundragun</ThingDef>
+	</descriptionHyperlinks>
 	<graphicData>
 		<texPath>Things/Item/Equipment/WeaponRanged/Thunder/CodZP_Thundergun</texPath>
 		<graphicClass>Graphic_Single</graphicClass>

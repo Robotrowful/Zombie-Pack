@@ -5,6 +5,9 @@
 	<defName>CodZP_Gun_Wunderwaffe</defName>
 	<label>Wunderwaffe DG-2</label>
 	<description>A shocking creation</description>
+	<descriptionHyperlinks>
+			<ThingDef>CodZP_Gun_Wunderwaffe_Scharf</ThingDef>
+	</descriptionHyperlinks>
 	<graphicData>
 		<texPath>Things/Item/Equipment/WeaponRanged/Wunder/CodZP_Wunderwaffe</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
@@ -297,7 +300,7 @@
 		<damageDef>CodZP_Shock</damageDef>
 		<damageAmountBase>15</damageAmountBase>
 		<stoppingPower>20</stoppingPower>
-		<explosionRadius>1</explosionRadius>
+		<explosionRadius>1.9</explosionRadius>
 		<ai_IsIncendiary>true</ai_IsIncendiary>
 	</projectile>
 	<comps>
@@ -320,7 +323,7 @@
 		<damageDef>CodZP_Shock</damageDef>
 		<damageAmountBase>30</damageAmountBase>
 		<stoppingPower>40</stoppingPower>
-		<explosionRadius>1</explosionRadius>
+		<explosionRadius>1.9</explosionRadius>
 		<ai_IsIncendiary>true</ai_IsIncendiary>
 	</projectile>
 	<comps>

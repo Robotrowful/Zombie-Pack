@@ -49,7 +49,7 @@
 				</Operation>
 			</apply>
 		</li>
-
+	<!--Cost-->
 		<li Class="XmlExtensions.UseSetting">
 			<modId>Robotrowful.CODZombies</modId>
 			<key>PerkColaCost_Dead</key>
@@ -143,6 +143,104 @@
 					<xpath>Defs/RecipeDef[defName="CODZP_BuyStaminUp"]/ingredients/li/count</xpath>
 					<value>
 						<count>{PerkColaCost_Stam}</count>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+	<!--Duration-->
+		<li Class="XmlExtensions.UseSetting">
+			<modId>Robotrowful.CODZombies</modId>
+			<key>PerkColaDuration_Dead</key>
+			<defaultValue>5</defaultValue>
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="CODZP_DeadshotDaiquiri"]/ingestible/outcomeDoers/li[@Class="IngestionOutcomeDoer_GiveHediff"]/severity</xpath>
+					<value>
+						<severity>{PerkColaDuration_Dead}</severity>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+
+		<li Class="XmlExtensions.UseSetting">
+			<modId>Robotrowful.CODZombies</modId>
+			<key>PerkColaDuration_DTap</key>
+			<defaultValue>5</defaultValue>
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="CODZP_DoubleTap"]/ingestible/outcomeDoers/li[@Class="IngestionOutcomeDoer_GiveHediff"]/severity</xpath>
+					<value>
+						<severity>{PerkColaDuration_DTap}</severity>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+
+		<li Class="XmlExtensions.UseSetting">
+			<modId>Robotrowful.CODZombies</modId>
+			<key>PerkColaDuration_DDTap</key>
+			<defaultValue>5</defaultValue>
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="CODZP_DoubleTapII"]/ingestible/outcomeDoers/li[@Class="IngestionOutcomeDoer_GiveHediff"]/severity</xpath>
+					<value>
+						<severity>{PerkColaDuration_DDTap}</severity>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+
+		<li Class="XmlExtensions.UseSetting">
+			<modId>Robotrowful.CODZombies</modId>
+			<key>PerkColaDuration_Jug</key>
+			<defaultValue>5</defaultValue>
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="CODZP_Juggernog"]/ingestible/outcomeDoers/li[@Class="IngestionOutcomeDoer_GiveHediff"]/severity</xpath>
+					<value>
+						<severity>{PerkColaDuration_Jug}</severity>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+
+		<li Class="XmlExtensions.UseSetting">
+			<modId>Robotrowful.CODZombies</modId>
+			<key>PerkColaDuration_Quick</key>
+			<defaultValue>5</defaultValue>
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="CODZP_QuickRevive"]/ingestible/outcomeDoers/li[@Class="IngestionOutcomeDoer_GiveHediff"]/severity</xpath>
+					<value>
+						<severity>{PerkColaDuration_Quick}</severity>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+
+		<li Class="XmlExtensions.UseSetting">
+			<modId>Robotrowful.CODZombies</modId>
+			<key>PerkColaDuration_Speed</key>
+			<defaultValue>5</defaultValue>
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="CODZP_SpeedCola"]/ingestible/outcomeDoers/li[@Class="IngestionOutcomeDoer_GiveHediff"]/severity</xpath>
+					<value>
+						<severity>{PerkColaDuration_Speed}</severity>
+					</value>
+				</Operation>
+			</apply>
+		</li>
+
+		<li Class="XmlExtensions.UseSetting">
+			<modId>Robotrowful.CODZombies</modId>
+			<key>PerkColaDuration_Stam</key>
+			<defaultValue>5</defaultValue>
+			<apply>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="CODZP_StaminUp"]/ingestible/outcomeDoers/li[@Class="IngestionOutcomeDoer_GiveHediff"]/severity</xpath>
+					<value>
+						<severity>{PerkColaDuration_Stam}</severity>
 					</value>
 				</Operation>
 			</apply>

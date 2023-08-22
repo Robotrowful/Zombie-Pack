@@ -6,6 +6,7 @@
 		<li>1.4</li>
 	</supportedVersions>
 	<packageId>Robotrowful.CODZombies</packageId>
+	<modVersion>1.5.1</modVersion>
 	<description>
 Addes new Weapons, Buildings and Researches based on call of duty zombies
 +5 Research Tasks
@@ -21,6 +22,7 @@ Addes new Weapons, Buildings and Researches based on call of duty zombies
 		<li>smartkar.athenaframework</li>
         <li>UnlimitedHugs.HugsLib</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>imranfish.xmlextensions</li>
     </loadAfter>
 	<modDependencies>
         <li>
