@@ -50,10 +50,11 @@
 			<CODZP_Juggernog>1</CODZP_Juggernog>
 			<CODZP_SpeedCola>1</CODZP_SpeedCola>
 			<CODZP_DoubleTap>1</CODZP_DoubleTap>
-			<CODZP_DoubleTapII MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">1</CODZP_DoubleTapII>
+			<CODZP_DoubleTapII>1</CODZP_DoubleTapII>
 			<CODZP_QuickRevive>1</CODZP_QuickRevive>
 			<CODZP_StaminUp>1</CODZP_StaminUp>
 			<CODZP_DeadshotDaiquiri>1</CODZP_DeadshotDaiquiri>
 		</producedItems>
 	</MysteryBoxFrameWork.ItemReplacerDef>
+
 </Defs>

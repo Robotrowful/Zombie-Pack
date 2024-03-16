@@ -4,9 +4,10 @@
 	<author>Robotrowful</author>
 	<supportedVersions>
 		<li>1.4</li>
+		<li>1.5</li>
 	</supportedVersions>
 	<packageId>Robotrowful.CODZombies</packageId>
-	<modVersion>1.5.1</modVersion>
+	<modVersion>1.6</modVersion>
 	<description>
 Addes new Weapons, Buildings and Researches based on call of duty zombies
 +5 Research Tasks

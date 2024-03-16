@@ -5,9 +5,16 @@
 	<label>Judge</label>
 	<description>Who needs the jury when you can also be the executioner!</description>
 	<graphicData>
-		<texPath>Things/Item/Equipment/WeaponRanged/CodZP_Revolver</texPath>
+		<texPath>Things/Item/Equipment/WeaponRanged/CODZP/REV_A</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
+	<randomStyleChance>1</randomStyleChance>
+	<randomStyle>
+		<li><styleDef>CODZP_REV_Variant_A</styleDef></li>
+		<li><styleDef>CODZP_REV_Variant_B</styleDef></li>
+		<!--<li><styleDef>CODZP_REV_Variant_C</styleDef></li> -->
+		<li MayRequire="HalituisAmaricanous.CODZombies"><styleDef>CODZP_REV_Variant_D</styleDef></li>
+	</randomStyle>
 	<uiIconScale>1.4</uiIconScale>
 	<soundInteract>Interact_Revolver</soundInteract>
 	<statBases>
@@ -84,9 +91,16 @@
 	<label>Atomizer</label>
 	<description>Standing on the edge of the crater, Like the once raider once stood</description>
 	<graphicData>
-		<texPath>Things/Item/Equipment/WeaponRanged/CodZP_Autopistol</texPath>
+		<texPath>Things/Item/Equipment/WeaponRanged/CODZP/AP_C</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
+	<randomStyleChance>1</randomStyleChance>
+    <randomStyle>
+        <li><styleDef>CODZP_AP_Variant_A</styleDef></li>
+        <li><styleDef>CODZP_AP_Variant_B</styleDef></li>
+        <li><styleDef>CODZP_AP_Variant_C</styleDef></li>
+		<li MayRequire="HalituisAmaricanous.CODZombies"><styleDef>CODZP_AP_Variant_D</styleDef></li>
+    </randomStyle>
 	<uiIconScale>1.5</uiIconScale>
 	<soundInteract>Interact_Autopistol</soundInteract>
 	<statBases>
@@ -162,9 +176,16 @@
 	<label>M.E.C.H pistol</label>
 	<description>Faster!</description>
 	<graphicData>
-		<texPath>Things/Item/Equipment/WeaponRanged/CodZP_MachinePistol</texPath>
+		<texPath>Things/Item/Equipment/WeaponRanged/CODZP/MP_A</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
+	<randomStyleChance>1</randomStyleChance>
+	<randomStyle>
+		<li><styleDef>CODZP_MP_Variant_A</styleDef></li>
+		<!-- <li><styleDef>CODZP_MP_Variant_B</styleDef></li>
+		<li><styleDef>CODZP_MP_Variant_C</styleDef></li> -->
+		<li MayRequire="HalituisAmaricanous.CODZombies"><styleDef>CODZP_MP_Variant_D</styleDef></li>
+	</randomStyle>
 	<uiIconScale>1.4</uiIconScale>
 	<soundInteract>Interact_SMG</soundInteract>
 	<statBases>
@@ -238,9 +259,16 @@
 	<label>Crematior</label>
 	<description>Starting fires have never been easier!</description>
 	<graphicData>
-		<texPath>Things/Item/Equipment/WeaponRanged/CodZP_IncendiaryLauncher</texPath>
+		<texPath>Things/Item/Equipment/WeaponRanged/CODZP/IL_A</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
+	<randomStyleChance>1</randomStyleChance>
+	<randomStyle>
+		<li><styleDef>CODZP_IL_Variant_A</styleDef></li>
+		<!-- <li><styleDef>CODZP_IL_Variant_B</styleDef></li>
+		<li><styleDef>CODZP_IL_Variant_C</styleDef></li> -->
+		<li MayRequire="HalituisAmaricanous.CODZombies"><styleDef>CODZP_IL_Variant_D</styleDef></li>
+	</randomStyle>
 	<soundInteract>Interact_Rifle</soundInteract>
 	<statBases>
 		<Mass>3.4</Mass>
@@ -320,9 +348,16 @@
 	<label>S.D launcher</label>
 	<description>Fills an area with a dense fog</description>
 	<graphicData>
-		<texPath>Things/Item/Equipment/WeaponRanged/CodZP_SmokeLauncher</texPath>
+		<texPath>Things/Item/Equipment/WeaponRanged/CODZP/SL_A</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
+	<randomStyleChance>1</randomStyleChance>
+	<randomStyle>
+		<li><styleDef>CODZP_SL_Variant_A</styleDef></li>
+		<!-- <li><styleDef>CODZP_SL_Variant_B</styleDef></li>
+		<li><styleDef>CODZP_SL_Variant_C</styleDef></li> -->
+		<li MayRequire="HalituisAmaricanous.CODZombies"><styleDef>CODZP_SL_Variant_D</styleDef></li>
+	</randomStyle>
 	<soundInteract>Interact_Rifle</soundInteract>
 	<generateCommonality>0.3</generateCommonality>
 	<statBases>
@@ -404,9 +439,16 @@
 	<label>Disruptor launcher</label>
 	<description>Multishot Emps that devistates machines</description>
 	<graphicData>
-		<texPath>Things/Item/Equipment/WeaponRanged/CodZP_EMPLauncher</texPath>
+		<texPath>Things/Item/Equipment/WeaponRanged/CODZP/EL_A</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
+	<randomStyleChance>1</randomStyleChance>
+	<randomStyle>
+		<li><styleDef>CODZP_EL_Variant_A</styleDef></li>
+		<!-- <li><styleDef>CODZP_EL_Variant_B</styleDef></li>
+		<li><styleDef>CODZP_EL_Variant_C</styleDef></li> -->
+		<li MayRequire="HalituisAmaricanous.CODZombies"><styleDef>CODZP_EL_Variant_D</styleDef></li>
+	</randomStyle>
 	<soundInteract>Interact_Rifle</soundInteract>
 	<statBases>
 		<Mass>3.4</Mass>
@@ -485,9 +527,16 @@
 		<label>Lethal dose</label>
 		<description>Covering more area can cause devistating effects</description>
 		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponRanged/CodZP_ToxbombLauncher</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/CODZP/TL_A</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<randomStyleChance>1</randomStyleChance>
+		<randomStyle>
+			<li><styleDef>CODZP_TL_Variant_A</styleDef></li>
+			<li><styleDef>CODZP_TL_Variant_B</styleDef></li>
+			<!-- <li><styleDef>CODZP_TL_Variant_C</styleDef></li> -->
+			<li MayRequire="HalituisAmaricanous.CODZombies"><styleDef>CODZP_TL_Variant_D</styleDef></li>
+		</randomStyle>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<weaponClasses>
 			<li>RangedHeavy</li>
@@ -568,9 +617,17 @@
 	<label>Empowered rifle</label>
 	<description>More precise, Even faster. turning a action rifle into something</description>
 	<graphicData>
-		<texPath>Things/Item/Equipment/WeaponRanged/CodZP_BoltActionRifle</texPath>
+		<texPath>Things/Item/Equipment/WeaponRanged/CODZP/BAR_A</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
+	<randomStyleChance>1</randomStyleChance>
+	<randomStyle>
+		<li><styleDef>CODZP_BAR_Variant_A</styleDef></li>
+		<li><styleDef>CODZP_BAR_Variant_B</styleDef></li>
+		<li><styleDef>CODZP_BAR_Variant_C</styleDef></li>
+		<li MayRequire="HalituisAmaricanous.CODZombies"><styleDef>CODZP_BAR_Variant_D</styleDef></li>
+		<li><styleDef>CODZP_BAR_Variant_K</styleDef></li>
+	</randomStyle>
 	<soundInteract>Interact_Rifle</soundInteract>
 	<statBases>
 		<Mass>3.5</Mass>
@@ -641,9 +698,16 @@
 	<label>Panner shotgun</label>
 	<description>Oldie But Goldie.</description>
 	<graphicData>
-		<texPath>Things/Item/Equipment/WeaponRanged/CodZP_Shotgun</texPath>
+		<texPath>Things/Item/Equipment/WeaponRanged/CODZP/PS_A</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
+	<randomStyleChance>1</randomStyleChance>
+	<randomStyle>
+		<li><styleDef>CODZP_PS_Variant_A</styleDef></li>
+		<!-- <li><styleDef>CODZP_PS_Variant_B</styleDef></li>
+		<li><styleDef>CODZP_PS_Variant_C</styleDef></li> -->
+		<li MayRequire="HalituisAmaricanous.CODZombies"><styleDef>CODZP_PS_Variant_D</styleDef></li>
+	</randomStyle>
 	<soundInteract>Interact_Shotgun</soundInteract>
 	<statBases>
 		<Mass>3.4</Mass>
@@ -697,9 +761,16 @@
 	<label>Carnage</label>
 	<description>It's very nature is devastating</description>
 	<graphicData>
-		<texPath>Things/Item/Equipment/WeaponRanged/CodZP_ChainShotgun</texPath>
+		<texPath>Things/Item/Equipment/WeaponRanged/CODZP/CS_A</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
+	<randomStyleChance>1</randomStyleChance>
+	<randomStyle>
+		<li><styleDef>CODZP_CS_Variant_A</styleDef></li>
+		<li><styleDef>CODZP_CS_Variant_B</styleDef></li>
+		<!-- <li><styleDef>CODZP_CS_Variant_C</styleDef></li> -->
+		<li MayRequire="HalituisAmaricanous.CODZombies"><styleDef>CODZP_CS_Variant_D</styleDef></li>
+	</randomStyle>
 	<soundInteract>Interact_Shotgun</soundInteract>
 	<statBases>
 		<Mass>4.5</Mass>
@@ -773,9 +844,16 @@
 	<label>Trencher 10k</label>
 	<description>What's left at the bottom is better left forgotten</description>
 	<graphicData>
-		<texPath>Things/Item/Equipment/WeaponRanged/CodZP_HeavySMG</texPath>
+		<texPath>Things/Item/Equipment/WeaponRanged/CODZP/HSMG_A</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
+	<randomStyleChance>1</randomStyleChance>
+	<randomStyle>
+		<li><styleDef>CODZP_HSMG_Variant_A</styleDef></li>
+		<li><styleDef>CODZP_HSMG_Variant_B</styleDef></li>
+		<li><styleDef>CODZP_HSMG_Variant_C</styleDef></li>
+		<li MayRequire="HalituisAmaricanous.CODZombies"><styleDef>CODZP_HSMG_Variant_D</styleDef></li>
+	</randomStyle>
 	<soundInteract>Interact_SMG</soundInteract>
 	<statBases>
 		<Mass>3.5</Mass>
@@ -848,9 +926,16 @@
 	<label>Laminate Machine Gun</label>
 	<description>Made from 1% natural resources!</description>
 	<graphicData>
-		<texPath>Things/Item/Equipment/WeaponRanged/CodZP_LMG</texPath>
+		<texPath>Things/Item/Equipment/WeaponRanged/CODZP/LMG_A</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
+	<randomStyleChance>1</randomStyleChance>
+	<randomStyle>
+		<li><styleDef>CODZP_LMG_Variant_A</styleDef></li>
+		<!-- <li><styleDef>CODZP_LMG_Variant_B</styleDef></li>
+		<li><styleDef>CODZP_LMG_Variant_C</styleDef></li> -->
+		<li MayRequire="HalituisAmaricanous.CODZombies"><styleDef>CODZP_LMG_Variant_D</styleDef></li>
+	</randomStyle>
 	<soundInteract>Interact_Rifle</soundInteract>
 	<statBases>
 		<Mass>8.5</Mass>
@@ -923,9 +1008,16 @@
 	<label>Apocalypse</label>
 	<description>A gun that appears at the end of the world</description>
 	<graphicData>
-		<texPath>Things/Item/Equipment/WeaponRanged/CodZP_AssaultRifle</texPath>
+		<texPath>Things/Item/Equipment/WeaponRanged/CODZP/AR_A</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
+	<randomStyleChance>1</randomStyleChance>
+	<randomStyle>
+		<li><styleDef>CODZP_AR_Variant_A</styleDef></li>
+		<li><styleDef>CODZP_AR_Variant_B</styleDef></li>
+		<!-- <li><styleDef>CODZP_AR_Variant_C</styleDef></li> -->
+		<li MayRequire="HalituisAmaricanous.CODZombies"><styleDef>CODZP_AR_Variant_D</styleDef></li>
+	</randomStyle>
 	<soundInteract>Interact_Rifle</soundInteract>
 	<statBases>
 		<Mass>3.5</Mass>
@@ -994,9 +1086,16 @@
 	<label>13.ET sniper rifle</label>
 	<description>1 Shot.</description>
 	<graphicData>
-		<texPath>Things/Item/Equipment/WeaponRanged/CodZP_SniperRifle</texPath>
+		<texPath>Things/Item/Equipment/WeaponRanged/CODZP/SR_A</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
+	<randomStyleChance>1</randomStyleChance>
+	<randomStyle>
+		<li><styleDef>CODZP_SR_Variant_A</styleDef></li>
+		<!-- <li><styleDef>CODZP_SR_Variant_B</styleDef></li>
+		<li><styleDef>CODZP_SR_Variant_C</styleDef></li> -->
+		<li MayRequire="HalituisAmaricanous.CODZombies"><styleDef>CODZP_SR_Variant_D</styleDef></li>
+	</randomStyle>
 	<soundInteract>Interact_Rifle</soundInteract>
 	<statBases>
 		<Mass>4</Mass>
@@ -1069,9 +1168,16 @@
 	<description>Beautiful, amazing and powerful</description>
 	<techLevel>Industrial</techLevel>
 	<graphicData>
-		<texPath>Things/Item/Equipment/WeaponRanged/CodZP_Minigun</texPath>
+		<texPath>Things/Item/Equipment/WeaponRanged/CODZP/MG_A</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
+	<randomStyleChance>1</randomStyleChance>
+	<randomStyle>
+		<li><styleDef>CODZP_MG_Variant_A</styleDef></li>
+		<!-- <li><styleDef>CODZP_MG_Variant_B</styleDef></li>
+		<li><styleDef>CODZP_MG_Variant_C</styleDef></li> -->
+		<li MayRequire="HalituisAmaricanous.CODZombies"><styleDef>CODZP_MG_Variant_D</styleDef></li>
+	</randomStyle>
 	<soundInteract>Interact_Rifle</soundInteract>
 	<statBases>
 		<Beauty>5</Beauty>
@@ -1139,9 +1245,16 @@
 	<description>Someone thought by adding more capacitors onto an electrical weapon it do more damage, they where right!</description>
 	<techLevel>Spacer</techLevel>
 	<graphicData>
-		<texPath>Things/Item/Equipment/WeaponRanged/CodZP_ChargeRifle</texPath>
+		<texPath>Things/Item/Equipment/WeaponRanged/CODZP/CR_A</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
+	<randomStyleChance>1</randomStyleChance>
+	<randomStyle>
+		<li><styleDef>CODZP_CR_Variant_A</styleDef></li>
+		<!-- <li><styleDef>CODZP_CR_Variant_B</styleDef></li>
+		<li><styleDef>CODZP_CR_Variant_C</styleDef></li> -->
+		<li MayRequire="HalituisAmaricanous.CODZombies"><styleDef>CODZP_CR_Variant_D</styleDef></li>
+	</randomStyle>
 	<soundInteract>Interact_ChargeRifle</soundInteract>
 	<statBases>
 		<Mass>4.6</Mass>
